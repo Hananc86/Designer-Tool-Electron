@@ -1,0 +1,359 @@
+<div class="trading_slip_data_container"> <div class="trading_slip_data_panel"><div class="chart_container"><div class="chart_controls_container"><div class="chart_controls_panel"><div class="chart_type_button linear_chart_button selected_chart_type"><i>Linear</i></div> <div class="chart_type_button candle_chart_button"><i>Candle</i></div> <select class="candle_chart_time_interval" aria-hidden="true" style="display: none;"><option value="1">1 Min</option><option value="5">5 Min</option><option value="15">15 Min</option><option value="30">30 Min</option><option value="60">1 Hour</option><option value="1440">1 Day</option></select></div></div> <div class="sentiment_layout"> <div class="trading_slip_graph_popup_button"></div> <div class="trading_slip_sentiment_popup_button trading_slip_sentiment_popup_button_active"></div> <div class="trading_slip_sentiment_popup"><div class="positions_sentiment_panel"><div class="positions_sentiment_data_panel"><div class="positions_sentiment_positionType_panel positions_sentiment_positionType1_panel"> <div class="positions_sentiment_positionType_percentage positions_sentiment_positionType1_percentage">50%</div> <div class="positions_sentiment_positionType_icon positions_sentiment_positionType1_icon positions_sentiment_positionType_Above"></div> </div> <div class="positions_sentiment_bar_panel"> <div class="positions_sentiment_sentimentBar_label">Trader's Choice</div> <div class="positions_sentiment_bar"><div class="positions_sentiment_bar_percentage" style="height: 50%;"></div></div> </div> <div class="positions_sentiment_positionType_panel positions_sentiment_positionType2_panel"> <div class="positions_sentiment_positionType_percentage positions_sentiment_positionType2_percentage">50%</div> <div class="positions_sentiment_positionType_icon positions_sentiment_positionType2_icon positions_sentiment_positionType_Below"></div> </div></div> <div class="positions_sentiment_notAvailable_label" aria-hidden="true" style="display: none;">Information is not applicable for this instrument</div></div></div> </div> <div class="chart_layout"> <div class="chart_header_container"></div> <div class="chart_main_container"><div class="prochart_container" id="n1rnd53424">
+            <prochart>
+            <div id="layoutlMHbR7ES" class="prof_chart noselect " style="width: 973px; height: 250px;">
+                <div class="htmlchart adv-svgchart layout1 template_200">
+                    <div id="VL6l4uFK" class="layout-innner-container" style="width: 973px; height: 250px;">
+                        
+         <div id="cXgARDDn" class=" layout-top" style="left: 0px; top: 0px; width: 973px; height: 36px; display: none;">
+             <div id="9POxS042" class="layout-innner-container" style="width: 973px; height: 36px;">
+                        
+        <div id="DmjWTkW3" class=" layout-row noselect" style="width: 973px; height: 40px; display: none;">
+           <div class="chart-header" id="DOHaUkr1">
+               
+           <div style="position :absolute;left :0px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="ZB9dfVPu"> 
+            <span class="search-symbolics"></span>
+            <span class="search-symbolics-subpoint"></span>
+           </div> 
+        
+            <div style="position :absolute;left :35px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="vYLsGn2J" relobj="sI1Uc1io">
+              <span class="symbol-title">Gold</span>
+            <div class="resize-triggers"><div class="expand-trigger"><div style="width: 1px; height: 1px;"></div></div><div class="contract-trigger"></div></div></div> 
+        
+            <div class="chart-header-search" style="position :absolute;left :35px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="SMGPSTTQ">
+                <div class="chart-header-search-input">
+                    <input autocomplete="off" autofocus="" class="chart-header-search-input-text" maxlength="50" max="50">
+                </div> 
+                <div class="chart-header-search-output" style="display:none  ">
+                    <div class="search-properties-filters">
+                        <ul class="search-properties-filters-list clearfix">
+                            <li class="search-properties-filter clearfix" idx="markets">
+                                <span data-localize="search.markets">Markets</span>
+                                <a href="javascript:void(0)" idx="markets" class="action-change-value" data-localize="search.filter-markets-all">All</a>
+                                <ul class="search-properties-filter-values" style="display: none">
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="forex" data-localize="search.forex">Forex</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="forexidx" data-localize="search.forexidx">Forex Indices</a> 
+                </li>
+            </ul>
+                                <div class="filter-up-range"></div>
+                                <div class="filter-down-point"></div>
+
+                            </li>
+                            <li class="search-properties-filter clearfix" idx="exchanges">
+                                <span data-localize="search.exchanges">Exchanges</span>
+                                <a href="javascript:void(0)" idx="exchanges" class="action-change-value" data-localize="search.filter-exchanges-all">All</a>
+                                <ul class="search-properties-filter-values" style="display: none">
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="forexex1" data-localize="search.forexex1">Advinion FEx</a> 
+                </li>
+            </ul>
+                                <div class="filter-up-range"></div>
+                                <div class="filter-down-point"></div>
+                            </li>
+                            <li class="search-properties-filter clearfix" idx="countries">
+                                <span data-localize="search.countries">Countries</span>
+                                <a href="javascript:void(0)" idx="countries" class="action-change-value" data-localize="search.filter-countries-all">All</a>
+                                <ul class="search-properties-filter-values" style="display: none">
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="uk" data-localize="search.uk">England</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="it" data-localize="search.it">Italy</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="sp" data-localize="search.sp">Spain</a> 
+                </li>
+            
+                <li class="search-properties-filter-value">
+                    <a href="javascript:void(0)" idx="jp" data-localize="search.jp">Japan</a> 
+                </li>
+            </ul>
+                                <div class="filter-up-range"></div>
+                                <div class="filter-down-point"></div>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="search-properties-tabs-labels">
+                
+                    </div>
+                    <div class="search-main-properties-tabs">
+                  
+                    </div>
+                </div>
+                <div class="chart-search-preload"></div>
+            </div> 
+        
+            <div style="position :absolute;left :10px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="sI1Uc1io"> 
+            <span class="header-timeframe" data-localize="menu.timescale.1200S">1 minute</span>
+            </div>
+        
+             <div style="position :absolute;left :auto; right :0px; top :auto; bottom :auto; width :auto; height :auto; " id="sGmhiVGw">
+             <span class="header-communic ComOff"></span>
+              </div>
+        
+             <div style="position :absolute;left :auto; right :25px; top :auto; bottom :auto; width :auto; height :auto; " id="ZGnIFrQO">
+              <span class="header-lastupdate">06/18/2017 10:00:00</span>
+             </div>
+        
+             <div style="position :absolute;left :auto; right :225px; top :auto; bottom :auto; width :auto; height :auto; " id="58t3KAAz">
+                
+              </div>
+        
+           </div>
+           <div class="clear"></div>
+       </div>
+    
+        <div id="M60Yiga1" class=" layout-row noselect" style="width: 973px; height: 30px; display: none;"></div>
+    
+        <div id="4XnK4Lgm" class=" layout-row noselect" style="width: 973px; height: 36px;"></div>
+    
+        <div id="UI6nuKjj" class=" layout-row noselect" style="width: 973px; height: 30px; display: none;">        <ul class="toolbar-adv  loc-horizontal" id="ntAXsNRm" tid="toolbar2">         <li class="tlb-caption hide-tlb-item"><span class="toolbar-adv-label " tid="title-tools" data-localize="tools.tools.title">Tools</span></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="pointer" type="button" data-localize="tools.tools.pointer" title="Pointer">                               <span class="pointer1-icon"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_selected" type="button" data-localize="tools.tools.delete_selected" title="Delete Selected Shape">                               <span class="delete-icon"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_allshapes" type="button" data-localize="tools.tools.delete_allshapes" title="Delete All Shapes">                               <span class="delete-shapes"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_allstudies" type="button" data-localize="tools.tools.delete_allstudies" title="Delete All Studies">                               <span class="delete-indicators"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="duplicate_delected" type="button" data-localize="tools.tools.duplicate_delected" title="Duplicate Selected Shape">                               <span class="many-windows-icon"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class=" icon-button  button-action caption-button" action="" tid="zoom_in" type="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>                    <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space1"></span></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_rayline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="ray-line"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_vline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="vertical-line"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_hline" type="button" data-localize="tools.draw.draw_hline" title="Horizontal Line">                               <span class="horizontal-line"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_extendedline" type="button" data-localize="tools.draw.draw_extendedline" title="Extended line">                               <span class="extended-line"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_arrow" type="button" data-localize="tools.draw.draw_arrow" title="Arrow">                               <span class="arrow"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_line" type="button" data-localize="tools.draw.draw_line" title="Trend line">                               <span class="trendline"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_measure" type="button" data-localize="tools.draw.draw_measure" title="Measure">                               <span class="measure"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_parallel" type="button" data-localize="tools.draw.draw_parallel" title="Parallel line">                               <span class="parallel-lines"></span>                             </button></li>             <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space2"></span></li>           <li class="tlb-item tlb-item-group hide-tlb-item"><button class=" icon-button  button-group" tid="group-4" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                                             <span class="ray-line"></span>                                            </button>                <div class="sub-point"></div>           <div class="tlb-button-groups a-top a-tooltip " style="display: none;">               <div class="tlb-array">                   <div></div>               </div>                <ul>        <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_rayline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="ray-line"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_vline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="vertical-line"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_hline" type="button" data-localize="tools.draw.draw_hline" title="Horizontal Line">                               <span class="horizontal-line"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_extendedline" type="button" data-localize="tools.draw.draw_extendedline" title="Extended line">                               <span class="extended-line"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_arrow" type="button" data-localize="tools.draw.draw_arrow" title="Arrow">                               <span class="arrow"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_line" type="button" data-localize="tools.draw.draw_line" title="Trend line">                               <span class="trendline"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_measure" type="button" data-localize="tools.draw.draw_measure" title="Measure">                               <span class="measure"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_parallel" type="button" data-localize="tools.draw.draw_parallel" title="Parallel line">                               <span class="parallel-lines"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_rect" type="button" data-localize="tools.draw.draw_rect" title="Rectangle">                               <span class="rectangle"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_arc" type="button" data-localize="tools.draw.draw_arc" title="Arc">                               <span class="draw-arc"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_ellipse" type="button" data-localize="tools.draw.draw_ellipse" title="Ellipse">                               <span class="ellipce"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_triangle" type="button" data-localize="tools.draw.draw_triangle" title="Triangle">                               <span class="triangle"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_circle" type="button" data-localize="tools.draw.draw_circle" title="Circle">                               <span class="circle"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_polygon" type="button" data-localize="tools.draw.draw_polygon" title="Polygon">                               <span class="polygon"></span>                             </button></li>            <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_text" type="button" data-localize="tools.draw.draw_text" title="Text">                               <span class="text-tool"></span>                             </button></li>    </ul>               <div class="clear"></div>           </div>                  </li>                                          <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space3"></span></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_rect" type="button" data-localize="tools.draw.draw_rect" title="Rectangle">                               <span class="rectangle"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_arc" type="button" data-localize="tools.draw.draw_arc" title="Arc">                               <span class="draw-arc"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_ellipse" type="button" data-localize="tools.draw.draw_ellipse" title="Ellipse">                               <span class="ellipce"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_circle" type="button" data-localize="tools.draw.draw_circle" title="Circle">                               <span class="circle"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_triangle" type="button" data-localize="tools.draw.draw_triangle" title="Triangle">                               <span class="triangle"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_polygon" type="button" data-localize="tools.draw.draw_polygon" title="Polygon">                               <span class="polygon"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_text" type="button" data-localize="tools.draw.draw_text" title="Text">                               <span class="text-tool"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fork" type="button" data-localize="tools.draw.draw_fork" title="Andrews Pitchfork">                               <span class="adrews_pitchfork"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibretrace" type="button" data-localize="tools.draw.draw_fibretrace" title="Fibo.Retracement">                               <span class="fib-retracement"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibtimezones" type="button" data-localize="tools.draw.draw_fibtimezones" title="Fibo.Time-zones">                               <span class="fib-timezone"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibfan" type="button" data-localize="tools.draw.draw_fibfan" title="Fibonacci fan">                               <span class="fib-fan"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibarc" type="button" data-localize="tools.draw.draw_fibarc" title="Fibonacci arc">                               <span class="fib-arc"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_ganfan" type="button" data-localize="tools.draw.draw_ganfan" title="Gann fan">                               <span class="fib-gannfan"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibextension" type="button" data-localize="tools.draw.draw_fibextension" title="Fibo. extension">                               <span class="fib-extension"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibtimeextension" type="button" data-localize="tools.draw.draw_fibtimeextension" title="Time-extension">                               <span class="fib-time-extentsion"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_gansquare" type="button" data-localize="tools.draw.draw_gansquare" title="Gann square">                               <span class="fib-gann-square"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_linearreg" type="button" data-localize="tools.draw.draw_linearreg" title="Linear regression">                               <span class="regression-channel"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_cycleline" type="button" data-localize="tools.draw.draw_cycleline" title="Cycle lines">                               <span class="cycle-lines"></span>                             </button></li>             <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space3"></span></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_in" type="button" data-localize="tools.view.zoom_in" title="Zoom-in">                               <span class="zoom-plus"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_out" type="button" data-localize="tools.view.zoom_out" title="Zoom-out">                               <span class="zoom-minus"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_left" type="button" data-localize="tools.view.zoom_left" title="Zoom left">                               <span class="zoom-left"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_right" type="button" data-localize="tools.view.zoom_right" title="Zoom right">                               <span class="zoom-right"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom-all" type="button" data-localize="tools.view.zoom_all" title="View all">                               <span class="zoom-all"></span>                             </button></li>            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom-default" type="button" data-localize="zoom_default" title="Default zoom">                               <span class="zoom-default"></span>                             </button></li>    
+        <li class="tlb-more" style="display: block;"><button class="button-more icon-button " tid="showmore" type="button" data-localize="tools.general.more" title="Show more">
+                                <span class="icon-more"></span>
+                              </button>
+                              <div class="sub-point"></div>
+                <div class="tlb-more-items   a-bottom" style="display: none;">
+                    <div class="tlb-array">
+                        <div></div>
+                    </div> 
+                    
+                    
+                    <ul>
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="pointer" caption-buttontype="button" data-localize="tools.tools.pointer" title="Pointer"><span class="pointer1-icon"></span>Pointer</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_selected" caption-buttontype="button" data-localize="tools.tools.delete_selected" title="Delete Selected Shape"><span class="delete-icon"></span>Delete Selected Shape</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_allshapes" caption-buttontype="button" data-localize="tools.tools.delete_allshapes" title="Delete All Shapes"><span class="delete-shapes"></span>Delete All Shapes</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_allstudies" caption-buttontype="button" data-localize="tools.tools.delete_allstudies" title="Delete All Studies"><span class="delete-indicators"></span>Delete All Studies</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="duplicate_delected" caption-buttontype="button" data-localize="tools.tools.duplicate_delected" title="Duplicate Selected Shape"><span class="many-windows-icon"></span>Duplicate Selected Shape</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action  tlb-more-a-closebyclick caption-button" tid="zoom_in" caption-buttontype="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_rayline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="ray-line"></span>Ray</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_vline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="vertical-line"></span>Ray</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_hline" caption-buttontype="button" data-localize="tools.draw.draw_hline" title="Horizontal Line"><span class="horizontal-line"></span>Horizontal Line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_extendedline" caption-buttontype="button" data-localize="tools.draw.draw_extendedline" title="Extended line"><span class="extended-line"></span>Extended line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_arrow" caption-buttontype="button" data-localize="tools.draw.draw_arrow" title="Arrow"><span class="arrow"></span>Arrow</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_line" caption-buttontype="button" data-localize="tools.draw.draw_line" title="Trend line"><span class="trendline"></span>Trend line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_measure" caption-buttontype="button" data-localize="tools.draw.draw_measure" title="Measure"><span class="measure"></span>Measure</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_parallel" caption-buttontype="button" data-localize="tools.draw.draw_parallel" title="Parallel line"><span class="parallel-lines"></span>Parallel line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_rayline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="ray-line"></span>Ray</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_vline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="vertical-line"></span>Ray</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_hline" caption-buttontype="button" data-localize="tools.draw.draw_hline" title="Horizontal Line"><span class="horizontal-line"></span>Horizontal Line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_extendedline" caption-buttontype="button" data-localize="tools.draw.draw_extendedline" title="Extended line"><span class="extended-line"></span>Extended line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_arrow" caption-buttontype="button" data-localize="tools.draw.draw_arrow" title="Arrow"><span class="arrow"></span>Arrow</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_line" caption-buttontype="button" data-localize="tools.draw.draw_line" title="Trend line"><span class="trendline"></span>Trend line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_measure" caption-buttontype="button" data-localize="tools.draw.draw_measure" title="Measure"><span class="measure"></span>Measure</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_parallel" caption-buttontype="button" data-localize="tools.draw.draw_parallel" title="Parallel line"><span class="parallel-lines"></span>Parallel line</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_rect" caption-buttontype="button" data-localize="tools.draw.draw_rect" title="Rectangle"><span class="rectangle"></span>Rectangle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_arc" caption-buttontype="button" data-localize="tools.draw.draw_arc" title="Arc"><span class="draw-arc"></span>Arc</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_ellipse" caption-buttontype="button" data-localize="tools.draw.draw_ellipse" title="Ellipse"><span class="ellipce"></span>Ellipse</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_triangle" caption-buttontype="button" data-localize="tools.draw.draw_triangle" title="Triangle"><span class="triangle"></span>Triangle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_circle" caption-buttontype="button" data-localize="tools.draw.draw_circle" title="Circle"><span class="circle"></span>Circle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_polygon" caption-buttontype="button" data-localize="tools.draw.draw_polygon" title="Polygon"><span class="polygon"></span>Polygon</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_text" caption-buttontype="button" data-localize="tools.draw.draw_text" title="Text"><span class="text-tool"></span>Text</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_rect" caption-buttontype="button" data-localize="tools.draw.draw_rect" title="Rectangle"><span class="rectangle"></span>Rectangle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_arc" caption-buttontype="button" data-localize="tools.draw.draw_arc" title="Arc"><span class="draw-arc"></span>Arc</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_ellipse" caption-buttontype="button" data-localize="tools.draw.draw_ellipse" title="Ellipse"><span class="ellipce"></span>Ellipse</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_circle" caption-buttontype="button" data-localize="tools.draw.draw_circle" title="Circle"><span class="circle"></span>Circle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_triangle" caption-buttontype="button" data-localize="tools.draw.draw_triangle" title="Triangle"><span class="triangle"></span>Triangle</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_polygon" caption-buttontype="button" data-localize="tools.draw.draw_polygon" title="Polygon"><span class="polygon"></span>Polygon</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_text" caption-buttontype="button" data-localize="tools.draw.draw_text" title="Text"><span class="text-tool"></span>Text</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fork" caption-buttontype="button" data-localize="tools.draw.draw_fork" title="Andrews Pitchfork"><span class="adrews_pitchfork"></span>Andrews Pitchfork</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibretrace" caption-buttontype="button" data-localize="tools.draw.draw_fibretrace" title="Fibo.Retracement"><span class="fib-retracement"></span>Fibo.Retracement</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibtimezones" caption-buttontype="button" data-localize="tools.draw.draw_fibtimezones" title="Fibo.Time-zones"><span class="fib-timezone"></span>Fibo.Time-zones</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibfan" caption-buttontype="button" data-localize="tools.draw.draw_fibfan" title="Fibonacci fan"><span class="fib-fan"></span>Fibonacci fan</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibarc" caption-buttontype="button" data-localize="tools.draw.draw_fibarc" title="Fibonacci arc"><span class="fib-arc"></span>Fibonacci arc</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_ganfan" caption-buttontype="button" data-localize="tools.draw.draw_ganfan" title="Gann fan"><span class="fib-gannfan"></span>Gann fan</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibextension" caption-buttontype="button" data-localize="tools.draw.draw_fibextension" title="Fibo. extension"><span class="fib-extension"></span>Fibo. extension</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibtimeextension" caption-buttontype="button" data-localize="tools.draw.draw_fibtimeextension" title="Time-extension"><span class="fib-time-extentsion"></span>Time-extension</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_gansquare" caption-buttontype="button" data-localize="tools.draw.draw_gansquare" title="Gann square"><span class="fib-gann-square"></span>Gann square</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_linearreg" caption-buttontype="button" data-localize="tools.draw.draw_linearreg" title="Linear regression"><span class="regression-channel"></span>Linear regression</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_cycleline" caption-buttontype="button" data-localize="tools.draw.draw_cycleline" title="Cycle lines"><span class="cycle-lines"></span>Cycle lines</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_in" caption-buttontype="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_out" caption-buttontype="button" data-localize="tools.view.zoom_out" title="Zoom-out"><span class="zoom-minus"></span>Zoom-out</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_left" caption-buttontype="button" data-localize="tools.view.zoom_left" title="Zoom left"><span class="zoom-left"></span>Zoom left</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_right" caption-buttontype="button" data-localize="tools.view.zoom_right" title="Zoom right"><span class="zoom-right"></span>Zoom right</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom-all" caption-buttontype="button" data-localize="tools.view.zoom_all" title="View all"><span class="zoom-all"></span>View all</button></li>      
+    
+        <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom-default" caption-buttontype="button" data-localize="zoom_default" title="Default zoom">
+                                      <span class="zoom-default"></span>Default zoom
+                                  </button></li>      
+    </ul>
+                </div></li>                             
+    </ul>        <div class="clear"></div>     </div>
+    
+            </div>
+         </div>
+    
+        <div id="ZBlnMhRq" class=" layout-left noselect" style="left: 0px; top: 0px; width: 40px; height: 250px; display: none;">
+            <div id="u4On0jWD" class="layout-innner-container" style="width: 40px; height: 250px;">
+                        
+        <div id="sxMI1lwX" class=" layout-row noselect" style="width: 40px; height: 250px; display: none;"></div>
+    
+            </div>
+        </div>
+    
+        <div id="kmX7tDOH" class=" layout-right noselect" style="right: 0px; top: 0px; width: 0px; height: 250px; display: none;">
+           <div id="6TZGcKqG" class="layout-innner-container" style="width: 0px; height: 250px;">
+                        
+            </div>
+        </div>
+    
+        <div id="75AUv3Kb" class=" layout-main noselect" style="left: 0px; right: 0px; top: 0px; width: 973px; height: 250px;">
+            <div id="i07HOUk4" class="layout-innner-container" style="width: 973px; height: 250px;">
+                        
+       <div id="Chart0A55E5FB612E485C98EA77830221490C" tabindex="0" class="  noselect layout-main-chart" style="width :560px; height :320px; ">
+            <div class="chart-pane-price chartpane AdvPanel" id="e2H0LP5A" guiid="e2H0LP5A" style="width: 973px; height: 250px; display: block;">
+                <div class="chart-pane-main" id="k0WCtDwA" style="left: 0px; right: 0px; top: 0px; bottom: 0px; width: 973px; height: 250px;"><div style="height: 250px; width: 973px; position: relative;" class="CoreCont"><div style="height: 250px; width: 973px; position: absolute; left: 0px; top: 0px;" id="divBK" class="DivBK"></div><canvas width="973" height="250" id="CNVBKUSR" class="AdvCNVBKUSR" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas><canvas width="973" height="250" id="CNVGRD5FD49FB3BCF04C428DA202FE1D66C3B7" class="AdvGrid" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas><canvas width="973" height="250" id="CNVRND" class="AdvCNVRND" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas><canvas width="973" height="250" id="CNVSGN" class="AdvCNVSGN" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas><canvas width="973" height="250" id="CNVUSR" class="AdvCNVUSR" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas><canvas width="973" height="250" id="cnvDrawing" class="CNVDRW" style="position: absolute; right: 0px; top: 0px; pointer-events: all; z-index: 6;" pointer-events="all"></canvas><canvas width="973" height="250" id="CNVCH" class="AdvCNVCH" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas><canvas width="973" height="250" id="CNVRT" class="AdvCNVRT" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas></div></div>
+                <div class="chart-pane-legend chart-pane-legend-price" id="YE4qpmJA" style="left: 23px; right: 110px; top: 12px; width: 840px; display: none;">
+                <div id="F910173382F241F395CF605C45C686B9" class="legend-price">
+                    <span class="legend-price-description legend-description">Gold</span>
+                    <div class="legend-buttons">
+                        <a href="javascript:void(0);" class="legend-button-visible " itemid="-3" itemtype="price" style="pointer-events: all;">
+                            <span class="legend-visible-icon"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="legend-button-properties " itemid="-3" itemtype="price" style="pointer-events: all;">
+                            <span class="legend-properties-icon"></span>
+                        </a>
+                    </div>
+                    <div class="legend-price-container"> 
+                    <span class="legend-price-open legend-title" data-localize="chart.open">open</span>:
+                    <span class="legend-price-open legend-value" style="color: rgb(255, 255, 255);">1253.900</span>
+                    <span class="legend-price-high legend-title" data-localize="chart.high">high</span>:
+                    <span class="legend-price-high legend-value" style="color: rgb(255, 255, 255);">1253.900</span>
+                    <span class="legend-price-low legend-title" data-localize="chart.low">low</span>:
+                    <span class="legend-price-low legend-value" style="color: rgb(255, 255, 255);">1253.900</span>
+                    <span class="legend-price-close legend-title" data-localize="chart.close">close</span>:
+                    <span class="legend-price-close legend-value" style="color: rgb(255, 255, 255);">1253.900</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+                <div class="chart-date-axis" id="tnbyoVdl" style="left: 0px; right: 0px; bottom: 0px; width: 973px; height: 27px;"><div style="height: 27px; width: 973px; position: relative;" class="CoreCont"><canvas width="973" height="27" id="hx" class="AdvHX" style="position: absolute; left: 0px; bottom: 0px;"></canvas><canvas width="973" height="27" id="vxch" class="AdvHXCH" style="position: absolute; left: 0px; bottom: 0px; pointer-events: none; z-index: 4;"></canvas></div></div>
+                <div class="chart-price-axis" id="ZWAGk5Ng" style="left: 0px; top: 0px; bottom: 0px; width: 70px; height: 250px;"><div style="height: 250px; width: 70px; position: relative;" class="CoreCont"><canvas width="70" height="250" id="vx" class="AdvVX" style="position: absolute; right: 0px; top: 0px; pointer-events: all; z-index: 3;"></canvas><canvas width="70" height="250" id="vxm" class="AdvVXM" style="position: absolute; right: 0px; top: 0px; pointer-events: none; z-index: 4;"></canvas><canvas width="70" height="250" id="vxch" class="AdvVXCH" style="position: absolute; right: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas></div></div>
+                <div class="chart-price-zoom" id="QRE1iUgp" style="left: 394px; right: 579px; bottom: 40px; width: 185px; height: 40px; display: none;"><div><div id="zoom-buttons">
+                <button class="chart-button  icon-button" data-localize="tools.view.zoom_left" tid="zoom_left" type="button" title="Zoom left" style="pointer-events: all;">
+                    <span class="zoom-left"></span>
+                </button>
+                <button class="chart-button  icon-button" data-localize="tools.view.zoom_in" tid="zoom_in" type="button" title="Zoom-in" style="pointer-events: all;">
+                    <span class="zoom-plus"></span>
+                </button>
+                <button class="chart-button   icon-button" data-localize="tools.view.zoom_out" tid="zoom_out" type="button" title="Zoom-out" style="pointer-events: all;">
+                    <span class="zoom-minus"></span>
+                </button>
+                <button class="chart-button  icon-button" data-localize="tools.view.zoom_all" tid="zoom_all" type="button" title="View all" style="pointer-events: all;">
+                    <span class="zoom-all"></span>
+                </button>
+                <button class="chart-button   icon-button" data-localize="tools.view.zoom_default" tid="zoom_default" type="button" title="Default zoom" style="pointer-events: all;">
+                    <span class="zoom-default"></span>
+                </button>
+                <button class="chart-button   icon-button" data-localize="tools.view.zoom_right" tid="zoom_right" type="button" title="Zoom right" style="pointer-events: all;">
+                    <span class="zoom-right"></span>
+                </button>
+                <div class="clear">
+                </div>
+            </div></div></div>
+                <div class="chart-controlpanel" id="v53tD5rr" style="right :65px; top :2px; width :43px; height :16px; display : none; ">
+                   <div class="controlpanel-buttons">
+                       <a href="javascript:void(0);" class="controlpanel-down %visible%" itemid="e2H0LP5A" style="pointer-events: all;">
+                           <span class="controlpanel-down-icon"></span>
+                       </a>
+                       <a href="javascript:void(0);" class="controlpanel-up %visible%" itemid="e2H0LP5A" style="pointer-events: all;">
+                            <span class="controlpanel-up-icon"></span>
+                        </a>
+                        <a href="javascript:void(0);" class="controlpanel-window " itemid="e2H0LP5A" style="pointer-events: all;">
+                            <span class="controlpanel-window-icon"></span>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+        <div id="MdAusMm3" class=" layout-bottom noselect" style="left: 0px; bottom: 0px; width: 973px; height: 40px; display: none;">
+          <div id="1bDv47YP" class="layout-innner-container" style="width: 973px; height: 40px;">
+                        
+        <div id="c5I0KfLx" class=" layout-row noselect" style="width: 973px; height: 40px;"></div>
+    
+            </div>
+        </div>
+    
+            </div> 
+        </div>
+    
+        <div id="HPGViHQR" class=" layout-bottom noselect" style="left: 0px; bottom: 0px; width: 973px; height: 40px; display: none;">
+          <div id="PCzXPbjP" class="layout-innner-container" style="width: 973px; height: 40px;">
+                        
+            </div>
+        </div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            </prochart>
+        </div></div> </div></div></div> </div>

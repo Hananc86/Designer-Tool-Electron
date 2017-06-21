@@ -1,0 +1,33 @@
+{
+  "name": "designer-tool",
+  "version": "1.0.0",
+  "description": "Designer Tool with Electron Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "./node_modules/.bin/electron-rebuild",
+    "build":"electron-packager ./ DesignerTool --all --icon=icon.ico",
+    "pack-win32":"asar pack DesignerTool-win32-ia32/resources/app DesignerTool-win32-ia32/resources/app.asar",
+    "pack-win64":"asar pack DesignerTool-win32-x64/resources/app DesignerTool-win32-x64/resources/app.asar",
+    "pack-linux32":"asar pack DesignerTool-linux-ia32/resources/app DesignerTool-linux-ia32/resources/app.asar",
+    "pack-linux64":"asar pack DesignerTool-linux-x64/resources/app DesignerTool-linux-x64/resources/app.asar",
+    "pack-linux-armv":"asar pack DesignerTool-linux-armv7l/resources/app DesignerTool-linux-armv7l/resources/app.asar"
+  },
+  "author": "Hanan Cohen",
+  "devDependencies": {
+    "asar": "^0.13.0",
+    "electron": "~1.6.2",
+    "electron-packager": "^8.7.1",
+    "electron-reload": "^1.2.0"
+  },
+  "dependencies": {
+    "awk": "^1.0.0",
+    "bluebird": "^3.5.0",
+    "electron-rebuild": "^1.5.11",
+    "fs": "0.0.1-security",
+    "grepit": "^1.0.0",
+    "node-cmd": "^3.0.0",
+    "path": "^0.12.7",
+    "rgb-hex": "^2.1.0"
+  }
+}

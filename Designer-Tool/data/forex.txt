@@ -1,0 +1,797 @@
+<div class="body_container">
+   <div class="forex_tab_panel">
+      <div class="forex_tab_clock_container">
+         <div class="clock_panel">
+            <div class="clock_block">
+               <div class="clock_date_value">Jun 15 2017</div>
+               <div class="clock_time_value">08:55:38</div>
+            </div>
+         </div>
+      </div>
+      <div class="forex_tab_north">
+         <div class="global_help global_help_forex global_help_assets_list" aria-hidden="true" style="display: none;">
+            <div class="global_help_layout_panel">
+               <div class="global_help_number">1</div>
+               <div class="global_help_number_header">Choose Asset</div>
+               <div class="global_help_explanation">Choose an asset you would like to trade from the variety of assets offered in the list.</div>
+            </div>
+         </div>
+         <div class="global_help global_help_forex global_help_forex_direction" aria-hidden="true" style="display: none;">
+            <div class="global_help_layout_panel">
+               <div class="global_help_number">2</div>
+               <div class="global_help_number_header">Choose Direction</div>
+               <div class="global_help_explanation">Decide which direction the chosen asset will take.</div>
+            </div>
+         </div>
+         <div class="global_help global_help_forex global_help_execution_panel" aria-hidden="true" style="display: none;">
+            <div class="global_help_layout_panel">
+               <div class="global_help_number">3</div>
+               <div class="global_help_number_header">Open Trade</div>
+               <div class="global_help_explanation">Enter the amount you wish to invest and click "Open Trade".</div>
+            </div>
+         </div>
+         <div class="forex_tab_assets_panel">
+            <div class="assets_filter_container">
+               <div class="assets_filter_panel">
+                  <div class="assets_filter_market_filter_container">
+                     <div class="assets_filter_market_filter_label">Filter</div>
+                     <div class="assets_filter_market_filter_wrapper">
+                        <select class="assets_filter_market_filter">
+                           <option value="-1">All</option>
+                           <option value="1">Indices</option>
+                           <option value="2">Forex</option>
+                           <option value="3">Stocks</option>
+                           <option value="4">Commodities</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="assets_filter_advanced_button"><i>Advanced</i></div>
+               </div>
+            </div>
+            <div class="assets_list_container">
+               <div class="assets_list_panel">
+                  <div class="assets_list_header">
+                     <div class="assets_list_header_asset">Asset</div>
+                     <div class="assets_list_header_sell">Sell</div>
+                     <div class="assets_list_header_buy">Buy</div>
+                  </div>
+                  <div class="assets_list_scroll_panel">
+                     <div class="assets_container">
+                        <div tabindex="0" class="asset_row_container asset_row_panel_odd">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_USDJPY"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">USD/JPY</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">109.71</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">109.74</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_USDCHF"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">USD/CHF</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_higher_spot">0.9709</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_higher_spot">0.9713</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container asset_row_panel_odd asset_row_container_selected">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_EURJPY"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">EUR/JPY</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">123.05</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">123.09</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_EURGBP"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">EUR/GBP</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_higher_spot">0.8799</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_higher_spot">0.8804</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container asset_row_panel_odd">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_EURCHF"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">EUR/CHF</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">1.0891</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">1.0895</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_AUDJPY"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">AUD/JPY</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">83.53</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">83.58</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container asset_row_panel_odd">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_NZDJPY"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">NZD/JPY</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">79.27</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">79.32</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_Gold"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">Gold</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_higher_spot">1261.99</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_higher_spot">1262.79</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container asset_row_panel_odd">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_CADJPY"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">CAD/JPY</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">82.87</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">82.91</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div tabindex="0" class="asset_row_container">
+                           <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                           <div class="asset_row_panel">
+                              <div class="asset_row_flag">
+                                 <div class="asset_row_asset_flag asset_flag_EURCAD"></div>
+                              </div>
+                              <div class="asset_row_asset">
+                                 <div class="asset_row_asset_label">EUR/CAD</div>
+                                 <div class="asset_row_future_time"></div>
+                              </div>
+                              <div class="asset_row_sell">
+                                 <div class="asset_row_sell_label asset_row_lower_spot">1.4845</div>
+                              </div>
+                              <div class="asset_row_buy">
+                                 <div class="asset_row_buy_label asset_row_lower_spot">1.4849</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="forex_slip_container">
+            <div class="forex_slip_panel">
+               <div class="forex_slip_north">
+                  <div class="forex_slip_info_container">
+                     <div class="asset_mode_info_panel">
+                        <div class="asset_mode_info_asset">
+                           <div class="asset_mode_info_asset_label">EUR/JPY</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="forex_slip_south">
+                  <div class="forex_slip_properties_container">
+                     <div class="asset_direction_container">
+                        <div class="asset_direction_panel asset_direction_panel_forex">
+                           <div class="asset_direction_explanation_label"></div>
+                           <div class="asset_direction_selection_panel">
+                              <div class="asset_direction_selection_top">
+                                 <div class="asset_direction_buy_button asset_direction_action_button">
+                                    <div class="asset_direction_button_label">Buy</div>
+                                    <div class="asset_direction_button_value">123.09</div>
+                                 </div>
+                              </div>
+                              <div class="asset_direction_selection_bottom">
+                                 <div class="asset_direction_sell_button asset_direction_action_button">
+                                    <div class="asset_direction_button_label">Sell</div>
+                                    <div class="asset_direction_button_value">123.05</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="forex_slip_action_container">
+                     <div class="asset_mode_buy_panel asset_mode_buy_panel_disabled">
+                        <div class="asset_mode_tabs_panel">
+                           <div class="asset_mode_tab_button asset_mode_trade_button asset_mode_tab_button_selected"><i>Trade</i></div>
+                           <div class="asset_mode_tab_button asset_mode_order_button"><i>Order</i></div>
+                        </div>
+                        <div class="asset_mode_content_panel">
+                           <div class="asset_mode_trade_panel asset_mode_buy_panel_disabled">
+                              <div class="asset_mode_positionType_panel">
+                                 <div class="asset_mode_positionType_label"></div>
+                              </div>
+                              <div class="asset_mode_buy_amount_panel">
+                                 <div class="asset_mode_buy_amount_label">Invest:</div>
+                                 <div class="asset_mode_buy_currency_label">$</div>
+                                 <input type="text" class="asset_mode_buy_amount_text asset_mode_buy_amount_text-readonly" maxlength="14" readonly=""> 
+                              </div>
+                              <div class="asset_mode_buy_button_panel">
+                                 <div class="asset_mode_buy_button"><i>Open Trade</i></div>
+                                 <div class="asset_mode_buy_button_loading" aria-hidden="true" style="display: none;"></div>
+                              </div>
+                              <div class="asset_mode_buy_info_container">
+                                 <div class="asset_mode_buy_info_panel asset_mode_buy_pipValue_panel">
+                                    <div class="asset_mode_buy_info_tooltip asset_mode_buy_pipValue_tooltip"></div>
+                                    <div class="asset_mode_buy_info_label asset_mode_buy_pipValue_label">Pip Value:</div>
+                                    <div class="asset_mode_buy_info_value asset_mode_buy_pipValue_value"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="forex_slip_data_container">
+                     <div class="forex_slip_data_panel">
+                        <div class="chart_container">
+                           <div class="chart_controls_container">
+                              <div class="chart_controls_panel">
+                                 <div class="chart_type_button linear_chart_button selected_chart_type"><i>Linear</i></div>
+                                 <div class="chart_type_button candle_chart_button"><i>Candle</i></div>
+                                 <select class="candle_chart_time_interval" aria-hidden="true" style="display: none;">
+                                    <option value="1">1 Min</option>
+                                    <option value="5">5 Min</option>
+                                    <option value="15">15 Min</option>
+                                    <option value="30">30 Min</option>
+                                    <option value="60">1 Hour</option>
+                                    <option value="1440">1 Day</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="sentiment_layout">
+                              <div class="trading_slip_graph_popup_button"></div>
+                              <div class="trading_slip_sentiment_popup_button trading_slip_sentiment_popup_button_active"></div>
+                              <div class="trading_slip_sentiment_popup">
+                                 <div class="positions_sentiment_panel">
+                                    <div class="positions_sentiment_data_panel">
+                                       <div class="positions_sentiment_positionType_panel positions_sentiment_positionType1_panel">
+                                          <div class="positions_sentiment_positionType_percentage positions_sentiment_positionType1_percentage">50%</div>
+                                          <div class="positions_sentiment_positionType_icon positions_sentiment_positionType1_icon positions_sentiment_positionType_Ask"></div>
+                                       </div>
+                                       <div class="positions_sentiment_bar_panel">
+                                          <div class="positions_sentiment_sentimentBar_label">Trader's Choice</div>
+                                          <div class="positions_sentiment_bar">
+                                             <div class="positions_sentiment_bar_percentage" style="height: 50%;"></div>
+                                          </div>
+                                       </div>
+                                       <div class="positions_sentiment_positionType_panel positions_sentiment_positionType2_panel">
+                                          <div class="positions_sentiment_positionType_percentage positions_sentiment_positionType2_percentage">50%</div>
+                                          <div class="positions_sentiment_positionType_icon positions_sentiment_positionType2_icon positions_sentiment_positionType_Bid"></div>
+                                       </div>
+                                    </div>
+                                    <div class="positions_sentiment_notAvailable_label" aria-hidden="true" style="display: none;">Information is not applicable for this instrument</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="chart_layout">
+                              <div class="chart_header_container"></div>
+                              <div class="chart_main_container">
+                                 <div class="prochart_container" id="n3rnd85499">
+                                    <prochart>
+                                       <div id="layoutQ2vz12gG" class="prof_chart noselect " style="width: 961px; height: 250px;">
+                                          <div class="htmlchart adv-svgchart layout1 template_200">
+                                             <div id="5aZCzZuY" class="layout-innner-container" style="width: 961px; height: 250px;">
+                                                <div id="p3zrSTKF" class=" layout-top" style="left: 0px; top: 0px; width: 961px; height: 36px; display: none;">
+                                                   <div id="zXBfS4MM" class="layout-innner-container" style="width: 961px; height: 36px;">
+                                                      <div id="W52Yb5Uh" class=" layout-row noselect" style="width: 961px; height: 40px; display: none;">
+                                                         <div class="chart-header" id="wnkuXaJ8">
+                                                            <div style="position :absolute;left :0px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="yGMZLm1F"> 
+                                                               <span class="search-symbolics"></span>
+                                                               <span class="search-symbolics-subpoint"></span>
+                                                            </div>
+                                                            <div style="position :absolute;left :35px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="GhFJfN2H" relobj="P4dnub2Q">
+                                                               <span class="symbol-title">EUR/JPY</span>
+                                                               <div class="resize-triggers">
+                                                                  <div class="expand-trigger">
+                                                                     <div style="width: 1px; height: 1px;"></div>
+                                                                  </div>
+                                                                  <div class="contract-trigger"></div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-header-search" style="position :absolute;left :35px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="c7GQVmem">
+                                                               <div class="chart-header-search-input">
+                                                                  <input autocomplete="off" autofocus="" class="chart-header-search-input-text" maxlength="50" max="50">
+                                                               </div>
+                                                               <div class="chart-header-search-output" style="display:none  ">
+                                                                  <div class="search-properties-filters">
+                                                                     <ul class="search-properties-filters-list clearfix">
+                                                                        <li class="search-properties-filter clearfix" idx="markets">
+                                                                           <span data-localize="search.markets">Markets</span>
+                                                                           <a href="javascript:void(0)" idx="markets" class="action-change-value" data-localize="search.filter-markets-all">All</a>
+                                                                           <ul class="search-properties-filter-values" style="display: none">
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="forex" data-localize="search.forex">Forex</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="forexidx" data-localize="search.forexidx">Forex Indices</a> 
+                                                                              </li>
+                                                                           </ul>
+                                                                           <div class="filter-up-range"></div>
+                                                                           <div class="filter-down-point"></div>
+                                                                        </li>
+                                                                        <li class="search-properties-filter clearfix" idx="exchanges">
+                                                                           <span data-localize="search.exchanges">Exchanges</span>
+                                                                           <a href="javascript:void(0)" idx="exchanges" class="action-change-value" data-localize="search.filter-exchanges-all">All</a>
+                                                                           <ul class="search-properties-filter-values" style="display: none">
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="forexex1" data-localize="search.forexex1">Advinion FEx</a> 
+                                                                              </li>
+                                                                           </ul>
+                                                                           <div class="filter-up-range"></div>
+                                                                           <div class="filter-down-point"></div>
+                                                                        </li>
+                                                                        <li class="search-properties-filter clearfix" idx="countries">
+                                                                           <span data-localize="search.countries">Countries</span>
+                                                                           <a href="javascript:void(0)" idx="countries" class="action-change-value" data-localize="search.filter-countries-all">All</a>
+                                                                           <ul class="search-properties-filter-values" style="display: none">
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="" data-localize="search.">All</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="uk" data-localize="search.uk">England</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="it" data-localize="search.it">Italy</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="sp" data-localize="search.sp">Spain</a> 
+                                                                              </li>
+                                                                              <li class="search-properties-filter-value">
+                                                                                 <a href="javascript:void(0)" idx="jp" data-localize="search.jp">Japan</a> 
+                                                                              </li>
+                                                                           </ul>
+                                                                           <div class="filter-up-range"></div>
+                                                                           <div class="filter-down-point"></div>
+                                                                        </li>
+                                                                     </ul>
+                                                                  </div>
+                                                                  <div class="search-properties-tabs-labels">
+                                                                  </div>
+                                                                  <div class="search-main-properties-tabs">
+                                                                  </div>
+                                                               </div>
+                                                               <div class="chart-search-preload"></div>
+                                                            </div>
+                                                            <div style="position :absolute;left :10px; right :auto; top :auto; bottom :auto; width :auto; height :auto; " id="P4dnub2Q"> 
+                                                               <span class="header-timeframe" data-localize="menu.timescale.90S">1 minute</span>
+                                                            </div>
+                                                            <div style="position :absolute;left :auto; right :0px; top :auto; bottom :auto; width :auto; height :auto; " id="cDuXNJki">
+                                                               <span class="header-communic ComOff"></span>
+                                                            </div>
+                                                            <div style="position :absolute;left :auto; right :25px; top :auto; bottom :auto; width :auto; height :auto; " id="EluqAieL">
+                                                               <span class="header-lastupdate">06/15/2017 08:57:00</span>
+                                                            </div>
+                                                            <div style="position :absolute;left :auto; right :225px; top :auto; bottom :auto; width :auto; height :auto; " id="OWrGR3mS">
+                                                            </div>
+                                                         </div>
+                                                         <div class="clear"></div>
+                                                      </div>
+                                                      <div id="YWCRCp2i" class=" layout-row noselect" style="width: 961px; height: 30px; display: none;"></div>
+                                                      <div id="lqclkTSo" class=" layout-row noselect" style="width: 961px; height: 36px;"></div>
+                                                      <div id="FJRpvbm1" class=" layout-row noselect" style="width: 961px; height: 30px; display: none;">
+                                                         <ul class="toolbar-adv  loc-horizontal" id="yezaLGqY" tid="toolbar2">
+                                                            <li class="tlb-caption hide-tlb-item"><span class="toolbar-adv-label " tid="title-tools" data-localize="tools.tools.title">Tools</span></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="pointer" type="button" data-localize="tools.tools.pointer" title="Pointer">                               <span class="pointer1-icon"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_selected" type="button" data-localize="tools.tools.delete_selected" title="Delete Selected Shape">                               <span class="delete-icon"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_allshapes" type="button" data-localize="tools.tools.delete_allshapes" title="Delete All Shapes">                               <span class="delete-shapes"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="delete_allstudies" type="button" data-localize="tools.tools.delete_allstudies" title="Delete All Studies">                               <span class="delete-indicators"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="duplicate_delected" type="button" data-localize="tools.tools.duplicate_delected" title="Duplicate Selected Shape">                               <span class="many-windows-icon"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class=" icon-button  button-action caption-button" action="" tid="zoom_in" type="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>
+                                                            <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space1"></span></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_rayline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="ray-line"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_vline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="vertical-line"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_hline" type="button" data-localize="tools.draw.draw_hline" title="Horizontal Line">                               <span class="horizontal-line"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_extendedline" type="button" data-localize="tools.draw.draw_extendedline" title="Extended line">                               <span class="extended-line"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_arrow" type="button" data-localize="tools.draw.draw_arrow" title="Arrow">                               <span class="arrow"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_line" type="button" data-localize="tools.draw.draw_line" title="Trend line">                               <span class="trendline"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_measure" type="button" data-localize="tools.draw.draw_measure" title="Measure">                               <span class="measure"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_parallel" type="button" data-localize="tools.draw.draw_parallel" title="Parallel line">                               <span class="parallel-lines"></span>                             </button></li>
+                                                            <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space2"></span></li>
+                                                            <li class="tlb-item tlb-item-group hide-tlb-item">
+                                                               <button class=" icon-button  button-group" tid="group-4" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                                             <span class="ray-line"></span>                                            </button>                
+                                                               <div class="sub-point"></div>
+                                                               <div class="tlb-button-groups a-top a-tooltip " style="display: none;">
+                                                                  <div class="tlb-array">
+                                                                     <div></div>
+                                                                  </div>
+                                                                  <ul>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_rayline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="ray-line"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_vline" type="button" data-localize="tools.draw.draw_raylineright" title="Ray">                               <span class="vertical-line"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_hline" type="button" data-localize="tools.draw.draw_hline" title="Horizontal Line">                               <span class="horizontal-line"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_extendedline" type="button" data-localize="tools.draw.draw_extendedline" title="Extended line">                               <span class="extended-line"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_arrow" type="button" data-localize="tools.draw.draw_arrow" title="Arrow">                               <span class="arrow"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_line" type="button" data-localize="tools.draw.draw_line" title="Trend line">                               <span class="trendline"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_measure" type="button" data-localize="tools.draw.draw_measure" title="Measure">                               <span class="measure"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_parallel" type="button" data-localize="tools.draw.draw_parallel" title="Parallel line">                               <span class="parallel-lines"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_rect" type="button" data-localize="tools.draw.draw_rect" title="Rectangle">                               <span class="rectangle"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_arc" type="button" data-localize="tools.draw.draw_arc" title="Arc">                               <span class="draw-arc"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_ellipse" type="button" data-localize="tools.draw.draw_ellipse" title="Ellipse">                               <span class="ellipce"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_triangle" type="button" data-localize="tools.draw.draw_triangle" title="Triangle">                               <span class="triangle"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_circle" type="button" data-localize="tools.draw.draw_circle" title="Circle">                               <span class="circle"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_polygon" type="button" data-localize="tools.draw.draw_polygon" title="Polygon">                               <span class="polygon"></span>                             </button></li>
+                                                                     <li class="tlb-item"><button class="icon-button  tlb-a-closebyclick tlb-a-changeicongroup button-action" tid="draw_text" type="button" data-localize="tools.draw.draw_text" title="Text">                               <span class="text-tool"></span>                             </button></li>
+                                                                  </ul>
+                                                                  <div class="clear"></div>
+                                                               </div>
+                                                            </li>
+                                                            <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space3"></span></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_rect" type="button" data-localize="tools.draw.draw_rect" title="Rectangle">                               <span class="rectangle"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_arc" type="button" data-localize="tools.draw.draw_arc" title="Arc">                               <span class="draw-arc"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_ellipse" type="button" data-localize="tools.draw.draw_ellipse" title="Ellipse">                               <span class="ellipce"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_circle" type="button" data-localize="tools.draw.draw_circle" title="Circle">                               <span class="circle"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_triangle" type="button" data-localize="tools.draw.draw_triangle" title="Triangle">                               <span class="triangle"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_polygon" type="button" data-localize="tools.draw.draw_polygon" title="Polygon">                               <span class="polygon"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_text" type="button" data-localize="tools.draw.draw_text" title="Text">                               <span class="text-tool"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fork" type="button" data-localize="tools.draw.draw_fork" title="Andrews Pitchfork">                               <span class="adrews_pitchfork"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibretrace" type="button" data-localize="tools.draw.draw_fibretrace" title="Fibo.Retracement">                               <span class="fib-retracement"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibtimezones" type="button" data-localize="tools.draw.draw_fibtimezones" title="Fibo.Time-zones">                               <span class="fib-timezone"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibfan" type="button" data-localize="tools.draw.draw_fibfan" title="Fibonacci fan">                               <span class="fib-fan"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibarc" type="button" data-localize="tools.draw.draw_fibarc" title="Fibonacci arc">                               <span class="fib-arc"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_ganfan" type="button" data-localize="tools.draw.draw_ganfan" title="Gann fan">                               <span class="fib-gannfan"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibextension" type="button" data-localize="tools.draw.draw_fibextension" title="Fibo. extension">                               <span class="fib-extension"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_fibtimeextension" type="button" data-localize="tools.draw.draw_fibtimeextension" title="Time-extension">                               <span class="fib-time-extentsion"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_gansquare" type="button" data-localize="tools.draw.draw_gansquare" title="Gann square">                               <span class="fib-gann-square"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_linearreg" type="button" data-localize="tools.draw.draw_linearreg" title="Linear regression">                               <span class="regression-channel"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="draw_cycleline" type="button" data-localize="tools.draw.draw_cycleline" title="Cycle lines">                               <span class="cycle-lines"></span>                             </button></li>
+                                                            <li class="tlb-space hide-tlb-item"><span class="toolbar-adv-space " tid="space3"></span></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_in" type="button" data-localize="tools.view.zoom_in" title="Zoom-in">                               <span class="zoom-plus"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_out" type="button" data-localize="tools.view.zoom_out" title="Zoom-out">                               <span class="zoom-minus"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_left" type="button" data-localize="tools.view.zoom_left" title="Zoom left">                               <span class="zoom-left"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom_right" type="button" data-localize="tools.view.zoom_right" title="Zoom right">                               <span class="zoom-right"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom-all" type="button" data-localize="tools.view.zoom_all" title="View all">                               <span class="zoom-all"></span>                             </button></li>
+                                                            <li class="tlb-item hide-tlb-item"><button class="icon-button  button-action" tid="zoom-default" type="button" data-localize="zoom_default" title="Default zoom">                               <span class="zoom-default"></span>                             </button></li>
+                                                            <li class="tlb-more" style="display: block;">
+                                                               <button class="button-more icon-button " tid="showmore" type="button" data-localize="tools.general.more" title="Show more">
+                                                               <span class="icon-more"></span>
+                                                               </button>
+                                                               <div class="sub-point"></div>
+                                                               <div class="tlb-more-items   a-bottom" style="display: none;">
+                                                                  <div class="tlb-array">
+                                                                     <div></div>
+                                                                  </div>
+                                                                  <ul>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="pointer" caption-buttontype="button" data-localize="tools.tools.pointer" title="Pointer"><span class="pointer1-icon"></span>Pointer</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_selected" caption-buttontype="button" data-localize="tools.tools.delete_selected" title="Delete Selected Shape"><span class="delete-icon"></span>Delete Selected Shape</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_allshapes" caption-buttontype="button" data-localize="tools.tools.delete_allshapes" title="Delete All Shapes"><span class="delete-shapes"></span>Delete All Shapes</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="delete_allstudies" caption-buttontype="button" data-localize="tools.tools.delete_allstudies" title="Delete All Studies"><span class="delete-indicators"></span>Delete All Studies</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="duplicate_delected" caption-buttontype="button" data-localize="tools.tools.duplicate_delected" title="Duplicate Selected Shape"><span class="many-windows-icon"></span>Duplicate Selected Shape</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action  tlb-more-a-closebyclick caption-button" tid="zoom_in" caption-buttontype="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_rayline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="ray-line"></span>Ray</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_vline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="vertical-line"></span>Ray</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_hline" caption-buttontype="button" data-localize="tools.draw.draw_hline" title="Horizontal Line"><span class="horizontal-line"></span>Horizontal Line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_extendedline" caption-buttontype="button" data-localize="tools.draw.draw_extendedline" title="Extended line"><span class="extended-line"></span>Extended line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_arrow" caption-buttontype="button" data-localize="tools.draw.draw_arrow" title="Arrow"><span class="arrow"></span>Arrow</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_line" caption-buttontype="button" data-localize="tools.draw.draw_line" title="Trend line"><span class="trendline"></span>Trend line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_measure" caption-buttontype="button" data-localize="tools.draw.draw_measure" title="Measure"><span class="measure"></span>Measure</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_parallel" caption-buttontype="button" data-localize="tools.draw.draw_parallel" title="Parallel line"><span class="parallel-lines"></span>Parallel line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_rayline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="ray-line"></span>Ray</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_vline" caption-buttontype="button" data-localize="tools.draw.draw_raylineright" title="Ray"><span class="vertical-line"></span>Ray</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_hline" caption-buttontype="button" data-localize="tools.draw.draw_hline" title="Horizontal Line"><span class="horizontal-line"></span>Horizontal Line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_extendedline" caption-buttontype="button" data-localize="tools.draw.draw_extendedline" title="Extended line"><span class="extended-line"></span>Extended line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_arrow" caption-buttontype="button" data-localize="tools.draw.draw_arrow" title="Arrow"><span class="arrow"></span>Arrow</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_line" caption-buttontype="button" data-localize="tools.draw.draw_line" title="Trend line"><span class="trendline"></span>Trend line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_measure" caption-buttontype="button" data-localize="tools.draw.draw_measure" title="Measure"><span class="measure"></span>Measure</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_parallel" caption-buttontype="button" data-localize="tools.draw.draw_parallel" title="Parallel line"><span class="parallel-lines"></span>Parallel line</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_rect" caption-buttontype="button" data-localize="tools.draw.draw_rect" title="Rectangle"><span class="rectangle"></span>Rectangle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_arc" caption-buttontype="button" data-localize="tools.draw.draw_arc" title="Arc"><span class="draw-arc"></span>Arc</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_ellipse" caption-buttontype="button" data-localize="tools.draw.draw_ellipse" title="Ellipse"><span class="ellipce"></span>Ellipse</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_triangle" caption-buttontype="button" data-localize="tools.draw.draw_triangle" title="Triangle"><span class="triangle"></span>Triangle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_circle" caption-buttontype="button" data-localize="tools.draw.draw_circle" title="Circle"><span class="circle"></span>Circle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_polygon" caption-buttontype="button" data-localize="tools.draw.draw_polygon" title="Polygon"><span class="polygon"></span>Polygon</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action caption-button" tid="draw_text" caption-buttontype="button" data-localize="tools.draw.draw_text" title="Text"><span class="text-tool"></span>Text</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_rect" caption-buttontype="button" data-localize="tools.draw.draw_rect" title="Rectangle"><span class="rectangle"></span>Rectangle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_arc" caption-buttontype="button" data-localize="tools.draw.draw_arc" title="Arc"><span class="draw-arc"></span>Arc</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_ellipse" caption-buttontype="button" data-localize="tools.draw.draw_ellipse" title="Ellipse"><span class="ellipce"></span>Ellipse</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_circle" caption-buttontype="button" data-localize="tools.draw.draw_circle" title="Circle"><span class="circle"></span>Circle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_triangle" caption-buttontype="button" data-localize="tools.draw.draw_triangle" title="Triangle"><span class="triangle"></span>Triangle</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_polygon" caption-buttontype="button" data-localize="tools.draw.draw_polygon" title="Polygon"><span class="polygon"></span>Polygon</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_text" caption-buttontype="button" data-localize="tools.draw.draw_text" title="Text"><span class="text-tool"></span>Text</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fork" caption-buttontype="button" data-localize="tools.draw.draw_fork" title="Andrews Pitchfork"><span class="adrews_pitchfork"></span>Andrews Pitchfork</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibretrace" caption-buttontype="button" data-localize="tools.draw.draw_fibretrace" title="Fibo.Retracement"><span class="fib-retracement"></span>Fibo.Retracement</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibtimezones" caption-buttontype="button" data-localize="tools.draw.draw_fibtimezones" title="Fibo.Time-zones"><span class="fib-timezone"></span>Fibo.Time-zones</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibfan" caption-buttontype="button" data-localize="tools.draw.draw_fibfan" title="Fibonacci fan"><span class="fib-fan"></span>Fibonacci fan</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibarc" caption-buttontype="button" data-localize="tools.draw.draw_fibarc" title="Fibonacci arc"><span class="fib-arc"></span>Fibonacci arc</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_ganfan" caption-buttontype="button" data-localize="tools.draw.draw_ganfan" title="Gann fan"><span class="fib-gannfan"></span>Gann fan</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibextension" caption-buttontype="button" data-localize="tools.draw.draw_fibextension" title="Fibo. extension"><span class="fib-extension"></span>Fibo. extension</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_fibtimeextension" caption-buttontype="button" data-localize="tools.draw.draw_fibtimeextension" title="Time-extension"><span class="fib-time-extentsion"></span>Time-extension</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_gansquare" caption-buttontype="button" data-localize="tools.draw.draw_gansquare" title="Gann square"><span class="fib-gann-square"></span>Gann square</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_linearreg" caption-buttontype="button" data-localize="tools.draw.draw_linearreg" title="Linear regression"><span class="regression-channel"></span>Linear regression</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="draw_cycleline" caption-buttontype="button" data-localize="tools.draw.draw_cycleline" title="Cycle lines"><span class="cycle-lines"></span>Cycle lines</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_in" caption-buttontype="button" data-localize="tools.view.zoom_in" title="Zoom-in"><span class="zoom-plus"></span>Zoom-in</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_out" caption-buttontype="button" data-localize="tools.view.zoom_out" title="Zoom-out"><span class="zoom-minus"></span>Zoom-out</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_left" caption-buttontype="button" data-localize="tools.view.zoom_left" title="Zoom left"><span class="zoom-left"></span>Zoom left</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom_right" caption-buttontype="button" data-localize="tools.view.zoom_right" title="Zoom right"><span class="zoom-right"></span>Zoom right</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom-all" caption-buttontype="button" data-localize="tools.view.zoom_all" title="View all"><span class="zoom-all"></span>View all</button></li>
+                                                                     <li class="tlb-more-item"><button class="icon-button  button-action tlb-more-a-closebyclick caption-button" tid="zoom-default" caption-buttontype="button" data-localize="zoom_default" title="Default zoom">
+                                                                        <span class="zoom-default"></span>Default zoom
+                                                                        </button>
+                                                                     </li>
+                                                                  </ul>
+                                                               </div>
+                                                            </li>
+                                                         </ul>
+                                                         <div class="clear"></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="IKXsuQVB" class=" layout-left noselect" style="left: 0px; top: 0px; width: 40px; height: 250px; display: none;">
+                                                   <div id="0c21vdEO" class="layout-innner-container" style="width: 40px; height: 250px;">
+                                                      <div id="0cmRIUMM" class=" layout-row noselect" style="width: 40px; height: 250px; display: none;"></div>
+                                                   </div>
+                                                </div>
+                                                <div id="lQ90kwKH" class=" layout-right noselect" style="right: 0px; top: 0px; width: 0px; height: 250px; display: none;">
+                                                   <div id="dOFvfQp8" class="layout-innner-container" style="width: 0px; height: 250px;">
+                                                   </div>
+                                                </div>
+                                                <div id="NGRyUIt4" class=" layout-main noselect" style="left: 0px; right: 0px; top: 0px; width: 961px; height: 250px;">
+                                                   <div id="kLWzgRAH" class="layout-innner-container" style="width: 961px; height: 250px;">
+                                                      <div id="Chart458CC20F2C9949128915F5F22C5BB382" tabindex="0" class="  noselect layout-main-chart" style="width :560px; height :320px; ">
+                                                         <div class="chart-pane-price chartpane AdvPanel" id="k0DBbU6t" guiid="k0DBbU6t" style="width: 961px; height: 250px; display: block;">
+                                                            <div class="chart-pane-main" id="U9EfuVnu" style="left: 0px; right: 0px; top: 0px; bottom: 0px; width: 961px; height: 250px;">
+                                                               <div style="height: 250px; width: 961px; position: relative;" class="CoreCont">
+                                                                  <div style="height: 250px; width: 961px; position: absolute; left: 0px; top: 0px;" id="divBK" class="DivBK"></div>
+                                                                  <canvas width="961" height="250" id="CNVBKUSR" class="AdvCNVBKUSR" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVGRDC5828A350F334EDEBAF870BDBE5BBA75" class="AdvGrid" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVRND" class="AdvCNVRND" style="position: absolute; left: 0px; top: 0px; pointer-events: none;"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVSGN" class="AdvCNVSGN" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVUSR" class="AdvCNVUSR" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas>
+                                                                  <canvas width="961" height="250" id="cnvDrawing" class="CNVDRW" style="position: absolute; right: 0px; top: 0px; pointer-events: all; z-index: 6;" pointer-events="all"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVCH" class="AdvCNVCH" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas>
+                                                                  <canvas width="961" height="250" id="CNVRT" class="AdvCNVRT" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-pane-legend chart-pane-legend-price" id="yYZnywJL" style="left: 23px; right: 110px; top: 12px; width: 828px; display: none;">
+                                                               <div id="F49A4FCA15834EA3B03413C4E0B12FD2" class="legend-price">
+                                                                  <span class="legend-price-description legend-description">EUR/JPY</span>
+                                                                  <div class="legend-buttons">
+                                                                     <a href="javascript:void(0);" class="legend-button-visible " itemid="-3" itemtype="price">
+                                                                     <span class="legend-visible-icon"></span>
+                                                                     </a>
+                                                                     <a href="javascript:void(0);" class="legend-button-properties " itemid="-3" itemtype="price">
+                                                                     <span class="legend-properties-icon"></span>
+                                                                     </a>
+                                                                  </div>
+                                                                  <div class="legend-price-container"> 
+                                                                     <span class="legend-price-open legend-title" data-localize="chart.open">open</span>:
+                                                                     <span class="legend-price-open legend-value" style="color: rgb(255, 255, 255);">123.072</span>
+                                                                     <span class="legend-price-high legend-title" data-localize="chart.high">high</span>:
+                                                                     <span class="legend-price-high legend-value" style="color: rgb(255, 255, 255);">123.072</span>
+                                                                     <span class="legend-price-low legend-title" data-localize="chart.low">low</span>:
+                                                                     <span class="legend-price-low legend-value" style="color: rgb(255, 255, 255);">123.072</span>
+                                                                     <span class="legend-price-close legend-title" data-localize="chart.close">close</span>:
+                                                                     <span class="legend-price-close legend-value" style="color: rgb(255, 255, 255);">123.072</span>
+                                                                     <span></span>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-date-axis" id="wVIZbhR0" style="left: 0px; right: 0px; bottom: 0px; width: 961px; height: 27px;">
+                                                               <div style="height: 27px; width: 961px; position: relative;" class="CoreCont">
+                                                                  <canvas width="961" height="27" id="hx" class="AdvHX" style="position: absolute; left: 0px; bottom: 0px;"></canvas>
+                                                                  <canvas width="961" height="27" id="vxch" class="AdvHXCH" style="position: absolute; left: 0px; bottom: 0px; pointer-events: none; z-index: 4;"></canvas>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-price-axis" id="spVdQmLb" style="left: 0px; top: 0px; bottom: 0px; width: 70px; height: 250px;">
+                                                               <div style="height: 250px; width: 70px; position: relative;" class="CoreCont">
+                                                                  <canvas width="70" height="250" id="vx" class="AdvVX" style="position: absolute; right: 0px; top: 0px; pointer-events: all; z-index: 3;"></canvas>
+                                                                  <canvas width="70" height="250" id="vxm" class="AdvVXM" style="position: absolute; right: 0px; top: 0px; pointer-events: none; z-index: 4;"></canvas>
+                                                                  <canvas width="70" height="250" id="vxch" class="AdvVXCH" style="position: absolute; right: 0px; top: 0px; pointer-events: none; z-index: 5;"></canvas>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-price-zoom" id="0y9k8qxq" style="left: 388px; right: 573px; bottom: 40px; width: 185px; height: 40px; display: none;">
+                                                               <div>
+                                                                  <div id="zoom-buttons">
+                                                                     <button class="chart-button  icon-button" data-localize="tools.view.zoom_left" tid="zoom_left" type="button" title="Zoom left">
+                                                                     <span class="zoom-left"></span>
+                                                                     </button>
+                                                                     <button class="chart-button  icon-button" data-localize="tools.view.zoom_in" tid="zoom_in" type="button" title="Zoom-in">
+                                                                     <span class="zoom-plus"></span>
+                                                                     </button>
+                                                                     <button class="chart-button   icon-button" data-localize="tools.view.zoom_out" tid="zoom_out" type="button" title="Zoom-out">
+                                                                     <span class="zoom-minus"></span>
+                                                                     </button>
+                                                                     <button class="chart-button  icon-button" data-localize="tools.view.zoom_all" tid="zoom_all" type="button" title="View all">
+                                                                     <span class="zoom-all"></span>
+                                                                     </button>
+                                                                     <button class="chart-button   icon-button" data-localize="tools.view.zoom_default" tid="zoom_default" type="button" title="Default zoom">
+                                                                     <span class="zoom-default"></span>
+                                                                     </button>
+                                                                     <button class="chart-button   icon-button" data-localize="tools.view.zoom_right" tid="zoom_right" type="button" title="Zoom right">
+                                                                     <span class="zoom-right"></span>
+                                                                     </button>
+                                                                     <div class="clear">
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="chart-controlpanel" id="955TcYhg" style="right :65px; top :2px; width :43px; height :16px; display : none; ">
+                                                               <div class="controlpanel-buttons">
+                                                                  <a href="javascript:void(0);" class="controlpanel-down %visible%" itemid="k0DBbU6t">
+                                                                  <span class="controlpanel-down-icon"></span>
+                                                                  </a>
+                                                                  <a href="javascript:void(0);" class="controlpanel-up %visible%" itemid="k0DBbU6t">
+                                                                  <span class="controlpanel-up-icon"></span>
+                                                                  </a>
+                                                                  <a href="javascript:void(0);" class="controlpanel-window " itemid="k0DBbU6t">
+                                                                  <span class="controlpanel-window-icon"></span>
+                                                                  </a>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div id="k8LdKT8A" class=" layout-bottom noselect" style="left: 0px; bottom: 0px; width: 961px; height: 40px; display: none;">
+                                                         <div id="t1zLm6Sh" class="layout-innner-container" style="width: 961px; height: 40px;">
+                                                            <div id="7yeWRNsh" class=" layout-row noselect" style="width: 961px; height: 40px;"></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="i4Zl8QDd" class=" layout-bottom noselect" style="left: 0px; bottom: 0px; width: 961px; height: 40px; display: none;">
+                                                   <div id="XR8S9oJx" class="layout-innner-container" style="width: 961px; height: 40px;">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="clear"></div>
+                                       </div>
+                                    </prochart>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="forex_tab_south">
+         <div class="global_help global_help_forex global_help_forex_trades" aria-hidden="true" style="display: none;">
+            <div class="global_help_layout_panel">
+               <div class="global_help_header">My Trades</div>
+               <div class="global_help_body">
+                  <div class="global_help_open_trades">
+                     <div class="global_help_sub_header">Open Trades</div>
+                     <div class="global_help_explanation">View the status of all your currently open trades in your account.</div>
+                  </div>
+                  <div class="global_help_trading_history">
+                     <div class="global_help_sub_header">Trade History</div>
+                     <div class="global_help_explanation">View your own trading history showing your traded assets of the past week. <br>To access trades that are older than a week, go to "My Account".</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="forex_trading_data_container">
+            <div class="forex_trading_data_panel">
+               <div class="forex_trading_data_main_navigation">
+                  <div class="forex_trading_data_main_navigation_item forex_trading_data_main_navigation_item_openTrades forex_trading_data_main_navigation_item_selected">Open Trades (0)</div>
+                  <div class="forex_trading_data_main_navigation_item forex_trading_data_main_navigation_item_orders">Orders (0)</div>
+                  <div class="forex_trading_data_main_navigation_item forex_trading_data_main_navigation_item_history">Trade History</div>
+                  <div class="forex_trading_data_main_navigation_item forex_trading_data_main_navigation_item_news">News</div>
+                  <div class="forex_trading_data_main_navigation_item forex_trading_data_main_navigation_item_info" aria-hidden="true" style="display: none;">Info</div>
+               </div>
+               <div class="forex_trading_data_content_container">
+                  <div class="forex_trading_data_content_panel">
+                     <div class="forex_portfolio_panel">
+                        <div class="forex_portfolio_positions_header">
+                           <div class="forex_portfolio_positions_header_tradeDetails">Trade Details</div>
+                           <div class="forex_portfolio_positions_header_amount">Invested</div>
+                           <div class="forex_portfolio_positions_header_openPrice">Open</div>
+                           <div class="forex_portfolio_positions_header_currentPrice">Current</div>
+                           <div class="forex_portfolio_positions_header_stopLoss">Stop Loss</div>
+                           <div class="forex_portfolio_positions_header_takeProfit">Take Profit</div>
+                           <div class="forex_portfolio_positions_header_netProfit">Net Profit</div>
+                           <div class="forex_portfolio_positions_header_close">Close</div>
+                        </div>
+                        <div class="forex_portfolio_positions_scroll_panel">
+                           <div class="trades_container"></div>
+                        </div>
+                        <div class="forex_portfolio_total_row">
+                           <div class="forex_portfolio_total_row_total">Total</div>
+                           <div class="forex_portfolio_total_row_amount">$0.00</div>
+                           <div class="forex_portfolio_total_row_openPrice"></div>
+                           <div class="forex_portfolio_total_row_currentPrice"></div>
+                           <div class="forex_portfolio_total_row_stopLoss"></div>
+                           <div class="forex_portfolio_total_row_takeProfit"></div>
+                           <div class="forex_portfolio_total_row_netProfit forex_portfolio_market_tie">$0.00</div>
+                           <div class="forex_portfolio_total_row_closeAmount">$0.00</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="notifications_container"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
