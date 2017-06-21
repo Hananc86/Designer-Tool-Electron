@@ -16,21 +16,13 @@ relativePath = relativePath.split('\\');
 relativePath.splice(-1, 1);
 relativePath = relativePath.join('\\');
 
-//for production only
-aplicationGroups = read('resources/app/data/groups.json');
-let forex = fs.readFileSync('resources/app/data/forex.txt').toString();
-let binary = fs.readFileSync('resources/app/data/binary.txt').toString();
-let globalHelp = fs.readFileSync('resources/app/data/globalHelp.txt').toString();
-
-
-// aplicationGroups = read('data/groups.json');
-// let forex = fs.readFileSync('data/forex.txt').toString();
-// let binary = fs.readFileSync('data/binary.txt').toString();
-// let globalHelp = fs.readFileSync('data/globalHelp.txt').toString();
+aplicationGroups = read(`${__dirname}/data/groups.json`);
+let forex = fs.readFileSync(`${__dirname}/data/forex.txt`).toString();
+let binary = fs.readFileSync(`${__dirname}/data/binary.txt`).toString();
+let globalHelp = fs.readFileSync(`${__dirname}/data/globalHelp.txt`).toString();
 
 
 $('.body_container').replaceWith(binary);
-
 
 let properties = {
     background: `<div><label>Background:</label><input type="text" id="background-input"></div>`,
