@@ -1,8 +1,11 @@
+const service = require(`${__dirname}/js/service.js`)
 const fs = require("fs");
 const cmd = require('node-cmd');
 // const awk = require('awk');
 // const grepit = require('grepit');
 const helper = require('./js/helper.js');
+
+const css = require('css');
 
 const {
     dialog
@@ -16,14 +19,11 @@ relativePath = relativePath.split('\\');
 relativePath.splice(-1, 1);
 relativePath = relativePath.join('\\');
 
-aplicationGroups = read(`${__dirname}/data/groups.json`);
+
 let forex = fs.readFileSync(`${__dirname}/data/forex.txt`).toString();
 let binary = fs.readFileSync(`${__dirname}/data/binary.txt`).toString();
 let globalHelp = fs.readFileSync(`${__dirname}/data/globalHelp.txt`).toString();
-
-
-$('.body_container').replaceWith(binary);
-
+let cssfile = fs.readFileSync(`${__dirname}/css/application/styleDefualt.css`).toString();
 let properties = {
     background: `<div><label>Background:</label><input type="text" id="background-input"></div>`,
     color: `<div><label>Color:</label><input type="text" id="color-input"></div>`,
@@ -33,11 +33,114 @@ let properties = {
     "text-decoration": `<div><label>Text-Decoration:</label><input type="text" id="text-decoration"></div>`,
     "font-weight": `<div><label>Font-Weight:</label><input type="text" id="font-weight"></div>`
 }
-
-
-
-
+$('.body_container').replaceWith(binary);
 $('#inputs').html('<h1 class="begining-title">Please Choose Group To Begin...</h1>');
+
+
+
+// declarions array of Obj
+// stylesheet.stylesheet.rules[1].declarations 
+
+//property
+// stylesheet.stylesheet.rules[1].declarations[1].property
+
+//value
+// stylesheet.stylesheet.rules[1].declarations[1].value
+
+
+
+// stylesheet.stylesheet.rules[1].selectors = ['.logo'];
+// service.saveStyleSheet()
+// service.openStyleSheet()
+
+
+
+
+
+
+let stylesheet;
+let groups = [],
+    styleSheetPropertiesDeclarationsArr = [];
+let JSONgroups = {};
+
+
+stylesheet = css.parse(cssfile, {
+    source: cssfile
+});
+
+// console.log(stylesheet.stylesheet.rules);
+
+//sort by groups
+for (let i = 0; i < stylesheet.stylesheet.rules.length; i++) {
+    groups.push(stylesheet.stylesheet.rules[i]);
+}
+
+
+for (let i = 0; i < groups.length; i++) {
+
+    let styleSheetPropertiesDeclarationsArr = [];
+    let classProperties;
+
+    if (groups[i] !== undefined && groups[i].declarations !== undefined) {
+
+
+
+                              
+
+
+
+        let elementProperties,instances;
+        groups[i].selectors.map((classItem)=>{
+
+        // elementProperties = service.checkInstancesOfClass(classItem)
+                        //    instances = elementProperties;
+                        //    console.log(instances) 
+                        //     classProperties = (service.getAllPropertiesFromClass(elementProperties))
+
+        })
+
+        
+
+
+        JSONgroups[i] = {
+            "discription": `<br/><strong>Group ${i} - Responsible for The Classes: ${groups[i].selectors}.</strong><br/><br/>`,
+            "properties": classProperties,
+            "instances":instances,
+            "state": true,
+            "previewBorders":service.getRegularSelected(groups[i]),
+            "regular": {
+                "selectors": service.getRegularSelected(groups[i]),
+                "propertiesFinal_regular": {}
+            },
+            "hover": {
+                "selectors": [],
+                "searchPattern": "",
+                "propertiesFinal_hover": {}
+            },
+            "selected": {
+                "selectors": [],
+                "searchPattern": "",
+                "propertiesFinal_selected": {
+
+                },
+                "propertiesFinal_hover": {
+
+                }
+            }
+        }
+    }
+}
+
+// console.log(JSON.stringify(JSONgroups));
+// console.log(JSONgroups)
+
+
+
+// write(`data/groups.json`,JSONgroups)
+aplicationGroups = read(`${__dirname}/data/groups.json`);
+// console.log(JSONgroups);
+
+
 
 function init() {
 
@@ -47,22 +150,28 @@ function init() {
     }
 
     function addingGroupPropsToDom(group) {
+        // console.log(aplicationGroups[group]['regular']['selectors'])
         let selectorsArrRegular = aplicationGroups[group]['regular']['selectors'];
 
         for (i = 0; i < selectorsArrRegular.length; i++) {
+            // console.log(selectorsArrRegular[i])
             $(selectorsArrRegular[i]).attr("data-group", group);
+            // $(selectorsArrRegular[i]).attr("id", group);
         }
     }
 
     const elementsArr = $("*[data-group]");
+
     for (i = 0; i < elementsArr.length; i++) {
+
         $(elementsArr[i]).bind('click', engine);
         $(elementsArr[i]).css("cursor", "pointer");
 
     }
 
-}
+    $('body,input,.paginate,.browse,.btn  ').unbind()
 
+}
 
 init();
 
@@ -153,13 +262,18 @@ function engine(e) {
     elementsArr.map(element => $(element).removeClass('border-selected'))
 
     let group = this.getAttribute('data-group');
+    console.log($(this).attr('class'))
+
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
     let elementsForAddingBorder = aplicationGroups[group]['previewBorders'];
 
     for (i = 0; i < elementsForAddingBorder.length; i++) {
         $(elementsForAddingBorder[i]).addClass('border-selected');
     }
 
-    $('#inputs').html(inputsCreator(group)).hide().fadeIn(1000)
+    $('#inputs').html(inputsCreator(group, e)).hide().fadeIn(1000)
 
         .animate({
             width: '95%',
@@ -179,7 +293,8 @@ function engine(e) {
 }
 
 
-function inputsCreator(group) {
+function inputsCreator(group, e) {
+    // console.log(e)
 
     let props = aplicationGroups[group]['properties']
     let state = aplicationGroups[group]['state']
@@ -254,9 +369,9 @@ function processingPropertiesToTheDom(group) {
         "font-weight": fontWeight
     }
 
-    for(prop in properties){
-        if(properties[prop] === undefined || properties[prop] === ""){
-        delete properties[prop];
+    for (prop in properties) {
+        if (properties[prop] === undefined || properties[prop] === "") {
+            delete properties[prop];
         }
     }
 
@@ -282,7 +397,7 @@ function processingPropertiesToTheDom(group) {
 }
 
 function restoreToDefualtGroup(group) {
-    
+
     let properties = {
         background: "",
         border: "",
@@ -301,14 +416,14 @@ function restoreToDefualtGroup(group) {
         aplicationGroups[group]['propertiesFinal_hover'] = properties;
         aplicationGroups[group]['propertiesFinal_selected'] = properties;
         write('data/groups.json', aplicationGroups);
-        
+
 
     } else {
 
-        
+
         aplicationGroups[group]['propertiesFinal_regular'] = properties;
-      
-        
+
+
         let selectorsArr = aplicationGroups[group]['regular']['selectors'].join(',');
 
         if (group === "A") {
@@ -316,12 +431,12 @@ function restoreToDefualtGroup(group) {
         }
 
         $(selectorsArr).css(properties);
-       
+
         resetInputs();
-       
-      
+
+
         processingPropertiesToTheDom(group)
-       
+
 
 
 
@@ -534,7 +649,7 @@ $('.right').bind('click', function() {
     if (cuurentPage < 2) {
         cuurentPage++
     }
-    
+
 
     if (cuurentPage == 2) {
         $('.body_container').fadeOut(1600, () => {
@@ -551,7 +666,7 @@ $('.left').bind('click', function() {
     if (cuurentPage > 1) {
         cuurentPage--
     }
-    
+
 
 
     if (cuurentPage === 1) {
@@ -673,7 +788,7 @@ function deleteHoversAndSelectedByGroup(group, state) {
             for (i = 0; i < document.styleSheets[0].rules.length; i++) {
                 result = document.styleSheets[0].rules[i].cssText;
                 if (result.search(".option_row_container:hover") != -1) {
-                    
+
                     document.styleSheets[0].deleteRule(i);
 
                 }
@@ -686,7 +801,7 @@ function deleteHoversAndSelectedByGroup(group, state) {
                 result = document.styleSheets[0].rules[i].cssText;
                 if (result.search(aplicationGroups[group]['hover']['selectors'][0]) != -1) {
 
-                  
+
                     document.styleSheets[0].deleteRule(i);
 
                 }
@@ -710,3 +825,10 @@ function deleteHoversAndSelectedByGroup(group, state) {
     }
 
 }
+
+
+
+
+
+service.searchAndChangeStyle(['.logo'],{'background':'red','width':'30px','background-image':4})
+// service.checksDuplicatesPropsForEachClass('.logo');

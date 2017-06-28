@@ -1,0 +1,1568 @@
+/**********************************************************************
+*
+* Template 1 - this file should not be changed 
+* the changes per brand should be done in the style.css file only
+*
+***********************************************************************/
+
+/************************************************
+Reset
+*************************************************/
+*						{ margin:0; padding:0; outline:none; }
+a						{ text-decoration:none; outline:none; display:block; border:none; }
+img						{ border:none; display:block; }
+i						{ font-style:normal; }
+button					{ border:none; }
+input[type="checkbox"]	{ margin-top:4px; border:none; padding:0; width:auto; height:auto; cursor:pointer; } 		/* for IE */
+select					{ padding-right:0; }	/* for IE */
+
+/* hidding clear space from scriptes above app */ 
+#_analytics, 
+#__printingFrame, 
+#__gwt_historyFrame 	{ position:absolute; top:-99999px; left:-99999px; visibility:hidden; }
+#TopMenuContainer 		{ display:none; }
+
+/************************************************
+ScrollBar Design for chrome only
+*************************************************/
+::-webkit-scrollbar         					{ width:17px; background:transparent; border:none; }
+::-webkit-scrollbar-button 			            { width:0px; height:0; }
+
+/************************************************
+Default Text Styles		
+*************************************************/
+body, input , select, button, a { font:300 14px 'Arial', sans-serif; } /* input & select & a- to override user agent font */
+
+/** Regular headers **/
+.notification_row_title, .notification_title,	/* Notification popup headers */
+.news_feed_item_header a,	/* NEWS Tab RSS headers */
+.messages_instance_message_title	/* Message headers */		{ font-size:16px; }
+	
+/** Popups headers **/
+.login_popup_header, .forgot_password_popup_header,
+.popup_header_label, .direct_deposit_header_label,
+.limits_popup_header_label, .roll_over_popup_header_label, .fast_deposit_header_label,
+.open_account_successfully_popup_label:first-child				{ font-size:16px; line-height:16px; text-transform:uppercase; }
+
+/** Intro Pages headers **/
+.open_account_panel_form_header, .account_details_title,
+.login_page_header, .forgot_password_page_header,
+.messages_page_header, .promoteToReal_page_header,
+.withdrawal_step_header, .deposit_cc_header						{ font-size:18px; text-transform:uppercase; padding-bottom:20px; }
+
+/** Text links **/
+/* in text important no-hover links */
+.login_page_info a, .forgot_password_page_info a, .forgot_password_popup_info a, .short_form_cc_container a,
+.field_confirmAge a, .field_subscribeToNewsletter a /*open account page*/	{ text-decoration:underline; display:inline; }	
+/* live_chat link & forgot password link(header & login popup) */
+.navigation_menu_live_chat_button, 
+.actions_menu_forgot_password_link					{ text-decoration:underline; cursor:pointer; margin-left:20px; }
+.login_popup_forgot_password_link					{ font-size:12px; text-decoration:underline; cursor:pointer; float:right; }
+/* All Trades> - link at the end of TRADE HISTORY Tab tables to history tables in my Account(BO & Forex) */
+.trading_data_allTrades_button						{ line-height:43px; padding-left:10px; display:inline-block;}
+.trading_data_allTrades_button:after /*arrow*/		{ content:" "; width:0; height:0; margin:0 0 0 5px; display:inline-block;}
+
+/************************************************
+ Links Navigation 
+*************************************************/
+/* Header Links Navigation */
+.navigation_menu_container				{ margin-top:25px; float:right; clear:right; }
+.navigation_menu_link					{ text-transform:uppercase; margin:0 20px; float:left; cursor:pointer; }	/* Regular */
+.navigation_menu_link:last-child		{ margin-right:5px; }
+.navigation_menu_link_current, 
+.navigation_menu_link_current:hover		{ font-weight:500; cursor:default; }	/* Selected */
+.navigation_menu_logged_out_panel:after,
+.navigation_menu_logged_in_panel:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+/* Pages Links Navigation */
+.tab_bar							{ width:100%; height:42px; overflow:hidden; }
+.tab_bar_panel						{ text-align:center; position:relative; z-index:2; }
+.tab_panel_tab_item					{ display:inline-block; }
+.tab_panel_tab_item	a				{ padding:0 10px; text-transform:uppercase; line-height:42px; text-align:center; cursor:pointer; }	/* Regular */
+.tab_panel_tab_item_active a,
+.tab_panel_tab_item_active a:hover	{ cursor:default; }	/* Selected */
+
+/************************************************
+ Tabs Navigation 
+*************************************************/
+.instruments_navigation_super_panel, .binary_trading_data_main_navigation, 
+.forex_trading_data_main_navigation						{ height:39px; }	/* Bottom line under Tabs */
+.instruments_navigation_super_panel:after, .binary_trading_data_main_navigation:after, 
+.forex_trading_data_main_navigation:after				{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.instruments_navigation_super, .binary_trading_data_main_navigation_item, /* Regular */
+.forex_trading_data_main_navigation_item				{ padding:0 10px; height:39px; line-height:39px; float:left; box-sizing:border-box; text-align:center; text-transform:uppercase; overflow: hidden;}
+.instruments_navigation_super							{ width:25%; }	/* Tabs above assets table */
+.instruments_navigation_super:first-child, .binary_trading_data_main_navigation_item:first-child, 
+.forex_trading_data_main_navigation_item:first-child	{ border-left:0; }
+.instruments_navigation_super:hover, .binary_trading_data_main_navigation_item:hover, /* Hover */
+.forex_trading_data_main_navigation_item:hover			{ cursor:pointer; }
+.instruments_navigation_super_selected, .binary_trading_data_main_navigation_item_selected, /* Selected */
+.forex_trading_data_main_navigation_item_selected, .instruments_navigation_super_selected:hover, 
+.binary_trading_data_main_navigation_item_selected:hover, 
+.forex_trading_data_main_navigation_item_selected:hover	{ cursor:default; }
+.instruments_navigation_label							{ display:inline-block; line-height:normal; font-size: 13px; }
+/* Notification Tab */									
+.notifications_container											{ position:absolute; top:0; right:0;  }
+.notifications_header												{ line-height:39px; padding:0 10px; text-transform:uppercase; }
+.notifications_header:hover											{ cursor:pointer; }	/* Hover */
+/* Banking Deposit Pages aside Tab Navigation */
+.deposit_menu_container												{ position:absolute; top:15px; left:0; }
+.deposit_menu_button								/* Regular */ 	{ margin-bottom:15px; padding:0 20px; width:160px; line-height:26px; text-transform:uppercase; cursor:pointer; }
+.deposit_menu_button:hover									 		{ cursor:pointer; }	/* Hover */
+.deposit_menu_button-selected,.deposit_menu_button-selected:hover	{ cursor:default; }	/* Selected */
+
+/* instruments navigation buttons - under Tab Navigation filters */
+.instruments_navigation_type_container				{ padding-left:17px; }
+.instruments_navigation_type_panel					{ height:45px; padding-top:12px; }
+.instruments_navigation_type_panel:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.instruments_navigation_type		/* Regular */	{ max-height:30px; margin-right:8px; padding:5px 10px; display:inline-block; vertical-align:middle; font-size:12px; line-height:14px; cursor:pointer; text-align:center; text-transform:uppercase; }
+.instruments_navigation_type_selected, 
+.instruments_navigation_type_selected:hover			{ cursor:default; }	/* Selected */
+.instruments_navigation_type_panel > div:last-child	{ margin-right:0; }
+
+/************************************************
+Forms
+*************************************************/
+.form						{ width:422px; position:relative; }
+.field						{ margin-bottom:15px; position:relative;}
+.form .field:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }			
+.form .collection, .field_captchaImage img	{ display:inline-block; }	/* img - captcha */	
+.iframe_form_container .form .collection	{ float:right; }
+.field_captchaImage .collection				{ width:232px; height:32px; text-align:center; }
+label						{ padding-right:25px; font-size:14px; line-height:26px; display:inline-block; }		
+input, select				{ height:22px; padding:0 20px; box-sizing:border-box; font-size:12px; line-height:20px; }
+select						{ padding-right:0; } /* for IE */
+.form label					{ width:165px; text-align:right; }
+.form input, .form select	{ width:232px; height:28px; line-height:28px; }
+.form input					{ text-indent:3px; } /* for same indent with select element */
+.formErrors					{ max-height:45px; padding:5px 0; font-size:12px; line-height:15px; word-wrap:break-word; overflow:hidden; text-align:right; } /* Errors */
+.fieldErrorIcon				{ position:absolute; right:-15px; bottom:8px; }
+.formErrors:before 			{ content:" "; display:inline-block; margin-right:5px; }
+.required_field 			{ display:none; }
+
+/* login & password inputs in header */
+.navigation_menu_login_action_fields_panel input	{ padding-left:15px; width:153px; height:28px; line-height:28px; }
+
+/************************************************
+TABLES
+*************************************************/
+/* option list filter panel */
+.binary_tab_options_panel, .forex_tab_assets_panel								{ position:absolute; right:0; bottom:0; left:0; }
+.binary_tab_options_panel														{ top:99px; }
+.forex_tab_assets_panel															{ width:452px; top:0; }
+.options_filter_container														{ padding:0 18px 12px; height:26px;}
+.assets_filter_container														{ padding:8px 15px; height:26px; }
+.options_filter_market_filter_container, .assets_filter_market_filter_container,
+.options_filter_market_filter_label, .assets_filter_market_filter_label,			
+.options_filter_market_filter_wrapper, .assets_filter_market_filter_wrapper		{ float:left; }
+.options_filter_market_filter_label, .assets_filter_market_filter_label			{ line-height:22px; }
+.options_filter_market_filter, .assets_filter_market_filter						{ margin-left:14px; padding-left:16px; width:235px; line-height:22px; cursor:pointer; }
+.options_filter_advanced_button, .assets_filter_advanced_button					{ margin-left:12px; float:left; cursor:pointer; }
+.options_filter_advanced_button i, .assets_filter_advanced_button i				{ display:none; }	
+
+/* options / assets list header */
+.options_list_header, .assets_list_header, .my_portfolio_positions_header,
+.forex_portfolio_positions_header, .forex_orders_positions_header					{ height:40px; overflow: hidden; } /* Header background */
+.options_list_header, .assets_list_header											{ padding-right:17px;} /* reducing right padding(scrollbar width) to make even width, for % usage */
+.options_list_header:after, .assets_list_header:after, 
+.my_portfolio_positions_header:after, .forex_portfolio_positions_header:after, 
+.forex_orders_positions_header:after												{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.options_list_header div, .assets_list_header div, .my_portfolio_positions_header div, /* Headers Text color */ 
+.forex_portfolio_positions_header div, .forex_orders_positions_header div			{ padding-left:1%; box-sizing:border-box; float:left; line-height:40px; height:40px; text-transform:uppercase; overflow:hidden; }
+.options_list_header div:first-child, .assets_list_header div:first-child			{ padding-left:2%; } 
+
+/* <div> table - BO trading: Options list, OpenTrades; Forex: Assets list, OpenTrades, Orders */	
+.options_list_container, .binary_trading_data_content_container, .assets_list_container,
+.forex_trading_data_content_container									{ position:absolute; bottom:0; left:0; right:0; }
+.options_list_container													{ top:34px; }
+.binary_trading_data_content_container,	.assets_list_container,
+.forex_trading_data_content_container									{ top:42px; }
+.options_list_scroll_panel, .my_portfolio_panel,
+.assets_list_scroll_panel, .forex_portfolio_panel,
+.forex_orders_panel, .binary_info_panel									{ position:absolute; top:0; bottom:0; left:0; right:0; overflow-y:scroll; }
+.options_list_scroll_panel,	.assets_list_scroll_panel					{ top:40px; }
+.option_row_container, .future_option_row_container, .position_row_panel,	 
+.asset_row_container, .trade_row_panel, .forex_portfolio_total_row,
+.forex_order_row_panel													{ height:42px; cursor:pointer; }	/* Row styles & Even Row */
+/* Market Closed */
+.asset_row_market_closed .asset_row_sell,
+.asset_row_market_closed .asset_row_buy     						{ display:none; }
+.asset_row_market_closed .asset_row_asset							{ width:100%; }
+.asset_row_market_closed .asset_row_asset div 						{ float:left; }
+.asset_row_market_closed .asset_row_asset:after						{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.asset_row_market_closed .asset_row_asset .asset_row_asset_label	{ width:155px; }
+.asset_row_market_closed .asset_row_asset .asset_row_future_time	{ margin-left:5px; width:250px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.future_option_row_container, .forex_portfolio_total_row				{ cursor:default; }
+.options_list_noOptions													{ padding:10px; text-align: center; }	
+.option_row_panel > div, .future_option_row_panel > div, .position_row_panel > div,
+.asset_row_panel > div, .trade_row_panel > div, .forex_portfolio_total_row > div,
+.forex_order_row_panel > div											{ padding-left:1%; float:left; height:42px; line-height:42px; box-sizing:border-box; overflow:hidden; user-select:none; }
+.option_row_panel > div.option_row_asset, .asset_row_panel > div.asset_row_asset { padding-left:2%; } /* padding for the first row cell */
+.my_portfolio_positions_scroll_panel .position_row_target_panel			{ height:42px; line-height:42px; } /* boundary target row two lines when needed - BO OpenTrades */
+.my_portfolio_positions_scroll_panel .position_row_target_Boundary		{ display:inline-block; line-height:normal; } /* boundary target row two lines when needed - BO OpenTrades */
+.option_row_panel:after, .future_option_row_panel:after, .position_row_panel:after,
+.asset_row_panel:after,	.trade_row_panel:after, .forex_portfolio_total_row:after,
+.forex_order_row_panel:after											{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.option_row_container input, .future_option_row_container input, 
+.asset_row_container input												{ display:none; }
+.option_row_flag, .asset_row_flag										{ display:none; }
+.assets_list_noAssets													{ padding-top:10px; text-align:center; }
+
+/* BO Trading */
+.options_list_header_asset					{ width:45%; }
+.options_list_header_target					{ width:21%; }
+.options_list_header_expiry					{ width:30%; position:relative; }
+.options_list_header_expiry:after			{ content:" "; position:absolute; top:12px; right:0; display:inline-block; }
+
+.option_row_asset							{ width:31%; }	/* asset column - options names */
+.option_row_return							{ width:14%; }
+	.option_row_return_label 				{ font-size:16px; }	/* return column - numbers in percents */
+.option_row_target							{ width:20%; }
+	.option_row_return_label_multiple, .option_row_target_Boundary, 
+	.option_row_target_HighYieldBoundary	{ font-size:14px; line-height:20px; }	/* display target column numbers in two rows */
+	.option_row_target_Boundary, 
+	.option_row_target_HighYieldBoundary	{ padding-right:17px; }
+
+.option_row_expiry							{ width:25%; }
+	.option_row_expiry_list, 
+	.option_mode_info_expiry_list			{ width:100px; padding-left:2px; line-height:20px; cursor:pointer; } /* expires column inputs */
+.option_row_countdown						{ width:10%; }	/* countdown column */
+.option_row_availableAt						{ width:69%; }	/* text info for unavailable option */
+.option_row_availableAt_label				{ display:inline-block; line-height:normal; vertical-align:middle; }
+
+/* BO Open Trades Tab Headers width */ 
+.my_portfolio_positions_header_tradeDetails	{ width:21%; }
+.my_portfolio_positions_header_amount		{ width:15%; }
+.my_portfolio_positions_header_target		{ width:14%; }
+.my_portfolio_positions_header_market		{ width:15%; }
+.my_portfolio_positions_header_expiry		{ width:15%; }
+.my_portfolio_positions_header_close		{ width:20%; }
+
+/* options columns in BO Open Trades Tab */
+.position_row_icon_panel		{ width:3%; }
+.position_row_asset_panel		{ width:18%; }
+.position_row_asset_value	    { padding-left:30px; }
+.position_row_amount_panel		{ width:15%; }
+.position_row_target_panel		{ width:14%; }
+.position_row_market_panel		{ width:15%; }
+.position_row_expiry_panel		{ width:15%; }
+.position_row_close_panel		{ width:20%; }
+	
+.position_row_asset_value,  
+.option_row_asset_label, 
+.option_row_message_label, 
+.asset_row_message_label,
+.asset_row_asset_label, 
+.trade_row_asset_value,
+.forex_order_row_asset_value	{ overflow:hidden; text-overflow: ellipsis; white-space: nowrap; } /* long asset names (out of width) ends with "..." */
+	
+/* Forex */		
+.assets_list_header_asset	{ width:38%; }
+.assets_list_header_sell	{ width:23%; }
+.assets_list_header_buy		{ width:28%; }
+
+.asset_row_asset			{ width:38%; }
+.asset_row_sell				{ width:23%; }
+.asset_row_buy				{ width:28%; }
+
+.forex_portfolio_positions_header > *, .trade_row_panel > *, .forex_portfolio_total_row > *, .forex_orders_positions_header > *, .forex_order_row_panel > *	{ width:11%; }
+.forex_portfolio_positions_header_tradeDetails, .forex_portfolio_total_row_total, .forex_orders_positions_header_tradeDetails								{ width:18%; }
+.forex_portfolio_positions_header_close, .forex_portfolio_total_row_closeAmount, .forex_orders_positions_header_cancel										{ width:16%; }
+.trade_row_icon_panel, .forex_order_row_icon_panel			{ width:2%; }
+.trade_row_asset_panel, .forex_order_row_asset_panel,
+.trade_row_close_panel, .forex_order_row_cancel_panel		{ width:16%; }
+
+/* <table> table - BO trading: tradeHistory; Forex trading: tradeHistory; My Account: binaryHistory, forexHistory, binaryHistoryExpiryPrice */
+.cellTableLoading 											{ padding:20px 0; }	
+.cellTableWidget											{ width:100%; padding:0; }
+.cellTableHeader							/* Header */	{ padding-left:10px; font-weight:300; height:40px; position:relative; text-align:left; text-transform:uppercase; }
+.cellTableCell												{ padding-left:10px; font-size:12px; height:42px; text-align:left; }
+.cellTableFirstColumn:first-child							{ text-transform:uppercase; }
+.trading_data_trading_history_panel							{ position:absolute; top:0; right:0; bottom:0; left:0; overflow-y:scroll; }
+.binary_trading_data_panel .trading_data_positionType div,
+.trading_history_positionType > div							{ display:none; }
+.trading_history_column_expiryPrice	div						{ text-decoration:underline; cursor:pointer; } /* Binary history cell link to expiry popup table */
+
+/* expiry price table popup - binaryHistory - MY ACCOUNT */
+.expiry_ticks_popup				{ padding:20px; z-index:301; } 
+.expiry_ticks_header			{ padding-bottom:15px; }
+.expiry_ticks_table_panel		{ min-width:400px; height:245px; overflow-y:auto; }
+.expiry_ticks_table				{ border:none; }
+.expiry_ticks_no_data			{ padding:10px; } /* text inside of table instead of full rows, while trying to see info of an option older then 7 days */ 
+.expiry_ticks_footer			{ display:none; }
+
+/************************************************
+Binary Buttons
+*************************************************/	
+/* BO trading buttons */
+.position_type_action1_button, .position_type_action2_button, .option_mode_buy_button,
+.asset_mode_buy_button, .asset_mode_sendOrder_button				{ height:40px; font-size:24px; line-height:40px; position:relative; cursor:pointer; text-align:center; text-transform:uppercase; user-select:none; }
+.asset_mode_buy_button, .asset_mode_sendOrder_button				{ font-size:18px; }
+.options_switcher_next_button, .options_switcher_previous_button	{ width:40px; height:40px; margin:0 auto; position:relative; cursor:pointer; user-select:none; }
+.position_type_noTouch_button, .position_type_noTouchDown_button	{ text-align:left; text-indent:10px; cursor:pointer; user-select:none; }
+/* Forex trading buttons */
+.asset_direction_action_button			{ height:87px; cursor:pointer; position:relative; user-select:none; }
+.asset_direction_button_label			{ padding:8px 5px; font-size:24px; line-height:24px; text-align:center; text-transform:uppercase; }
+.asset_direction_button_value			{ margin:0 5px; font-size:30px; height:39px; line-height:39px;text-align:center; }	
+.asset_direction_sell_button .asset_direction_button_value						{ margin-top:6px;}											
+.asset_direction_sell_button .asset_direction_button_label						{ width:100%; position:absolute; bottom:0; }	
+/* Selected */
+.position_type_call_button-selected, .position_type_call_button-selected:hover,
+.position_type_touch_button-selected, .position_type_touch_button-selected:hover,
+.position_type_noTouch_button-selected, .position_type_noTouch_button-selected:hover,
+.position_type_in_button-selected, .position_type_in_button-selected:hover,
+.asset_direction_buy_button-selected .asset_direction_button_value,
+.asset_direction_buy_button-selected .asset_direction_button_value:hover			{ cursor:default; }
+.position_type_put_button-selected, .position_type_put_button-selected:hover,
+.position_type_touchDown_button-selected, .position_type_touchDown_button-selected:hover,
+.position_type_noTouchDown_button-selected, .position_type_noTouchDown_button-selected:hover,
+.position_type_out_button-selected, .position_type_out_button-selected:hover,
+.asset_direction_sell_button-selected .asset_direction_button_value,
+.asset_direction_sell_button-selected .asset_direction_button_value:hover			{ cursor:default; }
+/* BO trading buttons disabled */
+.position_type_container_disabled .position_type_action1_button,
+.position_type_container_disabled .position_type_action1_button:hover,
+.position_type_container_disabled .position_type_action2_button,
+.position_type_container_disabled .position_type_action2_button:hover,
+.position_type_container_disabled .options_switcher_previous_button,
+.position_type_container_disabled .options_switcher_previous_button:hover,
+.position_type_container_disabled .options_switcher_next_button,
+.position_type_container_disabled .options_switcher_next_button:hover,
+.options_switcher_previous_button.options_switcher_button_disabled,
+.options_switcher_previous_button.options_switcher_button_disabled:hover,
+.options_switcher_next_button.options_switcher_button_disabled,
+.options_switcher_next_button.options_switcher_button_disabled:hover,
+.option_mode_buy_panel_disabled .option_mode_buy_button,
+.asset_mode_buy_panel_disabled .asset_mode_buy_button,
+.asset_mode_order_panel_disabled .asset_mode_sendOrder_button,
+.position_mode_action_button_disabled												{ cursor:default; }
+/* Forex trading buttons disabled */
+.asset_direction_container_disabled .asset_direction_action_button					{ cursor:default; }
+/* Close options/assets buttons - BO: openTrades & Forex: openTrades, Orders, asset info */
+.position_row_close_button, .position_mode_action_button,
+.trade_row_close_button, .forex_order_row_cancel_button, /* Forex Open Trades Close btn & Orders Tab Cancel btn */
+.trade_row_stopLoss_value, .trade_row_takeProfit_value,	/* Forex Open Trades Tab StopLoss & TakeProfit btns */
+.trade_mode_action_button	/* asset info btns: StopLoss,TakeProfit,Close,Cancel */		{ padding:0 15px; height:26px; margin-top:8px; float:left; line-height:26px; text-align:center; cursor:pointer; }
+.position_mode_action_button_disabled													{ cursor:default; }	/* asset info btn disabled */
+
+/*** SPECIAL BUTTONS ***/	
+/* open account & deposit buttons  - header */
+.navigation_menu_open_account_button, 
+.navigation_menu_deposit_button							{ height:38px; width:164px; line-height:38px; display:inline-block; text-transform:uppercase; text-align:center; user-select:none; }
+.navigation_menu_open_account_button i, 
+.navigation_menu_deposit_button i						{ font-size:16px; }
+/* open account & deposit buttons  - footer */
+.open_account_links_link, .balance_deposit_button		{ font-size:16px; line-height:28px; width:164px; text-align:center; text-transform:uppercase; user-select:none; }
+
+/*** COMMON BUTTONS ***/
+.login_popup_button, .account_menu_logout_button, .forgot_password_go_back_button, .navigation_menu_login_button,
+.advanced_filter_popup_apply_button, .limits_popup_apply_button, .roll_over_popup_apply_button, .roll_over_popup_cancel_button,
+.login_button, .forgot_password_submit_button, .direct_deposit_ok_button, .direct_deposit_reject_button,
+.open_account_button, .open_account_successfully_popup_continue_button, 
+.promoteToReal_panel_submit_button, .promoteToReal_panel_cancel_button, 
+.messages_table_action_button, .messages_instance_action_button,
+.account_details_save_button, .account_details_promoteToReal_button, .fast_deposit_buttons_container > div,
+.trading_history_clear_filters_button, .forex_history_clear_filters_button, .transaction_history_clear_filters_button, .deposit_cc_to_trade_button, .deposit_cc_save_card_button,
+.change_password_save_button, .withdrawal_step_button, .deposit_cc_submit_button, .deposit_cc_navigate_button, .external_deposit_button, .submit_button,
+.pending_requests_tab_content button, .deposit_saved_cc_navigate_button, .credit_cards_table button, .trading_slip_asset_price_minimized, .popup_reject_button, .popup_ok_button,
+.limits_popup_close_position_button_tie, .limits_popup_close_position_button_in_money, .limits_popup_close_position_button_out_money	{ padding:0 40px; font-size:16px; line-height:28px; text-align:center; text-transform:uppercase; cursor:pointer; user-select:none; }
+
+/************************************************
+SPECIAL Fields Defaults
+*************************************************/
+/* Sentiment bar - Graph */
+.trading_slip_sentiment_popup				{ width:74px; height:170px; position:absolute; top:49px; right:5px; z-index:1; }
+.positions_sentiment_positionType_panel		{ height:28px; text-align:center; }
+.positions_sentiment_positionType_percentage{ line-height:28px; }
+.positions_sentiment_bar_panel				{ height:114px; position:relative; }
+.positions_sentiment_sentimentBar_label		{ font-size:12px; -webkit-transform:rotate(90deg); transform:rotate(90deg); text-align:center; width:114px; top:50px; position:absolute; }
+.positions_sentiment_bar					{ margin:0 24px; width:16px; height:114px; }
+.positions_sentiment_bar_percentage			{ width:16px; }
+.positions_sentiment_notAvailable_label		{ padding:46px 10px; font-size:12px; line-height:15px; text-align:center; }
+
+/* Bonus bar - My Account - Bonus Summary */
+.bonus_row_bar										{ margin-bottom:25px; float:left; width:753px; height:42px; line-height:42px; position:relative; z-index:0; }
+.bonus_row_bar_percentage							{ height:40px; position:absolute; top:1px; bottom:1px; z-index:-1; } /* Bonus Bar filler */
+.bonus_row_received									{ margin-left:15px; float:left; }
+.bonus_row_percentage								{ margin-left:120px; float:left; font-size:18px; text-align:right; width:50px; }
+.bonus_row_status									{ margin-left:145px; float:left;}
+
+/* account levels bar - Header */
+.navigation_menu_account_level_panel div			{ margin:6px 0 0 20px; width:130px; height:28px; }
+.navigation_menu_account_level_panel div:after		{ content:" "; font-size:16px; line-height:23px;  text-align:center; text-transform:uppercase; display:block; }
+.navigation_menu_account_level_panel .account_level_silver:after	{ font-weight:600; }
+.navigation_menu_account_level_panel .account_level_vip:after		{ font-weight:600; }
+
+/************************************************
+Popups Defaults
+*************************************************/
+.message_popup_message a							{ display:inline-block; }
+
+/* Popups - Main */
+.login_popup, .forgot_password_popup,
+.roll_over_popup, .advanced_filter_popup,
+.message_popup, .advice_popup, .info_popup, .notification,
+.direct_deposit_popup, .fast_deposit_popup,
+.open_account_successfully_popup						{ width:447px; z-index:301; }
+
+/* Calendar popup - Binary/Forex History - MY ACCOUNT */
+.dateBoxPopup											{ margin-top:8px; width:200px;}
+.dateBoxPopup table 									{ width:100%; }
+.datePickerMonthSelector		/* Popups Header */		{ font-size:12px; line-height:35px; text-align:center; text-transform:uppercase; }
+.datePickerPreviousButton .html-face, 
+.datePickerNextButton .html-face						{ margin:0 10px; cursor:pointer; width:8px; height:9px; font-size:0; }	/* left/right labels */
+.datePickerDays											{ padding:15px 10px; text-align:center; }	/* Under header part of the Calendar popup */
+.datePickerWeekdayLabel, .datePickerWeekendLabel		{ padding:4px; font-size:12px; text-transform:lowercase; }	/* Columns headers */
+.datePickerDay											{ padding:5px; font-size:10px; cursor:pointer; }	/* Calendar numbers */
+
+/* language selector popup */
+.language_selector_popup							{ margin:10px 0 0 -20px; width:95px; z-index: 302; }
+.language_selector_popup_language_panel				{ padding:5px 20px; cursor:pointer; }
+.language_selector_popup_language_layout div		{ display:inline-block; }
+.language_selector_popup_language_layout:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.language_selector_popup_label						{ padding-right:5px; }
+.language_selector_popup .language_selector_flag	{ margin:2px 0 0; }
+
+/* account/help menu dropdown popups - dropdown menu of header links Hello UserName/HELP */
+.account_menu_popup				{ margin:26px 0 0 -30px;}
+.account_menu_logout_button		{ padding:0; margin:15px 10px; }
+.help_menu_popup				{ margin:7px 0 0 -98px; min-width:136px; z-index:301; }
+.help_menu_popup_arrow			{ content:" "; width:0; height:0; display:none; position:absolute; top:-6px; right:40px; }
+.help_menu_popup_arrow:after	{ content:" "; width:0; height:0; display:block; position:absolute; top:0; left:-5px; }
+.help_menu_popup_arrow:before	{ content:" "; width:0; height:0; font-size:0; display:block; position:absolute; top:-1px; left:-6px; }
+.account_menu_popup, .help_menu_popup						{ width:150px; z-index:302; }
+.account_menu_link, .help_menu_link i, .help_menu_link a	{ padding:15px 10px; line-height:20px; display:block; text-align:center; cursor:pointer;}
+
+/* Tooltip popups */
+/* pipValue tooltip - bottom side tooltip */
+.custom_tooltip			{ margin:10px 0 0 -15px; padding:10px; z-index:301; }
+.custom_tooltip:after	{ content:" "; width:0; height:0; display:block; position:absolute; top:-6px; left:13px; }
+.custom_tooltip:before	{ content:" "; width:0; height:0; display:block; position:absolute; top:-7px; left:12px; }
+/* right side tooltip popup */
+.form .fieldError, .trade_limits, .order_limits_popup, .table_tooltip, .trade_row_tooltip, .bonus_summary_bubble				{ padding:7px 20px; position:absolute; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); left:108%; font-size:14px; white-space:nowrap; z-index:301; }
+.form .fieldError:after	, .trade_limits:after, .table_tooltip:after, .trade_row_tooltip:after, .bonus_summary_bubble:after		{ content:" "; width:0; height:0; display:block; position:absolute; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); left:-7px; }
+.form .fieldError:before, .trade_limits:before, .table_tooltip:before, .trade_row_tooltip:before, .bonus_summary_bubble:before	{ content:" "; width:0; height:0; display:block; position:absolute; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); left:-8px; }
+/* trade limits popup */
+.trade_limits										{ margin:-13px 0 0 105px; z-index:301; }
+.trade_limits_limitPanel:after						{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.trade_limits_limitLabel, .trade_limits_limitValue	{ padding:5px; line-height:16px; }
+.trade_limits_limitLabel							{ float:left; }
+.trade_limits_limitValue							{ float:right; }
+/* order limits popup - triggered when asset order rate is too close to the current price */
+.order_limits_popup 					{ margin-top:5px; width:160px; white-space:normal; -webkit-transform:initial; -ms-transform:none; transform:initial; }
+/* adjusting forex tooltip popups */
+.table_tooltip, .trade_row_tooltip		{ width:200px; left:90%; visibility:hidden; }
+.trade_row_tooltip						{ margin:-18px 150px; width:200px; visibility:hidden; }
+.trading_data_trading_history_table .cellTableCell:hover .table_tooltip		{ visibility:visible; }
+.tooltip_open_time_panel > div,
+.tooltip_transaction_id_panel > div		{ margin-right:10px; float:left; }
+.tooltip_open_time_panel:after,
+.tooltip_transaction_id_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+/* bonus summary bubble (adjusting the arrow)- MY ACCOUNT Bonus Summary */
+.bonus_summary_bubble					{ padding:15px 20px; top:40px; left:870px; width:200px; white-space:normal; word-wrap:break-word; }
+.bonus_summary_bubble:after				{ left:-10px; top:30%; }
+.bonus_summary_bubble:before			{ left:-11px; top:30%; }
+
+/************************************************
+Icons	
+*************************************************/
+#loading span				{ height:100px; margin:0 auto; display:block; } /* Application loading .gif */
+/*** Upload sprites.png ***/
+.logo						{ float:left; max-width:325px; cursor:pointer; }
+/* Positioning Type icons */
+.position_row_icon, .trading_data_positionType, .trading_history_positionType,
+.trade_row_icon, .forex_order_row_icon	{ margin-top:15px; height:20px; }
+
+.option_mode_positionType_label:after	{ padding:0; margin-left:10px; width:10px; height:15px; content:" "; display:inline-block; vertical-align:text-bottom; }
+
+.trading_history_table .trading_history_positionType,		/* My account history tables - adjusting position type icons */
+.trading_data_trading_history_table_panel .trading_data_positionType	{ padding:0; }	/* BO history table - adjusting position type icons */
+
+/* BO Trading Buttons Sprites */
+.position_type_action1_button:after, .position_type_action2_button:after,
+.options_switcher_previous_button:after, .options_switcher_next_button:after	{ right:10px; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); content:" "; position:absolute; }
+
+.options_filter_advanced_button,
+.assets_filter_advanced_button					{ margin-top:4px; width:16px; height:15px; } /* advanced filter button icon */
+
+.navigation_menu_messages_link:before			{ margin:5px 5px 0 0; width:15px; height:12px; float:left; display:inline-block; content:" "; } /* envelop icon - Header */
+
+.deposit_cc_header:before, .direct_deposit_header_label:before	{ margin-right:5px; width:9px; height:13px; display:inline-block; content:" "; } /* lock icon before header - deposit, cc */
+.option_mode_info_countdown_value_running:after, 
+.position_mode_info_countdown_value_running:after	{ margin:14px 0 0 10px; float:right; width:14px; height:14px; display:inline-block; content:" "; } /* clock icon - BO trading - trading slip header */
+
+.sound_mute_button_muted						{ margin-top:16px; width:8px; height:10px; cursor:pointer; } /* sound off - Footer */
+.sound_mute_button_not_muted					{ margin-top:16px; width:12px; height:10px; cursor:pointer; } /* sound on  - Footer */
+
+/* paginator - << < x > >> */
+.pager							{ line-height:26px; }
+.pager > div					{ display:inline-block; line-height:normal; margin-left:8px; }
+.pager > div:first-child		{ margin-left:0; }
+.pager:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.pager_label					{ font-size:12px; line-height:26px; }
+.pager_button_first_page, .pager_button_previous_page, 
+.pager_button_next_page, .pager_button_last_page	{ height:9px; cursor:pointer; } 
+.pager_button_disabled								{ cursor:default; }		
+/* close icon */
+.login_popup_close_button, .forgot_password_popup_close_button, .open_account_successfully_popup_close_button, 
+.notifications_popup_close_button, .roll_over_popup_close_button, .fast_deposit_corner_button,
+.advanced_filter_popup_close_button, .limits_popup_close_button, .notification_close_button, .expiry_ticks_close_button, .deposit_info_message_close_button,
+.message_popup_close, .popup_corner_button, .direct_deposit_corner_button, .advice_popup_close_button	{ width:8px; height:8px; top:8px; right:8px; position:absolute; cursor:pointer; } /* light background */
+/* logIn popup footer */
+.login_popup_not_member_label:after				{ margin:14px 28px 0; width:8px; height:8px; float:right; display:block; content:" "; } 
+/* Buyer type icon next to option/asset name in history tables and BO trading openTrades table */
+.position_row_asset_value:before										{ width:9px; height:9px; left:5px; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); content:" ";  display:block; position:absolute; }
+.trading_data_trading_history_table .cellTableFirstColumn:before,
+.trading_history_table_panel .cellTableFirstColumn:before				{ width:9px; height:20px; left:10px; content:" ";  display:block; position:absolute; }
+.trading_data_trading_history_table_panel .cellTableFirstColumn,
+.trading_history_table_panel .cellTableFirstColumn{ padding:0 0 0 38px; position:relative;} /* adjusting space for buyer type icon - BO/Forex history tables */
+.position_row_asset_value{ position:relative; } /* BO openTrades */
+
+/* image for Visa and MasterCard on deposit by Credir Card - required by psp */
+.deposit_cc_body_container > .form:before	{ width:46px;height:15px;position:absolute;top:-40px;right:0;content:" ";display:block;}
+.deposit_cc_body_container > .form:after	{ width:46px;height:25px;position:absolute;top:-45px;right:-60px;content:" ";display:block;}
+
+/************************************************
+Main
+*************************************************/
+html					{ height:100%; }
+body					{ height:100%; }
+#loading				{ margin-top:-130px; top:50%; left:0; width:100%; color:#066; position:absolute; text-align:center;}
+#application			{ min-width:1260px; min-height:680px; height:100%; position:relative; }
+
+/************************************************
+Header
+*************************************************/	
+.header_panel										{ margin:0 18px;}		
+.header_panel:after									{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+/* header actions panel - right top section */			
+.header_actions_panel								{ margin-top:18px; float:right; height:38px; }				
+.language_selector_container						{ float:left; }
+.language_selector input							{ display:none; }
+.language_selector_layout							{ margin-top:10px;  width:63px; height:15px; position:relative; cursor:pointer; }
+.language_selector_flag								{ margin-right:16px; float:right; }
+.language_selector_label							{ float:left; line-height:14px; width:20px; overflow:hidden; text-transform:uppercase; }
+.language_selector_arrow							{ width:0; height:0; display: inline-block; position: absolute; top:7px; right:0; }							
+.language_selector_arrow:after						{ content:" "; width:0; height:0; display:block; position:absolute; top:-5px; left:-3px; }
+.header_actions_container							{ float:right; }
+.navigation_menu_login_panel:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.navigation_menu_login_panel div					{ float:left; }
+.navigation_menu_live_chat_button					{ font-size:16px; line-height:34px; }
+.actions_menu_link.actions_menu_forgot_password_link{ font-size:10px; line-height:38px; }
+.navigation_menu_login_action_panel					{ padding:4px 7px 4px 10px;}
+.navigation_menu_login_action_fields_panel input	{ margin-right:6px; float:left; width:126px; }
+.navigation_menu_messages_panel, .navigation_menu_hello_panel, 
+.navigation_menu_balance_panel						{ margin-top:11px; padding:0 20px; }
+.navigation_menu_messages_link						{ float:left; display:inline-block; } /* text near envelop icon with no unread messages */
+.navigation_menu_messages_panel:after, .navigation_menu_hello_panel:after, 
+.navigation_menu_balance_panel:after				{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.navigation_menu_hello_label						{ cursor:pointer; }
+.navigation_menu_hello_value						{ padding:0 15px 0 5px; max-width:140px; overflow:hidden; text-overflow:ellipsis; cursor:pointer; position:relative; }
+.navigation_menu_hello_value:before					{ content:" "; width:0; height:0; display:inline-block; position:absolute; top:8px; right:0;}
+.navigation_menu_hello_value:after					{ content:" "; width:0; height:0; display:block; position:absolute; top:8px; right:2px;}
+.navigation_menu_logout_button						{ display:none; }
+	
+/************************************************
+BODY CONTAINER
+*************************************************/						
+.body_container									{ position:absolute; top:104px; right:18px; bottom:58px; left:18px; }
+.binary_tab_panel, .forex_tab_panel				{ height:100%; position:relative; overflow:hidden; }
+.forex_tab_north								{ height:100%; position:absolute; top:0; right:0; left:0; }
+
+/* binary tab clock */
+.binary_tab_clock_container, 
+.forex_tab_clock_container						{ position:absolute; top:0; right:0; z-index:301;}
+.clock_block > div								{ padding-right:8px; float:left; font-size:13px; line-height:43px; }
+
+/* Binary west panel position + Forex assets position */					
+.binary_tab_west								{ width:452px; position:absolute; top:0; bottom:0; left:0; }
+
+/* Trading slip container */					
+.trading_slip_container, .forex_slip_container	{ position:absolute; top:0; right:0; left:461px; }
+.forex_slip_container							{ bottom:0; }
+
+/* Trading slip header */					
+.trading_slip_north, .forex_slip_north								{ height:43px; }
+.option_mode_info_panel > div, .trade_mode_info_panel > div,
+.position_mode_info_panel > div, .asset_mode_info_panel > div		{ float:left;  line-height:43px; }
+.option_mode_info_asset, .trade_mode_info_asset,
+.position_mode_info_asset, .asset_mode_info_asset					{ padding:0 10px 0 15px; font-size:18px;}
+.option_mode_info_return											{ padding-left:50px; padding-right:10px; font-size:18px; }
+.option_mode_info_expiry, .position_mode_info_expiry				{ padding-left:80px; }
+.position_mode_info_countdown, .option_mode_info_countdown			{ padding-left:35px; }
+.option_mode_info_expiry > div, .position_mode_info_expiry > div	{ float:left; }
+.option_mode_info_expiry_label, .position_mode_info_expiry_label	{ margin-right:5px; font-size:12px; text-transform:uppercase; }
+.option_mode_info_panel:after, 
+.position_mode_info_panel:after, .asset_mode_info_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+/* Trading slip south */
+.trading_slip_south, .forex_slip_south								{ margin-top:8px; height:270px; position:relative; }
+.trading_slip_properties_container, .trading_slip_action_container,
+.forex_slip_properties_container, .forex_slip_action_container		{ padding:0 16px; margin:10px 0; width:180px; height:250px; float:left; }
+
+/* Properties container */							
+.position_type_explanation_label									{ font-size:13px; }
+
+.forex_slip_properties_container			{ margin:0; } /* forex */
+.asset_direction_selection_panel > div		{ margin-top:30px; } /* forex */
+
+.position_type_explanation_label			{ padding-bottom:5px; height:65px; line-height:16px; text-align:center; }
+
+.position_type_selection_panel				{ height:180px; position:relative; }
+
+.position_type_market_value,
+.position_type_target_value,
+.options_switcher_return_value				{ font-size:24px; }
+.position_type_panel_boundary .position_type_target_value, .position_type_panel_boundary .position_type_target2_value	{ font-size:18px; } /* boundary */
+.position_type_panel_high_yield_touch .position_type_market_value, .position_type_panel_high_yield_touch .position_type_target_value, /* high yield touch */
+.position_type_panel_high_yield_boundary .position_type_target_value, .position_type_panel_high_yield_boundary .position_type_market_value, /* high yield boundary */
+.position_type_panel_high_yield_boundary .position_type_target2_value,
+.position_type_panel_below .position_type_target_value, .position_type_panel_below .position_type_market_value, /* above/below */
+.position_type_panel_above .position_type_target_value, .position_type_panel_above .position_type_market_value	{ font-size:15px; }
+
+.position_type_market_panel:after, .position_type_instrument_panel:after, 
+.position_type_target_panel:after, .position_type_target2_panel:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.position_type_market_label, .position_type_instrument_label, 
+.position_type_target_label, .position_type_target2_label				{ margin-right:3px; float:left; line-height:40px; }
+.position_type_market_value, 
+.position_type_target_value, .position_type_target2_value				{ padding-right:5px; float:right; line-height:40px; }
+
+/* high/low */
+.position_type_panel_high_low .position_type_market_panel				{ padding:20px 0; height:40px; text-align:center; }
+.position_type_panel_high_low .position_type_market_panel div			{ float:none; line-height:20px; }
+/* one touch */ 
+.position_type_panel_one_touch .position_type_selection_panel,
+.position_type_panel_touch_down .position_type_selection_panel			{ padding-top:50px; height:125px; position:relative; }	
+.position_type_touch_button, .position_type_touchDown_button			{ position:absolute; top:0; right:0; left:0; }
+.position_type_noTouch_button, .position_type_noTouchDown_button		{ position:absolute; right:0; bottom:0; left:0; }
+
+/* boundary */
+.position_type_panel_boundary .position_type_data_panel div				{ line-height:30px; }
+.position_type_in_button												{ margin-top:3px; }
+.position_type_out_button												{ margin-top:5px; }
+/* above/below high/yield */
+.position_type_panel_high_yield_boundary .position_type_market_panel div, /* high yield boundary */
+.position_type_panel_high_yield_touch .position_type_instrument_label	{ line-height:30px; }
+.position_type_panel_above .position_type_target_value, .position_type_panel_above .position_type_market_value,
+.position_type_panel_below .position_type_target_value, .position_type_panel_below .position_type_market_value,
+.position_type_panel_high_yield_touch .position_type_target_value, .position_type_panel_high_yield_touch .position_type_market_value,
+.position_type_panel_high_yield_boundary .position_type_target_value, .position_type_panel_high_yield_boundary .position_type_target2_value,
+ .position_type_panel_high_yield_boundary .position_type_market_value	{ float:left; }
+.position_type_panel_above .position_type_data_panel,
+.position_type_panel_below .position_type_data_panel,
+.position_type_panel_high_yield_touch .position_type_data_panel,
+.position_type_panel_high_yield_boundary .position_type_data_panel		{ width:130px; float:left; }
+.position_type_panel_above .position_type_instrument_panel,	
+.position_type_panel_below .position_type_instrument_panel				{ margin:25px 0; height:30px; }
+
+.position_type_panel_high_yield_touch .position_type_instrument_panel	{ margin:25px 0; }
+.position_type_panel_high_yield_boundary .position_type_market_panel	{ margin:25px 0; }
+
+.position_type_options_switcher_conatiner								{ width:50px; float:left; text-align:center; }
+.options_switcher_return_value											{ margin:25px 0; height:30px; line-height:30px; }
+
+/* Trading Actions container */							
+.option_mode_positionType_label												{ padding-top:5px; height:22px; font-weight:400; line-height:20px; text-transform:uppercase; }
+
+.option_mode_buy_amount_label, .option_mode_buy_currency_label,
+.asset_mode_buy_amount_label, .asset_mode_buy_currency_label				{ padding:0 4px 21px 0; float:left; line-height:22px; }
+.option_mode_buy_amount_text, .asset_mode_buy_amount_text					{ padding:0 5px; float:right; width:100px; text-indent:5px; }
+.option_mode_buy_panel:after, .asset_mode_buy_amount_panel:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }	
+
+.option_mode_buy_info_panel													{ padding-top:3px; }
+.option_mode_buy_closable_panel												{ padding-bottom:3px; }
+.option_mode_buy_closable_label, .option_mode_buy_closable_value			{ padding-right:3px; float:left; }
+.option_mode_buy_closable_panel:after										{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.option_mode_buy_return_panel												{ line-height:12px; }
+.option_mode_buy_return_panel .option_mode_buy_return_label					{ padding:3px 0; }
+.option_mode_buy_returnOnSuccess_panel										{ padding-bottom:5px; }
+.option_mode_buy_returnOnFailure_panel										{ padding-top:5px;  }
+.option_mode_buy_returnOnSuccess_label, 
+.option_mode_buy_returnOnFailure_panel div									{ font-size:12px; }
+
+/* Trading option info - when option from bottom tables selected */
+.position_mode_propeties_panel													{ padding:10px 10px 0; width:404px; height:205px; position:absolute; top:0; left:0; }
+.position_mode_action_panel														{ padding:0 10px; width:404px; position:absolute; top:215px; left:0; bottom:0;}
+.position_mode_propeties_info													{ padding:5px 0; width:404px;}
+.position_mode_propeties_west > div, .position_mode_propeties_east > div 		{ float:left; }
+.position_mode_propeties_west:after, .position_mode_propeties_west > div:after,
+.position_mode_propeties_east:after, .position_mode_propeties_east > div:after,
+.position_mode_propeties_prices:after,
+.position_mode_propeties_market:after, .position_mode_propeties_target:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.position_mode_propeties_prices													{ padding:5px 0; }
+.position_mode_propeties_market,.position_mode_propeties_target					{ width:404px; }	
+.position_mode_propeties_transactionId, .position_mode_propeties_positionType	{ width:202px; }
+.position_mode_propeties_inTheMoney, .position_mode_propeties_outOfTheMoney		{ width:380px; }
+.position_mode_propeties_label, .position_mode_propeties_value					{ line-height:26px; }
+.position_mode_propeties_label													{ padding-right:10px; float:left; }
+.position_mode_propeties_value													{ float:left; }
+.position_mode_propeties_east .position_mode_propeties_label					{ width:120px; }
+.position_mode_propeties_prices .position_mode_propeties_label					{ width:50px; }
+.position_mode_action_button_close 												{ margin-right:15px; }
+
+/* Forex Actions container */
+.asset_mode_buy_panel									{ width:212px; position:absolute; top:-52px; left:212px; bottom:0;  }
+.asset_mode_tabs_panel:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.asset_mode_tab_button									{ float:left; width:50%; height:43px; line-height:43px; box-sizing:border-box; text-align:center; text-transform:uppercase; cursor:pointer; }
+
+.asset_mode_tab_button_selected, 
+.asset_mode_tab_button_selected:hover					{ cursor:default; }
+.asset_mode_tab_button i								{ display:inline-block; line-height:normal; }
+
+.asset_mode_content_panel								{ padding:40px 16px 0 16px; height:239px; position:relative; }
+.asset_mode_trade_panel, .asset_mode_order_panel		{ height:100%; position:relative; }	
+.asset_mode_positionType_panel							{ display:none; }
+.asset_mode_rate_panel									{ width:100%; position:absolute; top:55px; }
+.asset_mode_rate_label									{ float:left; line-height:22px; }
+.plusMinusValueSelector.asset_mode_rate_value			{ width:114px; float:right; border: 1px solid #999; }
+.asset_mode_rate_panel:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.plusMinusValueSelector > div							{ width:20px; height:22px; cursor:pointer; }
+.plusMinusValueSelector_minusButton						{ float:left; }
+.plusMinusValueSelector_plusButton						{ float:right; }
+.plusMinusValueSelector_minusButton:before, 
+.plusMinusValueSelector_plusButton:before				{ line-height:20px; display:inline-block; width:20px; text-align:center; }
+.plusMinusValueSelector_minusButton:before				{ content:"\2013"; }
+.plusMinusValueSelector_plusButton:before				{ content:"\002B"; }
+.plusMinusValueSelector_value							{ padding:0 5px; width:70px; height:22px; border:none; text-align:center; }
+.asset_mode_order_panel .asset_mode_buy_button_panel, 
+.asset_mode_order_panel .asset_mode_buy_button_loading	{ margin-top:77px; }
+.asset_mode_trade_panel .asset_mode_buy_button_panel, 
+.asset_mode_trade_panel .asset_mode_buy_button_loading	{ margin-top:6px; }
+.asset_mode_buy_pipValue_panel							{ width:100%; height:24px; position:absolute; bottom:33px; }
+.asset_mode_buy_pipValue_label							{ float:left; line-height:14px; padding-top:8px; }
+.asset_mode_buy_pipValue_value							{ padding-left:5px; float:left; font-size:24px; line-height:24px; max-width:90px; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;} /* for too big value shows ... at the end */
+.asset_mode_buy_info_tooltip							{ width:11px; height:11px; position:absolute; right:0; top:65%; -webkit-transform:translateY(-65%); -ms-transform:translateY(-65%); transform:translateY(-65%); }/* pip value icon */
+.asset_mode_buy_info_tooltip:before						{ content:"?"; font-size:11px; line-height:10px; position:absolute; left:3px; cursor:default; }
+.asset_mode_buy_pipValue_panel:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+/* Forex asset info - when asset from bottom tables selected */
+.trade_mode_propeties_panel 										{ padding:0 12px; width:400px; height:195px; position:absolute; top:0; left:0; }
+.trade_mode_action_panel											{ padding:0 12px; width:400px; position:absolute; top:195px; left:0; bottom:0; }
+.trade_mode_propeties_panel > div 									{ padding:15px 0; }
+
+.trade_mode_propeties_west, .trade_mode_propeties_east								{ width:400px; }
+.trade_mode_propeties_west:after, .trade_mode_propeties_east:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.trade_mode_propeties_west > div, .trade_mode_propeties_east > div 					{ float:left; }
+.trade_mode_propeties_west > div:after, .trade_mode_propeties_east > div:after,
+.trade_mode_propeties_transactionId:after, .trade_mode_propeties_orderTime:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.trade_mode_action_label, .trade_mode_propeties_label								{ padding-right:10px; float:left; line-height:24px; }
+.trade_mode_action_value, .trade_mode_propeties_value								{ float:left; line-height:24px; }
+.trade_mode_propeties_transactionId, .trade_mode_propeties_positionType				{ width:200px; }
+.trade_mode_propeties_prices:after													{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+.trade_mode_propeties_prices_west, .trade_mode_propeties_prices_east				{ width:170px; }
+.trade_mode_propeties_prices_west,
+.trade_mode_propeties_prices_west .trade_mode_propeties_label,
+.trade_mode_propeties_prices_east .trade_mode_propeties_label						{ float:left; }
+.trade_mode_propeties_prices_east,
+.trade_mode_propeties_prices_west .trade_mode_propeties_value,
+.trade_mode_propeties_prices_east .trade_mode_propeties_value						{ float:right; }
+.trade_mode_propeties_prices_west > div:after, .trade_mode_propeties_prices_east > div:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+.trade_mode_action_stopLoss, 
+.trade_mode_action_takeProfit, .trade_mode_action_buttons_container			{ float:left; width:115px; height:75px; }
+.trade_mode_action_button 													{ width:80px; }	
+.order_mode_action_stopLoss_label, .order_mode_action_takeProfit_label		{ width:115px; }
+.trade_mode_action_takeProfit, .trade_mode_action_buttons_container			{ margin-left:25px; }
+.trade_mode_action_return_label												{ padding-left:10px; }
+
+/************************************************
+Graph
+*************************************************/						
+.trading_slip_data_container,
+.forex_slip_data_container							{ position:absolute; right:0; left:424px; }
+.forex_slip_data_container							{ border:none; }
+.trading_slip_data_panel, .forex_slip_data_panel	{ height:250px; margin:10px; }
+.trading_slip_graph_panel							{ height:100%; position:relative; text-align:right; }
+
+.trading_slip_graph_popup_button, 
+.trading_slip_sentiment_popup_button				{ margin-top:25px; margin-right:12px; position:relative; cursor:pointer; z-index:1; }
+.trading_slip_graph_popup_button					{ display:inline-block; }										
+.trading_slip_sentiment_popup_button				{ margin-right:5px; margin-left:-10px; float:right; } /* left margin - to adjust layout of popup graph btn when sentiment btn visible/hidden */
+
+.trading_slip_graph_frame							{ width:100%; height:100%; position:absolute; left:0; }
+.trading_slip_graph_panel_market_closed *			{ visibility:hidden; } /* hide graph for market closed asset */
+
+/************************************************
+Advinion Graph html5 7.13
+*************************************************/
+.sentiment_layout									{ position:absolute; top:10px; right:10px; z-index:301; }	/* Sentiment area */
+.chart_layout										{ height:250px; overflow:hidden; }	/* Advinion graph area size */
+.prochart_graph_popup_is_hidden						{ visibility:hidden; } /* the graph popup cannot be displayed for the selected Option/Position */
+.trading_slip_chart_container_is_hidden > div,	 /* the graph cannot be displayed for the selected Option/Position */
+.trading_slip_chart_container_market_closed > div	{ visibility:hidden; } /* hide graph for market closed asset */
+
+/******************************************************
+Advinion Graph html5 7.13 – popup window styles
+*******************************************************/
+.prochart_graph_popup .prochart_graph_popup_widget { width:700px; height:300px; }	/* popup window size */
+
+.prochart_graph_popup .Caption				{ padding:4px 4px 4px 8px; cursor:default; }
+.prochart_graph_popup .dialogMiddleCenter	{ padding:3px; }
+
+.prochart_graph_popup					{ z-index:301; }
+.prochart_graph_popup > div				{ position:relative; overflow:hidden; }
+.prochart_graph_popup .dialogTop		{ height:36px; } /* header dialog block */
+
+.prochart_graph_popup.gwt-extras-dialog-container-minimized { height:36px; overflow:hidden !important; }
+
+/* icons styles - minimize/maximize/close */
+.prochart_graph_popup .gwt-extras-dialog-restore,
+.prochart_graph_popup .gwt-extras-dialog-maximize,
+.prochart_graph_popup .gwt-extras-dialog-close,
+.prochart_graph_popup .gwt-extras-dialog-minimize		{ width:20px; height:20px; font:14px/100% Arial, sans-serif; display:block; position:absolute; top:8px; right:0; cursor:pointer; text-decoration:none; }
+.prochart_graph_popup.gwt-extras-dialog-container-minimized .gwt-extras-dialog-restore { right:46px; }
+.prochart_graph_popup .gwt-extras-dialog-restore		{ right:26px; }
+.prochart_graph_popup .gwt-extras-dialog-minimize		{ right:46px; z-index:1; }
+.prochart_graph_popup .gwt-extras-dialog-maximize		{ right:26px; }
+.prochart_graph_popup .gwt-extras-dialog-close:after		{ content:'x'; font-size:12px; font-family:Tahoma, sans-serif; position:absolute; top:3px; }
+.prochart_graph_popup .gwt-extras-dialog-minimize:after		{ position:absolute; top:4px; right:4px; content:'−'; }
+.prochart_graph_popup .gwt-extras-dialog-restore:after, 
+.prochart_graph_popup .gwt-extras-dialog-restore:before,
+.prochart_graph_popup .gwt-extras-dialog-maximize:after		{ position:absolute; top:2px; right:5px; content:'□'; }
+.prochart_graph_popup .gwt-extras-dialog-restore:before 	{ top:-1px; right:2px; }
+.gwt-extras-dialog-container-minimized .gwt-extras-dialog-restore:after { content:'+'; top:4px; right:4px; }
+.gwt-extras-dialog-container-minimized .gwt-extras-dialog-restore:before { display:none; }
+.prochart_graph_popup .dialogTopLeftInner				{ width:5px; zoom:1; }
+.prochart_graph_popup .dialogTopRightInner				{ width:8px; zoom:1; }
+.prochart_graph_popup .dialogBottomLeftInner			{ width:5px; height:8px; zoom:1; }
+.prochart_graph_popup .dialogBottomRightInner			{ width:5px; height:8px; zoom:1; }
+.prochart_graph_popup prochart .prof_chart 				{ margin:5px auto 0 auto; }
+.prochart_graph_popup.prochart_graph_popup_is_hidden 	{ display:none; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized > div,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized > div > table,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddleCenterInner,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .gwt-extras-dialog-container,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddle,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddleCenter,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .prochart_graph_popup_widget	{ width:100% !important; height:100% !important; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddleCenter				{ padding:0; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized prochart .prof_chart			{ margin:0 auto; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized		{ top:0 !important; bottom:0 !important; left:0 !important; right:0 !important; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddle					{ height:calc(100% - 44px) !important; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .prochart_graph_popup_widget	{ height:calc(100% - 4px) !important; }
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogTopLeft,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogTopRight,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddleLeft,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogMiddleRight,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogBottomLeft,
+.prochart_graph_popup.gwt-extras-dialog-container-maximized .dialogBottomRight 				{ display: none; }
+
+/************************************************
+Trading data container - bottom tables
+*************************************************/		
+.binary_trading_data_container, .forex_tab_south	{ position:absolute; top:331px; right:0; bottom:0;  }
+.binary_trading_data_container, .forex_tab_south	{ left:461px; }
+
+/* News tab content */							
+.news_feed_panel				{ padding:25px 30px; position:absolute; top:0; right:0; bottom:0; left:0; overflow-y:auto; }
+.news_feed_news_container		{ max-width:800px; }
+.news_feed_item_header a		{ line-height:26px; display:inline-block; }
+.news_feed_item_description		{ padding-bottom:20px; }
+
+/************************************************
+FOOTER CONTAINER
+*************************************************/							
+.footer_container										{ padding:0 20px; position:absolute; right:18px; bottom:8px;left:18px; height:42px; line-height:42px; }
+.open_account_links_panel, .balance_deposit_container	{ padding:7px 5px; float:left; }
+.balance_block											{ float:left; }		
+.balance_block > div									{ float:left; }
+.balance_label											{ padding-left:15px; }
+.balance_currency										{ padding:0 3px 0 8px; }
+.connection_status_container							{ float:right; }
+.connection_status_connected_label						{ text-indent:-66px; }
+.connection_status_disconnected_label					{ text-indent:-96px; }
+.sound_mute_container									{ float:right; width:12px; }
+/* this footer string hack required by psp on all pages */
+.footer_container:after									{ display:block; position:absolute; left:50%; -webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); transform:translateX(-50%); }
+/************************************************
+Global Help
+*************************************************/
+.global_help												{ position:absolute; top:0; right:0; bottom:0; left:0; z-index:303; } 
+.global_help_assets_list									{ width:452px; }
+.global_help_choose_direction, .global_help_forex_direction	{ left:461px; width:420px; height:325px; }
+.global_help_buy_panel, .global_help_execution_panel		{ left:881px; height:325px; }
+.global_help_number											{ float:left; font-size:124px; line-height:110px; }
+.global_help_number_header									{ padding-top:5px; font-size:30px; line-height:50px; }
+.global_help_explanation									{ font-size:18px; line-height:20px; }
+.global_help_my_trades										{ padding-left:10px; top:320px; left:461px; }
+.global_help_header											{ padding-top:15px; font-size:30px; line-height:40px; }
+.global_help_open_trades, .global_help_trading_history		{ padding-right:5%;float:left; width:40%; }
+.global_help_sub_header										{ font-size:22px; line-height:38px; }
+.global_help_forex_trades									{ padding-left:30px; }
+
+/************************************************
+Popups
+*************************************************/
+/* message popup layout */
+.message_popup, .advice_popup					{ margin-top:5px; width:auto; width:180px; }
+.message_popup_navigation_menu_login_panel, 
+.message_popup_option_mode_buy_panel			{ margin-top:10px; }
+.message_popup_layout							{ padding:10px; position:relative; }
+.message_popup_message							{ line-height:20px; word-wrap:break-word; }
+
+/* info popup */
+.info_popup							{ padding:20px 20px 30px; width:400px; }
+.info_popup_frame					{ margin:0 auto; width:350px; }
+.popup_message_label				{ padding:20px 0 40px; }
+.popup_buttons_container > div		{ min-width:50px; }
+.popup_buttons_container:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.popup_reject_button				{ float:left; }
+.popup_ok_button					{ float:right; }
+
+/* login popup & deposit by saved credit card popup - triggered when trying to buy, but have not enought money */
+.login_popup_header, .direct_deposit_header_label						{ margin:30px auto 0; width:300px; }
+.login_popup_form_panel, .direct_deposit_form_panel						{ margin:26px auto 0; width:300px; }
+.login_popup .form, .direct_deposit_popup .form							{ width:100%; } 
+.login_popup .formErrors, .direct_deposit_popup .formErrors				{ text-align:left; }
+.login_popup .fieldError, .direct_deposit_popup .fieldError				{ top:75%; }
+.login_popup label, .direct_deposit_popup label							{ padding-bottom:10px; width:100%; line-height:normal; text-align:left; }
+.login_popup input, .login_popup .field_captchaImage .collection,
+.direct_deposit_popup input, .direct_deposit_popup select				{ width:100%; }
+.login_popup .collection, .direct_deposit_popup .collection				{ display:block; }
+.login_popup_forgot_password_panel										{ width:370px; position:absolute; bottom:148px; }
+.login_popup_login_button_panel, .direct_deposit_buttons_container		{ margin:26px auto 20px; width:300px; }
+.direct_deposit_buttons_container > div 								{ float:right; padding:0; width:140px; display:inline-block; }
+div.direct_deposit_reject_button										{ float:left; }
+.login_popup_button, 
+.login_popup_button_loading												{ float:right; }
+.login_popup_footer														{ padding-left:60px; height:36px; font-size:14px; line-height:36px; }
+.login_popup_not_member_label											{ float:left; }
+.login_popup_open_free_account											{ float:left; cursor:pointer; }
+.login_popup_login_button_panel:after, 
+.direct_deposit_buttons_container:after, .login_popup_footer:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+/* forgot password popup */
+.forgot_password_popup 												{ padding:30px 50px 10px; width:423px; }
+.forgot_password_popup_header 										{ padding-bottom:20px; }
+.forgot_password_go_back_button 									{ margin-right:20px; float:right; }
+.forgot_password_popup .form										{ width:382px; }
+.forgot_password_popup label										{ width:125px; }
+.forgot_password_popup .forgot_password_panel_submit_button_panel	{ width:382px; }
+.forgot_password_popup .forgot_password_form_panel					{ padding-top:25px; }
+.forgot_password_popup .forgot_password_success_message 			{ padding-bottom:10px; font-size:16px; font-weight:500; }
+
+/* roll over popup */
+.roll_over_popup_panel						{ margin:26px auto 0; width:300px; }
+.roll_over_popup_explanation_label			{ padding:25px 0; }
+.roll_over_popup_currentExpiry_panel:after,
+.roll_over_popup_newExpiry_panel:after,
+.roll_over_popup_investment_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.roll_over_popup_currentExpiry_label,
+.roll_over_popup_newExpiry_label,
+.roll_over_popup_investment_label			{ margin-bottom:5px; width:230px; float:left; line-height:28px; }
+.roll_over_popup_currentExpiry_value,
+.roll_over_popup_investment_value			{ width:55px; float:left; line-height:26px; text-align:center; }
+.roll_over_popup_optionsList				{ padding-left:5px; width:70px; height:28px; float:left; font-size:14px; }
+.roll_over_popup_buttons_panel				{ margin:25px 0 30px; }
+.roll_over_popup_buttons_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.roll_over_popup_apply_button 				{ float:right; }
+.roll_over_popup_cancel_button 				{ float:left; }
+
+/* open account successfull popup - for demo users */
+.open_account_successfully_popup_layout:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.open_account_successfully_popup_body					{ margin:50px auto 0; width:350px; }
+.open_account_successfully_popup_label:nth-child(2)		{ margin:35px 0 25px; }
+.open_account_successfully_popup_label_bold				{ margin-bottom:10px; }
+.open_account_successfully_popup_continue_button		{ margin:30px 70px 30px 0; float:right; }
+
+/* advanced filter popup */
+.advanced_filter_popup										{ width:837px; }
+.advanced_filter_popup_layout								{ position: relative; }
+.advanced_filter_popup_body:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+.advanced_filter_popup_header								{ height:36px; }
+.advanced_filter_popup_header_label							{ padding-left:20px; line-height:36px; float:left; text-transform:uppercase;}
+.advanced_filter_popup_markets_container					{ padding-right:17px; height:34px; }
+.advanced_filter_popup_markets_container .gwt-CheckBox		{ padding-left:20px; width:25%; box-sizing:border-box; display:inline-block; }
+.advanced_filter_popup_markets_container .gwt-CheckBox:after{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.advanced_filter_popup_markets_container input				{ display:none; margin:10px 5px 0 0; float:left; cursor:pointer; }
+.advanced_filter_popup_markets_container label				{ margin-left:18px; float:left; line-height:34px; display:block; text-transform:uppercase; cursor:pointer; position:relative; }
+.advanced_filter_popup_markets_container label:before       { content:""; display:inline-block; width:12px; height:12px; position:absolute; top:50%; transform:translateY(-50%); left:-18px; }
+.advanced_filter_popup_markets_container input[type=checkbox]:checked + label:before { content:"\2713"; font-size:11px; text-align:center; line-height:11px; font-weight:600; }
+
+.advanced_filter_popup_assets_scroll						{ height:240px; overflow-y:scroll; }
+.advanced_filter_popup_assets_container						{ height:100%; }
+.advanced_filter_popup_assets_container:after				{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.advanced_filter_popup_assets_panel							{ width:25%; height:100%; float:left; }
+.advanced_filter_popup_assets_panel .gwt-CheckBox			{ padding-left:20px; height:24px; display:block; }
+.advanced_filter_popup_assets_panel input					{ display:none; margin:0px 5px 0 0; float:left; height:24px; cursor:pointer; }
+.advanced_filter_popup_assets_panel label					{ margin-left:18px; padding:0; font-size:12px; line-height:22px; display:block; float:left; text-transform:uppercase; cursor:pointer; position:relative; }
+.advanced_filter_popup_assets_panel label:before            { background-color: #fff; border:1px solid #ccc; content:""; display:inline-block; width:11px; height:11px; position:absolute; left:-18px; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); }
+.advanced_filter_popup_assets_panel input[type=checkbox]:checked + label:before { content:"\2713"; font-size:10px; text-align:center; line-height:11px; font-weight:600;}
+
+.advanced_filter_popup_apply_button							{ margin:8px 15px; box-shadow:none; float:right; } /* advanced filter popup */
+	
+/* notification popup - notification btn triggered */
+.notifications_list								{ position:absolute; top:0; right:0; }	
+.notifications_popup							{ margin-left:-500px; width:500px; bottom:52px; }
+.notifications_popup .popupContent				{ height:100%; }
+.notifications_popup_header						{ padding-left:30px; font-size:14px; line-height:36px; text-transform:uppercase; }
+.notifications_popup_scroll						{ position:absolute; top:36px; right:0; bottom:0; left:0; word-wrap: break-word; overflow-y:auto; }
+.notifications_popup_list						{ padding:20px 20px 15px 30px; }
+.notification_row_title, .notification_title 	{ line-height:26px; }
+.notification_row_content, .notification_content{ padding-bottom:20px; word-wrap:break-word; }
+
+/* notification popup - temporary msg */
+.notification									{ margin-right:5px; padding:10px 15px; width:auto; min-width:300px; max-width:700px; position:relative; }
+.notification .notification_title				{ padding:10px 0 5px 10px; }
+.notification .notification_content				{ padding:5px 10px 10px 10px; max-height:80px; overflow-y:auto; }
+
+/************************************************
+PAGES
+*************************************************/	
+.tab_panel > div 				{ padding-bottom:20px; width:100%; position:absolute; top:51px; bottom:0; overflow-y:auto; } /* content space for each page of My Account & Banking */
+.tab_panel > div > div 			{ margin:45px auto 0; }	/* top margin for each page of My Account & Banking */
+.credit_cards_no_data			{ margin:0 auto; width:600px; font-size:20px; }
+/*** MY ACCOUNT Pages ***/
+.trading_history_table_panel .credit_cards_no_data, 
+.forex_history_table_panel .credit_cards_no_data,
+.transaction_history_table_panel .credit_cards_no_data		{ margin-left:15px; }
+/* Open Account Page & Account Details - MY ACCOUNT */
+.open_account_panel:after, .open_account_form_panel:after, 
+.account_details_panel:after								{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.open_account_form_panel .form, 
+.account_details_personal_form_panel, .account_details_account_form_panel		{ width:423px; float:left; }
+.open_account_panel_personal_form_header:before,
+.account_details_personal_title:before				{ content:"1."; padding-right:14px; }
+.open_account_panel_account_form_header:before,
+.account_details_account_title:before				{ content:"2."; padding-right:14px; }
+.open_account_panel_personal_form,
+.account_details_personal_form_panel				{ margin-right:200px; }					
+
+.field_phone .field_phone_prefix, .field_birthDate select				{ margin-right:8px; width:72px; }
+.field_birthDate select:last-child										{ padding-left:10px; margin-right:0; }
+.field_phone .field_phone_number										{ width:152px; }
+.field_confirmAge .collection, .field_subscribeToNewsletter .collection	{ vertical-align:top; } /* checkbox fields */
+.field_confirmAge label, .field_subscribeToNewsletter label				{ padding:0 10px; max-width:380px; width:auto; font-size:12px; line-height:normal; text-align:left; }
+.field_confirmAge input, .field_subscribeToNewsletter input				{ padding:0; width:auto; height:auto; } 
+
+.open_account_panel_open_account_button_panel							{ padding-bottom:30px; }
+.open_account_panel_open_account_button_panel:after,
+.account_details_panel_buttons_container:after,
+.account_details_panel_save_button_panel:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+.open_account_button, .open_account_button_loading,
+.account_details_panel_buttons_container div			{ float:right; }
+.account_details_panel_save_button_panel:first-child	{ margin-left:20px; }
+.account_details_promoteToReal_button					{ padding:0 15px; }
+/* Open Account Page */
+.open_account_page_container							{ width:100%; position:absolute; top:35px; bottom:0; overflow-y:auto; }
+.open_account_page_panel								{ margin:0 auto; width:1046px; }
+.open_account_page_header								{ display:none; }
+.open_account_form_panel .formErrors					{ position:absolute; top:370px; left:30px; text-align:left; }
+.open_account_form_panel .formErrors a					{ font-size:12px; display:inline-block; text-decoration:underline; }
+/* Account Details - MY ACCOUNT */
+.account_details_tab_content							{ width:1046px; }
+.account_details_personal_form_panel .formErrors		{ width:420px; position:absolute; top:220px; left:625px; }
+/* Change Password- MY ACCOUNT */
+.change_password_tab_content							{ width:430px; }
+.change_password_panel_save_button_panel				{ padding-right:8px; float:right; }
+.change_password_save_button							{ padding:0; width:232px; }
+/* Auto Trading - MY ACCOUNT */
+.auto_trading_tab_content								{ width:515px; }
+.auto_trading_tab_content .form							{ width:507px; }
+.auto_trading_tab_content .label						{ width:250px; }
+/* Binary History & Forex History - MY ACCOUNT; History - BANKING */
+.trading_history_tab_content, .forex_history_tab_content, .transaction_history_tab_content											{ max-width:1210px; }
+.trading_history_filter_container, .forex_history_filter_container, .transaction_history_filter_container							{ padding-bottom:30px; line-height:26px; }
+.trading_history_filter_container:after, .forex_history_filter_container:after, .transaction_history_filter_container:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.trading_history_filter_panel, .forex_history_filter_panel, .transaction_history_filter_panel 										{ padding-left:15px; float:left; }
+.trading_history_filter_panel > *, .forex_history_filter_panel > *, .transaction_history_filter_panel > *							{ margin-right:10px; float:left; }
+.trading_history_filter_panel:after, .forex_history_filter_panel:after, .transaction_history_filter_panel:after,
+.trading_history_actions_panel:after, .forex_history_actions_panel:after, .transaction_history_actions_panel:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.trading_history_instrument_filter_list, .forex_history_instrument_filter_list, .transaction_history_instrument_filter_list			{ margin-right:40px; width:233px; height:28px; }
+.trading_history_filter_panel input, .forex_history_filter_panel input, .transaction_history_filter_panel input						{ padding:0; width:103px; height:28px; text-align:center;}
+.trading_history_dates_filter_from_button, .forex_history_dates_filter_from_button, .transaction_history_dates_filter_from_button	{ margin-right:25px; margin-top:6px;}
+.trading_history_dates_filter_to_button, .forex_history_dates_filter_to_button, .transaction_history_dates_filter_to_button			{ margin-top:6px; }
+.trading_history_clear_filters_button, .forex_history_clear_filters_button, .transaction_history_clear_filters_button				{ margin-left:50px; padding:0 20px; }
+.trading_history_actions_panel, .forex_history_actions_panel, .transaction_history_actions_panel									{ margin-top:5px; padding-left:30px; line-height:normal; float:right; }
+.trading_history_actions_panel > div, .forex_history_actions_panel > div, .transaction_history_actions_panel > div					{ margin-right:15px; display:inline-block; vertical-align:middle; font-size:0; }
+.trading_history_pager																												{ padding:10px 15px 0 0; float:right; }
+/* Account/Trading Summary - MY ACCOUNT */
+.account_summary_tab_content, .trading_statistics_data_panel						{ width:460px; }
+.account_summary_panel > div:after, .trading_statistics_data_panel > div:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.account_summary_cashBalance, .account_summary_bonusBalance							{ padding-bottom:40px;}
+.account_summary_positionBalance, .trading_statistics_data_panel > div				{ padding-bottom:20px; }
+.account_summary_totalBalance, .account_summary_comission 							{ padding-top:20px; }
+.account_summary_comission															{ border-top:none;}
+.account_summary_label, .trading_statistics_label									{ float:left; }
+.account_summary_value, .trading_statistics_value									{ float:right; text-align:right; }
+.account_summary_totalBalance, .account_summary_comission 							{ font-weight:400; }
+
+/* Financial Suitability */
+.financial_suitability_tab_panel .account_summary_tab_content	{ width:650px; }
+.regulationFrame							{ width:800px; height:2500px; }
+/* Trading Summary - MY ACCOUNT */
+.trading_statistics_data_panel				{ margin:0 auto; }
+.trading_statistics_charts_panel			{ margin:60px auto 0; width:990px; }
+.trading_statistics_charts_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.pie										{ padding:0 15px 20px; width:300px; float:left; }
+.pieTitle									{ padding-bottom:20px; text-align:center; }
+.pieFrame									{ height:345px; }
+/* Bonus Summary - MY ACCOUNT */
+.bonus_summary_tab_content						{ max-width:1100px; }
+.bonus_summary_container						{ position:relative; }
+.bonus_row_panel:after, .bonus_row_bar:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.bonus_row_amount								{ margin-left:35px; float:left; font-size:18px; line-height:42px; text-align:right; }
+.bonus_summary_update_message					{ padding:30px 0 15px; }
+.bonus_summary_panel .credit_cards_no_data		{ margin-left:0; }	
+	
+/*** BANKING Pages ***/
+/* Deposit */
+.deposit_tab_panel div.deposit_tab_content 			{ margin:0; }
+.deposit_content_container > div					{ margin:45px auto 0; width:453px; position:relative; }
+.deposit_secure_connection, .short_cc_secure		{ display:none; }		
+.external_deposit_iframe_panel iframe 				{ width:800px; height:1000px; } /* external iframe size */		
+#externalDepositFrame								{ width:800px; height:630px; position:absolute; border:none; }
+#depositBannersFrame 								{ position:absolute; width:237px; height:500px; top:90px; right:0; }
+#externalDepositFrame.ext_deposit_2747				{ margin-left:-140px; width:725px; }
+#externalDepositFrame.ext_deposit_2812 				{ width:900px; } /* Fibonatix_3D/3d_Secure */
+iframe#FNSframe										{ margin-top:20px; width:700px; height:800px; border:none; }
+.deposit_cc_container .deposit_cc_submit_button,
+.external_deposit_button, .submit_button			{ padding:0; width:232px; float:right; } /* input size button */
+.submit_button.loading_button_loading				{ margin-left:270px; color:transparent; box-shadow:none; }
+.external_deposit_main_panel:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+/* Credentials after fast registration -> *.com/app/pages/landingpageAutoLoginRegistration */
+.deposit_info_message_container				{ margin:0 auto; padding:10px 20px; width:528px; text-align:center; position:relative; }
+.deposit_info_message_body > div			{ line-height:30px; }
+.deposit_info_message_header				{ padding-bottom:10px; font-size:18px; }
+.deposit_info_message_body:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.deposit_info_message_details_label			{ padding-bottom:5px; }
+.deposit_info_message_username_label,
+.deposit_info_message_password_label		{ width:49%; float:left; text-align:right; }
+.deposit_info_message_username,
+.deposit_info_message_password				{ width:49%; float:right; font-weight:600; text-align:left; }
+.deposit_info_message_footer				{ padding-top:5px; }
+/* deposit by wire */
+.deposit_wire_bodytext					{ margin-bottom:20px; font-size:16px; }
+/* deposit by credit card long */
+.deposit_cc_body_container				{ padding:0 15px 20px; float:left; }
+.deposit_cc_required_field				{ text-align:right; }
+.deposit_expired_container > select		{ width:112px; }
+.deposit_expiredmonthbox				{ margin-right:8px; }
+.deposit_cc_button_container:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.deposit_saved_cc_navigate_button		{ padding:0; width:180px; float:left; }
+.deposit_cc_navigate_button				{ padding:0 30px; margin-right:10px; float:right;}
+/* deposit by credit card short */
+div.short_form_cc_container									{ margin-top:20px; width:790px;}
+.short_form_cc_container .deposit_cc_body_container			{ padding-bottom:0; }
+.short_form_cc_container .formErrors						{ width:390px; text-align:left; }
+.amount_container											{ width:386px; margin-top:12px;}
+.amount_container:after										{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.label_amount												{ float:left; line-height:26px; }
+.label_amount:before										{ content:"* "; }
+.short_cc_required, .label_currncy_sign						{ display:none; }					
+.amount_box													{ width:200px; padding-left:5px; float:right; }
+.cc_information_box											{ margin-top:61px; width:410px; height:280px; }
+.cc_information_box > div									{ display:inline-block; }
+.cc_information_psp											{ position:absolute; left:354px; } /* cc type icon in short deposit form - banking */
+.cc_title.cc_information_title								{ margin-top:-38px; position:absolute; font-size:22px; }
+.cc_information_box input, 
+.cc_information_box select 									{ height:28px; line-height:28px; }
+.short_form_cc_container  input, .short_form_cc_container  select		{ font-size:16px; }
+.first_row.cc_info_row										{ padding:44px 0 0 30px; }
+.first_row.cc_info_row input								{ margin:0 25px 0 0; width:160px;padding:0px 5px; }
+.cc_first_name_box											{ margin-right:8px; }
+.cc_title.cc_information_number								{ display:none; }
+.second_row.cc_info_row										{ padding: 46px 0 0 30px; }
+.second_row.cc_info_row input								{ padding:0; margin-left:13px; width:75px; text-align:center; }
+.second_row.cc_info_row input:first-child					{ margin-left:0; }
+.third_row.cc_expiry_block									{ padding:45px 0 0 30px;}
+.label_cc_vailid_month										{ display:inline-block; visibility:hidden; }
+.third_row.cc_expiry_block select							{ padding-left:5px; margin-right:11px; width:110px; }
+.third_row div												{ display:none; }
+.label_cvv													{ display:inline-block; visibility:hidden; }
+.cc_cvv														{ width:100px; }
+.short_cc_button_container									{ padding: 34px 2px 0; width: 405px;}
+.short_cc_button_container .deposit_cc_submit_button 		{ padding:0; width:195px; float:right;}
+.short_cc_button_container .deposit_cc_navigate_button		{ padding:0; width:195px; float:left;}
+.loading_button_loading										{ margin-left:70px; width:50px; height:15px; position:absolute; }
+.short_cc_button_container:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.bottom_note_container										{ padding:20px 0; width:390px; } /* bottom message - required by psp */
+/* First Time Deposit Bonus on deposit by credit card short v7.11 */
+.amount_bonus_label											{ margin-top:-23px; float:right; font-size:14px; }
+.right_bonus_external_container 							{ padding:10px 20px; float:right; width:300px; text-align:center;}
+.right_bonus_external_container br							{ display:none; }
+.bonus_switch_on_off_container								{ padding-bottom:15px; display:none; margin:0 auto; width:220px; }
+.bonus_lbl													{ margin-right:13px; float:left; font-size:20px; display:none; line-height:26px;}
+.bonus_switch_on_off_container button 						{ float:left; width:65px; height:26px; display:none; }
+.on_bonus_panel_btn											{ cursor:pointer; display:none; }
+.off_bonus_panel_btn										{ display:none; }
+.bonus_switch_on_off_container:after						{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.right_bonus_container										{ position:relative; }
+.choose_your_bonus_lbl										{ font-size:22px; margin-top: 10px;}
+.right_bonus_container button,	/* Bonus buttons overall styles */
+.right_bonus_container_disabled button						{ width:300px; font-size:18px; line-height:24px; display:block; box-sizing:border-box;position:relative;overflow:visible;}
+.right_bonus_container button i,	
+.right_bonus_container_disabled button i                    { font-size:38px; display:block; line-height:40px;}
+.bonus_deposit_vertical_button								{ margin-top:50px; height:280px; }	/* Only one Bonus button presented */
+.bonus_deposit_button										{ margin-top:30px; height: 126px; }	/* 2-3 Bonus buttons presented */
+.right_bonus_container button:nth-child(2),
+.right_bonus_container_disabled button:nth-child(2) 		{ margin-top:10px;}
+.right_bonus_container .bonus_deposit_button,
+.right_bonus_container .bonus_deposit_vertical_button,							
+.right_bonus_container .bonus_deposit_button_clicked, 
+.right_bonus_container .bonus_deposit_vertical_button_clicked					{ cursor:pointer; }	/* Clicked Bonus buttons */
+.right_bonus_container .bonus_deposit_vertical_button.bonus_unclickable_button	{ cursor:default; }	/* Clicked Bonus buttons */
+/* Bonus badge active */
+.right_bonus_container .bonus_deposit_button.bonus_deposit_button_badge:after			{ content:"";width:66px;height:65px;top: -23px;right: -26px;position:absolute;display:block; }
+/* Bonus badge disabled */
+.right_bonus_container_disabled .bonus_deposit_button.bonus_deposit_button_badge:after	{ content:"";width:66px;height:65px;top: -23px;right: -26px;position:absolute;display:block; }
+.bonus_terms_and_conditions						{ margin-top:15px; display:block; }
+.bonus_terms_and_conditions > *					{ margin:5px; float:left; }
+.bonus_terms_and_conditions label				{ padding:0; width:215px; font-size:12px; line-height:14px; text-align:left; }
+.bonus_terms_and_conditions:after				{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+/* safe charge */
+.external_deposit_external_wnd_view .external_deposit_button		{ width:180px; float:left; }
+.external_deposit_external_wnd_view .deposit_wire_bodytext			{ display:none; }
+.external_deposit_main_panel										{ padding:0 15px 20px; }
+/*deposit by inatec 3d */
+#externalDepositFrame												{ width:800px; height:630px; position:absolute; border:none; }
+.iframe_form_container .form										{ width:426px; }
+.iframe_form_container .field.field_expiryDate label 				{ font-size:13px; }
+.iframe_form_container .deposit_expired_container > select			{ width:114px; }
+.iframe_form_container .deposit_expiredmonthbox						{ margin-right:5px; }
+/* deposit failure of inatec 3d */
+.page_container:after												{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+table.accountActivationPage											{ width:422px; }
+.form_title_arrow													{ display:none; }
+.form_title.extDepositResultHeader									{ padding-bottom:15px; font-size:16px; font-weight:400; }				
+.deposit_cc_to_trade_button, .deposit_cc_save_card_button			{ padding:0; margin:15px 10px 0 0; width:180px; float:left; }
+.deposit_notify_bodypanel .deposit_cc_to_trade_button				{ padding:0 20px; width:auto; }
+.deposit_cc_to_trade_button:last-child								{ float:right; }
+
+/* Pending Requests & Credit Cards*/
+.pending_requests_tab_content, .credit_cards_tab_content	{ width:1200px; }
+.pending_requests_tab_content button						{ padding:0 20px; }
+
+/* Withdrawal - BANKING */
+.external_withdrawal_frame_panel											{ margin:0 auto; width:600px; }
+.external_withdrawal_frame													{ width:100%; height:700px; border:none; }
+.withdrawal_step_one_panel, .withdrawal_step_four_panel						{ width:400px; }
+.withdrawal_step_two_panel, .withdrawal_step_three_panel					{ width:500px; }
+.withdrawal_step_container > div:first-child								{ padding-top:0; }	
+.withdrawal_panel_container > div 											{ margin-left:auto;margin-right:auto; } /* center align for diff width of each step */
+.withdrawal_step_requested_panel, .withdrawal_step_list_item,
+.withdrawal_step_three_panel .form, .withdrawl_step_outcome					{ padding:20px 0; }
+.withdrawal_step_availble_balance_input,
+.withdrawal_step_requested_amount_input, .withdrawal_step_list_input		{ font-size:18px; }
+.withdrawal_step_requested_amount_label, .withdrawal_step_list_label		{ float:left; line-height:28px; }			
+.withdrawal_step_requested_amount_input, .withdrawal_step_list_input		{ float:right; }			
+.withdrawal_step_one_panel .withdrawal_step_requested_amount_input,
+.withdrawal_step_list_listbox												{ float:right; width:235px; height:28px; }
+.withdrawal_step_list_label													{ max-width:250px; }
+.withdrawal_step_requested_panel:after, .withdrawal_step_list_item:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+.withdrawal_step_btn_panel													{ padding:20px 0px; }
+.withdrawal_step_btn_panel:after											{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.withdrawal_step_button														{ width:140px; padding:0; } 
+.withdrawal_step_next_button, .withdrawal_step_done_button					{ float:right; }
+.withdrawal_step_prev_button												{ margin-right:8px; float:right; }
+.withdrawal_step_cancel_button, .withdrawal_step_print_button				{ float:left; }
+/* withdrawal step one */
+.withdrawal_step_availible_panel										{ line-height:26px; }
+.withdrawal_step_availible_panel > div 									{ display:inline-block; }
+.withdrawal_step_availble_balance_label									{ vertical-align:baseline; line-height:normal; }
+.withdrawal_step_one_panel .withdrawal_step_availble_balance_input		{ margin-left:10px; }
+.withdrawal_step_one_panel .withdrawal_step_requested_amount_input		{ font-size:12px; }
+.withdrawal_step_one_panel .withdrawal_step_btn_panel					{ padding-top:0; }
+.withdrawal_step_footer													{ padding:30px 10px 0 0; }	
+/* withdrawal step three wire */
+.withdrawal_step_three_panel .formErrors								{ position:absolute; top:360px; }
+.withdrawal_step_three_footer											{ padding:10px 0; }
+
+/* Login Page & Forgot password*/
+.login_page_container, .forgot_password_page_container		{ width:423px; margin:50px auto 0; }
+.login_panel, .forgot_password_form_panel					{ padding-top:45px; }
+.login_panel_login_button_panel, 
+.forgot_password_panel_submit_button_panel					{ padding:5px 0 30px; }
+.change_password_tab_content .forgot_password_submit_button	{ padding:0; width:232px; }
+.login_panel_login_button_panel:after, 
+.forgot_password_panel_submit_button_panel:after			{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.login_button,	.login_button_loading, 
+.forgot_password_submit_button, 
+.forgot_password_submit_button_loading						{ float:right; }
+
+/* Upgrade to real account page - demo user in BANKING */
+.promoteToReal_page_container											{ width:460px; margin:50px auto 0; }
+.promoteToReal_page_panel												{ padding-top:20px; }
+.promoteToReal_panel_submit_button_panel								{ padding-top:25px; }
+.promoteToReal_panel_cancel_button, .promoteToReal_panel_submit_button	{ float:left; }
+.promoteToReal_panel_cancel_button										{ margin-right:10px; }
+
+/* Fast deposit by credit card popup */
+.fast_deposit_popup_frame          		 { width:400px; margin:30px auto; }
+.fast_deposit_header_label         		 { margin:20px 20px 30px; }
+.fast_deposit_popup_frame .form    		 { width:380px; }
+.fast_deposit_popup_frame label    		 { width:120px; }
+.fast_deposit_buttons_container    		 { width:350px; margin:40px auto; }
+.fast_deposit_reject_button        		 { width:60px; float:left; }
+.fast_deposit_ok_button           		 { width:60px; float:right; }
+.fast_deposit_buttons_container:after	 { content:" "; height:0; display:block; visibility:hidden; clear:both; }
+
+/* Messages List Page & Message Page */
+.messages_page_container														{ position:absolute; top:30px; bottom:0; right:0; left:0; overflow-y:auto; }
+.messages_page_header, .messages_page_panel										{ margin:0 auto; width:685px; }
+.messages_table_actions_container, .messages_instance_actions_container			{ padding:10px 0px 30px; }
+.messages_table_actions_container:after, .messages_table_actions_panel:after, 
+.messages_instance_actions_panel:after											{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.messages_table_actions_panel													{ float:left; }
+.messages_table_actions_panel > *												{ margin-right:6px; float:left; }
+.messages_table_actions_panel input[type="checkbox"]							{ margin-left:5px; vertical-align:middle;}
+.messages_table_actions_panel label												{ display:none; }
+.messages_table_action_button, .messages_instance_action_button					{ padding:0; width:160px; }
+.messages_table_pager_container													{ float:right; }
+.cellTableWidget.messages_table													{ margin-top:20px; border:none; }
+.messages_table thead															{ display:none; }
+.messages_table .cellTableCell													{ font-size:14px; border:none; cursor:pointer; }
+.messages_table_cell_unread														{ font-weight:600; }
+.messages_table_column_checkbox													{ padding-left:5px; width:5%; }
+.messages_table_column_subject													{ width:75%; }
+.messages_table_column_date														{ padding:0 5px; text-align:right; }
+.messages_empty_label															{ font-size:18px; }
+/* message page adjusments*/
+.messages_instance_actions_container			{ padding-bottom:0; }
+.messages_instance_action_button				{ margin-right:15px; float:left; }
+.messages_instance_action_button:last-child		{ margin-right:0; }
+.messages_instance_message_date					{ padding:15px 0 10px; font-size:12px; text-align:right; }
+.messages_instance_message_panel				{ padding:20px 0; word-wrap:break-word; overflow-y:auto; }
+.messages_instance_message_title				{ padding-bottom:20px; }
+
+/***************************************************************************
+ Assets Icons feature  - enabled/disabled in style.css relative block 
+****************************************************************************/
+/* when adding new type of icon asset - must be added at the end of the feature section .option_row_asset_label[title*=""] to padding-left style !*/ 
+.option_row_panel > div.option_row_asset			{ padding-left:1%; }
+.option_row_asset_label[title]						{ position:relative; }
+.option_row_asset_label[title]:before				{ width:30px; height:30px; content:""; font-size:0; left:0; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); position:absolute; }
+ /*Assets Icons feature  - enabled/disabled in style.css relative block */
+ /*.option_row_asset_label[title]:before				{ background:url("images/assetsprites.png") no-repeat 0 200px; }*/
+ /*FOREX LABELS*/
+.option_row_asset_label[title="EUR/USD"]:before { background-position: 0px -0px; }
+.option_row_asset_label[title="GBP/USD"]:before { background-position: 0px -120px; }
+.option_row_asset_label[title="EUR/GBP"]:before { background-position: 0px -240px; }
+.option_row_asset_label[title="GBP/JPY"]:before { background-position: 0px -360px; }
+.option_row_asset_label[title="EUR/JPY"]:before { background-position: 0px -480px; }
+.option_row_asset_label[title="USD/JPY"]:before { background-position: 0px -600px; }
+.option_row_asset_label[title="USD/ZAR"]:before { background-position: 0px -720px; }
+.option_row_asset_label[title="AUD/USD"]:before { background-position: 0px -840px; }
+.option_row_asset_label[title="USD/CAD"]:before { background-position: 0px -960px; }
+.option_row_asset_label[title="USD/TRY"]:before { background-position: 0px -1080px; }
+.option_row_asset_label[title="EUR/TRY"]:before { background-position: 0px -1200px; }
+.option_row_asset_label[title="USD/CHF"]:before { background-position: 0px -1320px; }
+.option_row_asset_label[title="CAD/JPY"]:before { background-position: 0px -1440px; }
+.option_row_asset_label[title="USD/NOK"]:before { background-position: 0px -1560px; }
+.option_row_asset_label[title="EUR/CAD"]:before { background-position: 0px -1680px; }
+.option_row_asset_label[title="EUR/NOK"]:before { background-position: 0px -1800px; }
+.option_row_asset_label[title="NZD/USD"]:before { background-position: 0px -1920px; }
+.option_row_asset_label[title="EUR/ZAR"]:before { background-position: 0px -2040px; }
+.option_row_asset_label[title="AUD/JPY"]:before { background-position: 0px -2160px; }
+.option_row_asset_label[title="USD/RUB"]:before { background-position: 0px -2280px; }
+.option_row_asset_label[title="GBP/AUD"]:before { background-position: 0px -2400px; }
+.option_row_asset_label[title="NZD/CHF"]:before { background-position: 0px -2520px; }
+.option_row_asset_label[title="GBP/CAD"]:before { background-position: 0px -2640px; }
+.option_row_asset_label[title="AUD/CHF"]:before { background-position: 0px -2760px; }
+.option_row_asset_label[title="EUR/AUD"]:before { background-position: 0px -2880px; }
+.option_row_asset_label[title="AUD/NZD"]:before { background-position: 0px -3000px; }
+.option_row_asset_label[title="CHF/JPY"]:before { background-position: 0px -3120px; }
+.option_row_asset_label[title="GBP/CHF"]:before { background-position: 0px -3240px; }
+.option_row_asset_label[title="CAD/CHF"]:before { background-position: 0px -3360px; }
+.option_row_asset_label[title="USD/MXN"]:before { background-position: 0px -3480px; }
+.option_row_asset_label[title="AUD/CAD"]:before { background-position: 0px -3600px; }
+.option_row_asset_label[title="BITCOIN/USD"]:before { background-position: 0px -3720px; }
+/*STOCKS LABELS*/
+.option_row_asset_label[title="Royal Dutch"]:before 		{ background-position: 0px -3960px; }
+.option_row_asset_label[title="Tata Motors Ltd "]:before 	{ background-position: 0px -4080px; }
+.option_row_asset_label[title="Amex"]:before 				{ background-position: 0px -4200px; }
+.option_row_asset_label[title="Apple"]:before 				{ background-position: 0px -4320px; } 
+.option_row_asset_label[title="Amazon"]:before 				{ background-position: 0px -4440px; }
+.option_row_asset_label[title="AXA"]:before 				{ background-position: 0px -4560px; }
+.option_row_asset_label[title="BP"]:before 					{ background-position: 0px -4680px; }
+.option_row_asset_label[title="Facebook"]:before 			{ background-position: 0px -4800px; }
+.option_row_asset_label[title="Vodafone"]:before 			{ background-position: 0px -4920px; }
+.option_row_asset_label[title="Sumitomo"]:before 			{ background-position: 0px -5160px; }
+.option_row_asset_label[title="JPMorgan Chase"]:before 		{ background-position: 0px -5280px; }
+.option_row_asset_label[title="Google"]:before 				{ background-position: 0px -5400px; }
+.option_row_asset_label[title="Orange France"]:before		{ background-position: 0px -5520px; }
+.option_row_asset_label[title="Gazprom"]:before 			{ background-position: 0px -5640px; }
+.option_row_asset_label[title="Silver Wheaton"]:before 		{ background-position: 0px -5760px; } 
+.option_row_asset_label[title="Renault "]:before 			{ background-position: 0px -5880px; }
+.option_row_asset_label[title="McDonalds"]:before 			{ background-position: 0px -6000px; }
+.option_row_asset_label[title="Microsoft"]:before 			{ background-position: 0px -6120px; }
+.option_row_asset_label[title="Netflix"]:before 			{ background-position: 0px -6240px; }
+.option_row_asset_label[title="Sberbank"]:before 			{ background-position: 0px -6360px; }
+.option_row_asset_label[title="NIKE"]:before 				{ background-position: 0px -6480px; }
+.option_row_asset_label[title="Linkedin"]:before 			{ background-position: 0px -6600px; }
+.option_row_asset_label[title="Yahoo"]:before 				{ background-position: 0px -6720px; }
+.option_row_asset_label[title="Twitter"]:before 			{ background-position: 0px -6840px; }
+.option_row_asset_label[title="Societe General"]:before		{ background-position: 0px -6960px; }
+.option_row_asset_label[title="Alibaba"]:before 			{ background-position: 0px -7080px; }
+.option_row_asset_label[title="Ebay"]:before 				{ background-position: 0px -7200px; }
+.option_row_asset_label[title="Ferrari"]:before 			{ background-position: 0px -7320px; }
+.option_row_asset_label[title="EXXON"]:before 				{ background-position: 0px -7440px; }
+.option_row_asset_label[title="Baidu"]:before 				{ background-position: 0px -7560px; }
+.option_row_asset_label[title="IBM"]:before 				{ background-position: 0px -7680px; }
+.option_row_asset_label[title="Intel"]:before 				{ background-position: 0px -7800px; }
+.option_row_asset_label[title="Samsung Electronics"]:before { background-position: 0px -7920px; }
+.option_row_asset_label[title="Sony"]:before 				{ background-position: 0px -8040px; }
+.option_row_asset_label[title="Cisco"]:before 				{ background-position: 0px -8160px; }
+.option_row_asset_label[title="ICICI Bank "]:before 		{ background-position: 0px -8280px; }
+.option_row_asset_label[title="Disney"]:before 				{ background-position: 0px -8400px; } 
+.option_row_asset_label[title="Barclays"]:before 			{ background-position: 0px -8520px; }
+.option_row_asset_label[title="BBVA"]:before 				{ background-position: 0px -8640px; }
+.option_row_asset_label[title="Telefonica"]:before 			{ background-position: 0px -8760px; }
+.option_row_asset_label[title="BNP Paribas "]:before		{ background-position: 0px -8880px; }
+.option_row_asset_label[title="Pfizer"]:before 				{ background-position: 0px -9000px; }
+.option_row_asset_label[title="Goldman Sachs"]:before		{ background-position: 0px -9120px; }
+.option_row_asset_label[title="Priceline"]:before 			{ background-position: 0px -9240px; }
+.option_row_asset_label[title="CITIGROUP"]:before 			{ background-position: 0px -9360px; }
+.option_row_asset_label[title="Tesco"]:before 				{ background-position: 0px -9480px; }
+.option_row_asset_label[title="GoldCorp"]:before 			{ background-position: 0px -10800px; }
+/*COMMODITIES LABELS*/
+.option_row_asset_label[title="Coffee"]:before 				{ background-position: 0px -9600px; }
+.option_row_asset_label[title="Oil"]:before 				{ background-position: 0px -9720px; }
+.option_row_asset_label[title="Gold"]:before 				{ background-position: 0px -10080px; }
+.option_row_asset_label[title="Sugar"]:before 				{ background-position: 0px -10560px; }
+.option_row_asset_label[title="Corn"]:before 				{ background-position: 0px -10680px; }
+.option_row_asset_label[title="Silver"]:before 				{ background-position: 0px -11040px; }
+.option_row_asset_label[title="Gold/Silver"]:before 		{ background-position: 0px -11160px; }
+.option_row_asset_label[title="Gold/JPY"]:before 			{ background-position: 0px -11280px; }
+.option_row_asset_label[title="Gold/EUR"]:before 			{ background-position: 0px -11400px; }
+/*INDIXES LABELS*/
+.option_row_asset_label[title="South Africa 40 future"]:before		{ background-position: 0px -11520px; }
+.option_row_asset_label[title="South Africa Future"]:before	 		{ background-position: 0px -11520px; }
+.option_row_asset_label[title="Qatar Index"]:before 				{ background-position: 0px -11640px; }
+.option_row_asset_label[title="Kuwait Index"]:before 				{ background-position: 0px -11760px; }
+.option_row_asset_label[title="DUBAI"]:before 						{ background-position: 0px -11880px; }
+.option_row_asset_label[title="TADAWUL"]:before 					{ background-position: 0px -12000px; }
+.option_row_asset_label[title="Kospi 200"]:before 					{ background-position: 0px -12120px; }
+.option_row_asset_label[title="Bombay 30"]:before 					{ background-position: 0px -12240px; }
+.option_row_asset_label[title="Nikkei 225-Future"]:before			{ background-position: 0px -12360px; }
+.option_row_asset_label[title="Hang Seng Future"]:before 			{ background-position: 0px -12480px; }
+.option_row_asset_label[title="ASX-200 Future"]:before 				{ background-position: 0px -12600px; }
+.option_row_asset_label[title="NIFTY-Future"]:before 				{ background-position: 0px -12720px; }
+.option_row_asset_label[title="SMI-Future"]:before 					{ background-position: 0px -12840px; }
+.option_row_asset_label[title="IBEX -Future"]:before 				{ background-position: 0px -12960px; }
+.option_row_asset_label[title="FTSE 100 -Future"]:before 			{ background-position: 0px -13080px; }
+.option_row_asset_label[title="CAC-40 Future"]:before 				{ background-position: 0px -13200px; }
+.option_row_asset_label[title="DAX-30 Future"]:before 				{ background-position: 0px -13320px; }
+.option_row_asset_label[title="Dow Jones"]:before 					{ background-position: 0px -13440px; }
+.option_row_asset_label[title="Dow Jones 30- Future"]:before		{ background-position: 0px -13440px; }
+.option_row_asset_label[title="S&P 500-Future"]:before 				{ background-position: 0px -13560px; }
+.option_row_asset_label[title="Nasdaq 100- Future"]:before 			{ background-position: 0px -13680px; }
+
+/****************************************************************************/
+
+/****************************************************************************
+Skin Adjustments
+****************************************************************************/
+/* Version 7.12 - BO Regulation - i tooltip & BID/ASK btn & Cancel btn */
+.option_mode_info_details											{ height:43px; position:relative; }
+.option_mode_info_asset_additional_info_icon						{ margin-top:17px; font:700 10px/12px "Times new Roman", serif; width:13px; height:12px; text-transform:none; text-align:center; border-radius:50%; cursor:pointer;	}
+.option_mode_info_asset_additional_info_icon_hidden					{ display:none; }	
+.additional_info_tooltip_container_hide								{ display:none; }
+/* info popup tooltip window */
+.option_mode_info_details_window									{ padding:10px; font:10px/12px 'Arial', sans-serif; min-width:200px; white-space:normal; position:absolute; top:40px; left:50%; transform:translateX(-50%); z-index:303; }
+.option_mode_info_details_window:before								{ content:""; width:0; height:0; position:absolute; top:-12px; left:50%; transform:translateX(-50%); }
+.option_mode_info_details_window:after								{ content:""; width:0; height:0; position:absolute; top:-11px; left:50%; transform:translateX(-50%); }
+.option_mode_info_details_window_asset_name_value_label,
+.option_mode_info_details_window_underlying_asset_name_value_label	{ font-size:15px; line-height:17px; display:block; }
+.option_mode_info_details_window_underlying_asset_name_value_label	{ font-size:14px; padding-bottom:10px; }
+.option_mode_info_details_window > div								{ padding:5px 0; }
+.option_mode_info_details_window_target_rate_label,
+.option_mode_info_details_window_bid_ask_rates_label				{ font-size:14px; line-height:18px; display:block; }
+/* Bid/Ask button */
+.trading_slip_asset_price_container									{ font:14px/16px 'Arial', sans-serif; position: absolute; top: 15px; left: 440px; z-index: 301; }
+.trading_slip_asset_price_panel_is_hidden							{ display:none; }
+.trading_slip_asset_price											{ padding:4px; }
+.trading_slip_asset_price > div										{ padding:0 5px; display:inline-block; }
+.trading_slip_asset_price_panel_close_button						{ width:13px; height:13px; display:inline-block; border-radius:50%; cursor:pointer; position:relative; }
+.trading_slip_asset_price_panel_close_button:after					{ content:"x"; font:900 10px/10px Arial, sans-serif; position:absolute; left:3px; }
+.trading_slip_asset_price_minimized									{ padding:5px; font-size:14px; line-height:normal; text-transform:none; }
+
+/* Version 8.0	- Open Position Commission */
+.option_mode_buy_openPositionCommission_panel 		{ min-width:190px; font-size:12px; line-height:12px; }
+.option_mode_buy_openPositionCommission_panel div	{ display:inline; }
+
+/* Version 8.3 - Total Commission Paid (My Account -> Account Summary) */
+.account_summary_comission_invisible 				{ display:none; }
+
+/* Version 8.4	- Limits popup */
+.limits_popup												{ width:600px; z-index:301; }
+.limits_popup_close_button									{ margin-top:5px; }
+.limits_popup_header_label									{ font-size:14px; line-height:36px; text-align:center; }
+.limits_popup_sub_panel .limits_popup_header_label			{ font-weight:500; }
+.limits_popup_top_panel_container							{ margin:0 15px; padding:10px 0; text-align:center; }
+.limits_popup_top_panel_container > div						{ margin-right:20px; display:inline-block; text-align:center; }
+.limits_popup_top_panel_container:after						{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.limits_popup_top_panel_container > div > div				{ display:inline; line-height:20px; }
+.limits_popup_top_panel_container > div > div:last-child	{ margin-left:5px; }
+.limits_popup_top_panel_user_selection_value				{ text-transform:uppercase; }
+.limits_popup_sub_panel										{ width:50%; display:table-cell;}
+.limits_popup_sub_panel .limits_popup_header_label			{ padding:10px 25px; font-size:16px; line-height:20px; }
+.limits_popup_sub_panel .limits_popup_content				{ padding:1px 25px; }
+
+.limits_popup_explanation_label								{ padding-bottom:20px; }
+.limits_popup_field_label									{ display:none; }	
+.limits_popup .plusMinusValueSelector						{ margin-bottom:20px; }
+.limits_popup .plusMinusValueSelector:after					{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.limits_popup .plusMinusValueSelector_value					{ width:75%; height:28px; float:left; font-size:14px; border:none; text-align:center; }
+.limits_popup .plusMinusValueSelector > div					{ width:27px; height:28px; }
+.limits_popup .plusMinusValueSelector_minusButton:before,
+.limits_popup .plusMinusValueSelector_plusButton:before		{ width:26px; line-height:28px; }
+
+.limits_popup_buttons_panel									{ padding:25px 30px 20px; }
+.limits_popup_panel .limits_popup_content:after				{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.limits_popup_buttons_panel	> div							{ padding:0; min-width:45%; max-width:50%; }		
+.limits_popup_buttons_panel:after							{ content:" "; height:0; display:block; visibility:hidden; clear:both; }						
+.limits_popup_apply_button									{ float:left; font-weight:400; }
+.limits_popup_close_position_button_panel					{ float:right; }
+.limits_popup_close_position_button							{ margin-left:5px; text-transform:none; }
+.limits_popup_close_position_button_out_money				{ font-weight:500; }			
+
+/* advice popup */
+.advice_popup							{ min-width:380px; }
+.advice_popup_text_label				{ padding:40px 35px 35px; }
+.advice_popup_buttons_panel				{ padding:0 20%; font-size:16px; line-height:37px; }
+.advice_popup_buttons_panel:after		{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.advice_popup_cancel_button				{ float:left; }
+.advice_popup_apply_button				{ float:right; }
+.advice_popup_cancel_button:hover,		
+.advice_popup_apply_button:hover		{ cursor:pointer; }
+
+/* Version 8.6 - navigation menu links re-alignment */
+.navigation_menu_links_group_static                 {float:right;} /* static navigation links floated to the right */
+.navigation_menu_links_group_brand_platform         {float:left;} /* dynamic navigation links floated to the left */
+.navigation_menu_container > div:after              {content:" "; height:0; display:block; visibility:hidden; clear:both;}
+.navigation_menu_links_group_brand_platform:after   {content:" "; height:0; display:block; visibility:hidden; clear:both;}
+.navigation_menu_links_group_brand_platform > div   {float: left;}  /* float: left to make binary be first, float:right to make forex be first */
+
+/* 8.7 - new feature - Members only asset row */
+.blocked_asset_row_panel:after,
+.blocked_option_row_panel:after											{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.blocked_asset_row_panel .asset_row_asset, .blocked_option_row_panel .option_row_message, .blocked_asset_row_panel .asset_row_message,
+.blocked_option_row_panel .option_row_asset 							{ float:left; height:40px; line-height:40px; box-sizing:border-box; overflow:hidden; user-select:none; }
+.blocked_asset_row_panel .asset_row_message .asset_row_message_label,
+.blocked_option_row_panel .option_row_message .option_row_message_label { display:inline-block; line-height:normal; vertical-align:middle; }
+.blocked_asset_row_panel .asset_row_asset .asset_row_asset_label,
+.blocked_option_row_panel .option_row_asset	.option_row_asset_label 	{ overflow:hidden; text-overflow: ellipsis; white-space: nowrap; }
+.blocked_asset_row_panel:hover, .blocked_option_row_panel:hover			{ cursor:pointer; }
+
+/* 8.10 - Candle/Linear graph switch buttons */
+.chart_type_button {display: inline-block;cursor: pointer;color: transparent; }
+/*.chart_type_button.candle_chart_button {background: url(images/chart_type_button_sprites.png) no-repeat -19px 0px; width: 20px; height: 20px; background-color: #393a3b; border: 1px solid #999; border-radius: 5px;}*/
+/*.chart_type_button.linear_chart_button {background: url(images/chart_type_button_sprites.png) no-repeat 0px 0px; width: 20px; height: 20px; background-color: #393a3b; border: 1px solid #999; border-radius: 5px;}*/
+.chart_type_button.candle_chart_button:hover { background-position: -19px -20px;}
+.chart_type_button.linear_chart_button:hover { background-position: 0px -20px;}
+.chart_controls_container { position: absolute; z-index: 302; top: 10px; right: 15px;}
+.chart_type_button.linear_chart_button.selected_chart_type,
+.chart_type_button.candle_chart_button.selected_chart_type { background-color: #242526; }
+prochart .layout1 .chart-pane-legend { text-align: center; margin-top: -10px; width: 100% !important; }
+.chart_type_button i { display: none; }
+select.candle_chart_time_interval {float: right; margin-left: 5px;}
+.chart_controls_panel:after	{ content:" "; height:0; display:block; visibility:hidden; clear:both; }
+.prochart_graph_popup { z-index: 302; }
+
+.sentiment_panel { position: relative; }  /*fix for 8.11 version*/

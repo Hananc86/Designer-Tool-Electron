@@ -1,0 +1,1852 @@
+{
+  "1": {
+    "discription": "<br/><strong>Group A - Responsible for Application background only.</strong><br/><br/><strong> Note! - you can use only background property with this section.</strong>",
+    "properties": [
+      "background"
+    ],
+    "state": false,
+    "previewBorders": [
+      "#application"
+    ],
+    "regular": {
+      "selectors": [
+        ".header_container"
+      ],
+      "searchPattern": "#application",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".expiry_ticks_expiry_row:hover td",
+        " .option_row_container:hover",
+        " .position_row_panel:hover",
+        " .blocked_option_row_container:hover",
+        " .blocked_asset_row_container:hover",
+        " .asset_row_container:hover",
+        " .trade_row_panel:hover",
+        " .forex_order_row_panel:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        "",
+        ""
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "B": {
+    "discription": "<br/><strong>Group B - Responsible for Application Links only.</strong><br/><br/>",
+    "properties": [
+      "color",
+      "text-decoration",
+      "font-weight"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".navigation_menu_live_chat_button",
+      ".actions_menu_link",
+      ".actions_menu_forgot_password_link"
+    ],
+    "regular": {
+      "selectors": [
+        ".navigation_menu_live_chat_button",
+        ".actions_menu_forgot_password_link"
+      ],
+      "searchPattern": ".actions_menu_forgot_password_link",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".navigation_menu_live_chat_button:hover",
+        ".actions_menu_forgot_password_link:hover"
+      ],
+      "searchPattern": ".navigation_menu_live_chat_button:hover",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        "",
+        ""
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "C": {
+    "discription": "<br/><strong>Group C - Responsible for Login,deposit buttons,forgot password buttons and etc...</strong><br/><br/>",
+    "properties": [
+      "color",
+      "background",
+      "border",
+      "box-shadow"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".navigation_menu_login_button"
+    ],
+    "regular": {
+      "selectors": [
+        ".navigation_menu_login_button",
+        ".promoteToReal_panel_cancel_button",
+        ".messages_table_delete_button",
+        ".messages_instance_delete_button",
+        ".deposit_cc_save_card_button",
+        ".direct_deposit_reject_button",
+        ".roll_over_popup_cancel_button",
+        ".fast_deposit_reject_button",
+        ".withdrawal_step_prev_button",
+        ".withdrawal_step_cancel_button",
+        ".withdrawal_step_print_button",
+        ".popup_reject_button",
+        ".forgot_password_go_back_button",
+        ".limits_popup_close_position_button_tie",
+        ".limits_popup_close_position_button_in_money",
+        ".limits_popup_close_position_button_out_money"
+      ],
+      "searchPattern": "background",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".navigation_menu_login_button:hover",
+        " .promoteToReal_panel_cancel_button:hover",
+        " .messages_table_delete_button:hover",
+        " .messages_instance_delete_button:hover",
+        " .deposit_cc_save_card_button:hover",
+        " .direct_deposit_reject_button:hover",
+        " .roll_over_popup_cancel_button:hover",
+        " .fast_deposit_reject_button:hover",
+        " .withdrawal_step_prev_button:hover",
+        " .withdrawal_step_cancel_button:hover",
+        " .withdrawal_step_print_button:hover",
+        " .popup_reject_button:hover",
+        " .forgot_password_go_back_button:hover",
+        " .limits_popup_close_position_button_tie:hover",
+        " .limits_popup_close_position_button_in_money:hover",
+        " .limits_popup_close_position_button_out_money:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        "",
+        ""
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "D": {
+    "discription": "<br/><strong>Group D - Responsible for Application Open Accounts, Deposit and etc .. buttons.",
+    "properties": [
+      "color",
+      "background",
+      "border",
+      "box-shadow"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".navigation_menu_open_account_button"
+    ],
+    "regular": {
+      "selectors": [
+        ".navigation_menu_open_account_button",
+        ".navigation_menu_deposit_button"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".navigation_menu_open_account_button:hover",
+        " .navigation_menu_deposit_button:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        ".instruments_navigation_super",
+        ".binary_trading_data_main_navigation_item"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "E": {
+    "discription": "<br/><strong>Group A - Responsible for Application background only.</strong><br/><br/><strong> Note! - you can use only background property with this section.</strong>",
+    "properties": [
+      "color",
+      "background",
+      "border"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".instruments_navigation_super",
+      " .binary_trading_data_main_navigation_item",
+      " .forex_trading_data_main_navigation_item"
+    ],
+    "regular": {
+      "selectors": [
+        ".instruments_navigation_super",
+        " .binary_trading_data_main_navigation_item",
+        " .forex_trading_data_main_navigation_item"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".instruments_navigation_super:hover",
+        ".binary_trading_data_main_navigation_item:hover",
+        ".forex_trading_data_main_navigation_item:hover"
+      ],
+      "searchPattern": ".instruments_navigation_super:hover",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        ".instruments_navigation_super",
+        ".binary_trading_data_main_navigation_item"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "F": {
+    "discription": "<br/><strong>Group F - Responsible for Application background only.</strong><br/><br/><strong> Note! - you can use only background property with this section.</strong>",
+    "properties": [
+      "color",
+      "background",
+      "border"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".instruments_navigation_type"
+    ],
+    "regular": {
+      "selectors": [
+        ".instruments_navigation_type"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".instruments_navigation_type:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        ".instruments_navigation_super",
+        ".binary_trading_data_main_navigation_item"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "G": {
+    "discription": "<br/><strong>Group G - Responsible for 'option_row_panel_odd' & '.asset_row_panel_odd'.",
+    "properties": [
+      "background"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".option_row_panel_odd",
+      ".asset_row_panel_odd"
+    ],
+    "regular": {
+      "selectors": [
+        ".option_row_panel_odd",
+        ".position_row_panel_odd",
+        ".asset_row_panel_odd",
+        ".forex_portfolio_total_row",
+        ".position_row_panel_odd"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        " .expiry_ticks_expiry_row:hover td",
+        " .option_row_container:hover",
+        " .position_row_panel:hover",
+        " .blocked_option_row_container:hover",
+        " .blocked_asset_row_container:hover",
+        " .asset_row_container:hover",
+        " .trade_row_panel:hover",
+        " .forex_order_row_panel:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [
+        ".instruments_navigation_super",
+        ".binary_trading_data_main_navigation_item"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "H": {
+    "discription": "<br/><strong>Group A - Responsible for 'option_row_panel' & '.asset_row_panel'.",
+    "properties": [
+      "background"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".options_container .option_row_container[data-group=H]",
+      ".asset_row_container[data-group=H]"
+    ],
+    "regular": {
+      "selectors": [
+        ".options_list_scroll_panel > div > div:nth-child(2)",
+        ".options_list_scroll_panel > div > div:nth-child(4)",
+        ".options_list_scroll_panel > div > div:nth-child(6)",
+        ".options_list_scroll_panel > div > div:nth-child(8)",
+        ".options_list_scroll_panel > div > div:nth-child(10)",
+        ".assets_list_scroll_panel > div > div:nth-child(2)",
+        ".assets_list_scroll_panel > div > div:nth-child(4)",
+        ".assets_list_scroll_panel > div > div:nth-child(6)",
+        ".assets_list_scroll_panel > div > div:nth-child(8)",
+        ".assets_list_scroll_panel > div > div:nth-child(10)"
+      ],
+      "searchClass": ".option_row_container",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "searchPattern": null
+    },
+    "hover": {
+      "selectors": [
+        ".expiry_ticks_expiry_row:hover td",
+        ".option_row_container:hover",
+        ".position_row_panel:hover",
+        ".blocked_option_row_container:hover",
+        ".blocked_asset_row_container:hover",
+        ".asset_row_container:hover",
+        ".trade_row_panel:hover",
+        ".forex_order_row_panel:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "I": {
+    "discription": "<br/><strong>Group I - Responsible for '.trading_slip_north + .forex_slip_north'.",
+    "properties": [
+      "background"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".trading_slip_north",
+      ".asset_direction_button_value"
+    ],
+    "regular": {
+      "selectors": [
+        ".trading_slip_north",
+        ".forex_slip_north"
+      ],
+      "searchClass": ".trading_slip_north",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "J": {
+    "discription": "<br/><strong>Group J - Responsible for 'options_list_header' & .forex_portfolio_positions_header background only.",
+    "properties": [
+      "background"
+    ],
+    "state": false,
+    "previewBorders": [
+      ".options_list_header",
+      " .assets_list_header",
+      " .my_portfolio_positions_header",
+      " .forex_portfolio_positions_header",
+      " .forex_orders_positions_header"
+    ],
+    "regular": {
+      "selectors": [
+        ".options_list_header",
+        " .assets_list_header",
+        " .my_portfolio_positions_header",
+        " .forex_portfolio_positions_header",
+        " .forex_orders_positions_header"
+      ],
+      "searchClass": ".options_list_header",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "K": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [
+      "color"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".options_list_header div",
+      " .assets_list_header div",
+      " .my_portfolio_positions_header div",
+      " .forex_portfolio_positions_header div",
+      " .forex_orders_positions_header div"
+    ],
+    "regular": {
+      "selectors": [
+        ".options_list_header div",
+        " .assets_list_header div",
+        " .my_portfolio_positions_header div",
+        " .forex_portfolio_positions_header div",
+        " .forex_orders_positions_header div"
+      ],
+      "searchClass": ".options_list_header div",
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "L": {
+    "discription": "<br/><strong>Group L - Lorem Inspum",
+    "properties": [
+      "color"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".option_mode_info_asset_label",
+      " .trade_mode_info_asset_label",
+      " .position_mode_info_asset_label",
+      " .asset_mode_info_asset_label"
+    ],
+    "regular": {
+      "selectors": [
+        ".option_mode_info_asset_label",
+        " .trade_mode_info_asset_label",
+        " .position_mode_info_asset_label",
+        " .asset_mode_info_asset_label"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "M": {
+    "discription": "<br/><strong>Group M - Lorem Inspum",
+    "properties": [
+      "color"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".option_mode_info_panel > div",
+      " .trade_mode_info_panel > div",
+      " .position_mode_info_panel > div",
+      " .asset_mode_info_panel > div"
+    ],
+    "regular": {
+      "selectors": [
+        ".option_mode_info_panel > div",
+        " .trade_mode_info_panel > div",
+        " .position_mode_info_panel > div",
+        " .asset_mode_info_panel > div"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "N": {
+    "discription": "<br/><strong>Group N - Lorem Inspum",
+    "properties": [
+      "color"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".binary_tab_clock_container"
+    ],
+    "regular": {
+      "selectors": [
+        ".clock_block > div"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "O": {
+    "discription": "<br/><strong>Group O - Lorem Inspum",
+    "properties": [
+      "color"
+    ],
+    "state": false,
+    "previewBorders": [],
+    "regular": {
+      "selectors": [
+        "::-webkit-scrollbar-thumb"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "P": {
+    "discription": "<br/><strong>Group P - Lorem Inspum",
+    "properties": [
+      "color",
+      "background",
+      "border",
+      "box-shadow",
+      "font-weight",
+      "text-decoration"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".position_type_call_button",
+      " .options_switcher_next_button",
+      " .position_type_touch_button",
+      " .position_type_noTouch_button",
+      " .position_type_in_button",
+      " .asset_direction_buy_button .asset_direction_button_value"
+    ],
+    "regular": {
+      "selectors": [
+        ".position_type_call_button",
+        " .options_switcher_next_button",
+        " .position_type_touch_button",
+        " .position_type_noTouch_button",
+        " .position_type_in_button",
+        " .asset_direction_buy_button .asset_direction_button_value"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".position_type_call_button:hover",
+        " .options_switcher_next_button:hover",
+        " .position_type_touch_button:hover",
+        " .position_type_noTouch_button:hover",
+        " .position_type_in_button:hover",
+        " .asset_direction_buy_button .asset_direction_button_value:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_hover": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    },
+    "propertiesFinal_selected": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "Q": {
+    "discription": "<br/><strong>Group Q - Lorem Inspum",
+    "properties": [
+      "color",
+      "background",
+      "border",
+      "box-shadow",
+      "font-weight",
+      "text-decoration"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".position_type_put_button",
+      " .options_switcher_previous_button",
+      " .position_type_touchDown_button",
+      " .position_type_noTouchDown_button",
+      " .position_type_out_button",
+      " .asset_direction_sell_button .asset_direction_button_value"
+    ],
+    "regular": {
+      "selectors": [
+        ".position_type_put_button",
+        " .options_switcher_previous_button",
+        " .position_type_touchDown_button",
+        " .position_type_noTouchDown_button",
+        " .position_type_out_button",
+        " .asset_direction_sell_button .asset_direction_button_value"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".position_type_put_button:hover",
+        " .options_switcher_previous_button:hover",
+        " .position_type_touchDown_button:hover",
+        " .position_type_noTouchDown_button:hover",
+        " .position_type_out_button:hover",
+        " .asset_direction_sell_button .asset_direction_button_value:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "R": {
+    "discription": "<br/><strong>Group R - Lorem Inspum",
+    "properties": [
+      "color",
+      "background",
+      "border",
+      "box-shadow",
+      "font-weight",
+      "text-decoration"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".open_account_links_link",
+      ".balance_deposit_button"
+    ],
+    "regular": {
+      "selectors": [
+        ".open_account_links_link",
+        ".balance_deposit_button"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [
+        ".open_account_links_link:hover",
+        ".balance_deposit_button:hover"
+      ],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "S": {
+    "discription": "<br/><strong>Group S - footer_container",
+    "properties": [
+      "background"
+    ],
+    "state": false,
+    "previewBorders": [
+      ".footer_container"
+    ],
+    "regular": {
+      "selectors": [
+        ".footer_container"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "propertiesFinal_regular": {
+      "background": "",
+      "border": "",
+      "color": "",
+      "box-shadow": "",
+      "border-radius": "",
+      "text-decoration": "",
+      "font-weight": ""
+    }
+  },
+  "T": {
+    "discription": "<br/><strong>Group T -",
+    "properties": [
+      "background"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".positions_sentiment_bar_percentage"
+    ],
+    "regular": {
+      "selectors": [
+        ".positions_sentiment_bar_percentage"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "U": {
+    "discription": "<br/><strong>Group U - Lorem Inspum",
+    "properties": [
+      "background"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".positions_sentiment_bar"
+    ],
+    "regular": {
+      "selectors": [
+        ".positions_sentiment_bar"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "V": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [
+      "background",
+      "color"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".trading_slip_asset_price"
+    ],
+    "regular": {
+      "selectors": [
+        ".trading_slip_asset_price"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "W": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [
+      "background",
+      "color",
+      "border",
+      "font-weight",
+      "text-decoration"
+    ],
+    "state": true,
+    "previewBorders": [
+      ".asset_direction_action_button"
+    ],
+    "regular": {
+      "selectors": [
+        ".asset_direction_action_button"
+      ],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "X": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [],
+    "state": true,
+    "previewBorders": [],
+    "regular": {
+      "selectors": [],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "Y": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [],
+    "state": true,
+    "previewBorders": [],
+    "regular": {
+      "selectors": [],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  },
+  "Z": {
+    "discription": "<br/><strong>Group K - Lorem Inspum",
+    "properties": [],
+    "state": true,
+    "previewBorders": [],
+    "regular": {
+      "selectors": [],
+      "propertiesFinal_regular": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "hover": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    },
+    "selected": {
+      "selectors": [],
+      "searchPattern": "",
+      "propertiesFinal_selected": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      },
+      "propertiesFinal_hover": {
+        "background": "",
+        "border": "",
+        "color": "",
+        "box-shadow": "",
+        "border-radius": "",
+        "text-decoration": "",
+        "font-weight": ""
+      }
+    }
+  }
+}
