@@ -1,8 +1,0 @@
-windows
-electron-packager ./ "Designer Tool v1.0.0" --platform=win32 --icon=icon.ico
-
-change path to 
-resources/app/data/
-
-all platforms
-electron-packager ./ "Designer Tool v1.0.0" --all --icon=icon.ico
