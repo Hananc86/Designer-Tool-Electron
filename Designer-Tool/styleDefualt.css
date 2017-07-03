@@ -6,11 +6,9 @@
 *
 ***************************************************************************************/
 
-@import url("../../../core/styles-core.css");
-
 .logo {
   margin-top: 30px;
-  width: 325px;
+  width: 60px;
   height: 52px;
 }
 
@@ -2045,7 +2043,7 @@ Version 8.4	- Limits popup
   background-color: #ccc;
 }
 
-/* Adding padding-left for asstes - uncomment when feature is enabled*/
+/* Adding padding-left for asstes with available icons - uncomment when feature is enabled*/
 
 /*.option_row_asset_label												{ padding-left:35px; } */
 
@@ -2110,7 +2108,7 @@ IMAGES BLOCK
 }
 
 .logo {
-  background-image: url("images/logo.png");
+  background-image: 4;
 }
 
 /* Flag Sprites Upload */

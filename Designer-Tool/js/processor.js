@@ -13,6 +13,7 @@ const {
 const path = require('path');
 const rgbHex = require('rgb-hex');
 const userPath = path.resolve();
+
 const fullPath = userPath;
 let relativePath = userPath;
 relativePath = relativePath.split('\\');
@@ -28,7 +29,7 @@ let properties = {
     background: `<div><label>Background:</label><input type="text" id="background-input"></div>`,
     color: `<div><label>Color:</label><input type="text" id="color-input"></div>`,
     border: `<div><label>Border:</label><input type="text" id="border-input"></div>`,
-    boxShadow: `<div><label>Box-Shadow:</label><input type="text" id="box-shadow-input"></div>`,
+    "box-shadow": `<div><label>Box-Shadow:</label><input type="text" id="box-shadow-input"></div>`,
     "border-radius": `<div><label>Border-Radius:</label><input type="text" id="border-radius-input"></div>`,
     "text-decoration": `<div><label>Text-Decoration:</label><input type="text" id="text-decoration"></div>`,
     "font-weight": `<div><label>Font-Weight:</label><input type="text" id="font-weight"></div>`
@@ -37,38 +38,15 @@ $('.body_container').replaceWith(binary);
 $('#inputs').html('<h1 class="begining-title">Please Choose Group To Begin...</h1>');
 
 
-
-// declarions array of Obj
-// stylesheet.stylesheet.rules[1].declarations 
-
-//property
-// stylesheet.stylesheet.rules[1].declarations[1].property
-
-//value
-// stylesheet.stylesheet.rules[1].declarations[1].value
-
-
-
-// stylesheet.stylesheet.rules[1].selectors = ['.logo'];
-// service.saveStyleSheet()
-// service.openStyleSheet()
-
-
-
-
-
-
 let stylesheet;
 let groups = [],
     styleSheetPropertiesDeclarationsArr = [];
 let JSONgroups = {};
 
-
 stylesheet = css.parse(cssfile, {
     source: cssfile
 });
 
-// console.log(stylesheet.stylesheet.rules);
 
 //sort by groups
 for (let i = 0; i < stylesheet.stylesheet.rules.length; i++) {
@@ -84,30 +62,22 @@ for (let i = 0; i < groups.length; i++) {
     if (groups[i] !== undefined && groups[i].declarations !== undefined) {
 
 
+        let elementProperties, instances;
+        groups[i].selectors.map((classItem) => {
 
-                              
-
-
-
-        let elementProperties,instances;
-        groups[i].selectors.map((classItem)=>{
-
-        // elementProperties = service.checkInstancesOfClass(classItem)
-                        //    instances = elementProperties;
-                        //    console.log(instances) 
-                        //     classProperties = (service.getAllPropertiesFromClass(elementProperties))
+            elementProperties = service.checkInstancesOfClass(classItem)
+            instances = elementProperties;
+            classProperties = (service.getAllPropertiesFromClass(elementProperties).properties)
 
         })
 
-        
-
-
+console.log(74)
         JSONgroups[i] = {
             "discription": `<br/><strong>Group ${i} - Responsible for The Classes: ${groups[i].selectors}.</strong><br/><br/>`,
-            "properties": classProperties,
-            "instances":instances,
+            "properties": service.removeDuplicatesFromArray(classProperties),
+            "instances": instances,
             "state": true,
-            "previewBorders":service.getRegularSelected(groups[i]),
+            "previewBorders": service.getRegularSelected(groups[i]),
             "regular": {
                 "selectors": service.getRegularSelected(groups[i]),
                 "propertiesFinal_regular": {}
@@ -134,13 +104,11 @@ for (let i = 0; i < groups.length; i++) {
 // console.log(JSON.stringify(JSONgroups));
 // console.log(JSONgroups)
 
+write(`${__dirname}/data/groups.json`,JSONgroups)
 
 
-// write(`data/groups.json`,JSONgroups)
 aplicationGroups = read(`${__dirname}/data/groups.json`);
-// console.log(JSONgroups);
-
-
+console.log(aplicationGroups);
 
 function init() {
 
@@ -248,7 +216,7 @@ function resetAll(group) {
     aplicationGroups[group]['regular']['propertiesFinal_regular'] = emptyProperties;
     aplicationGroups[group]['hover']['propertiesFinal_hover'] = emptyProperties
     aplicationGroups[group]['selected']['propertiesFinal_hover'] = emptyProperties
-    write('data/groups.json', aplicationGroups);
+    write(`${__dirname}/data/groups.json`, aplicationGroups);
 
 }
 
@@ -263,7 +231,6 @@ function engine(e) {
 
     let group = this.getAttribute('data-group');
     console.log($(this).attr('class'))
-
     event.stopPropagation();
     event.stopImmediatePropagation();
 
@@ -295,9 +262,10 @@ function engine(e) {
 
 function inputsCreator(group, e) {
     // console.log(e)
-
+    
     let props = aplicationGroups[group]['properties']
     let state = aplicationGroups[group]['state']
+    console.log(props)
 
     return `
                <h1 class="group-title">Group: ${group}</h1>
@@ -315,7 +283,7 @@ function inputsCreator(group, e) {
 
                     ''
                 }
-
+                
                 ${props.map( prop => properties[prop]).join(' ')}
             <div class="buttons">
                   <button class="btn btn-primary"  id="resetButton">Reset</button>    
@@ -375,20 +343,22 @@ function processingPropertiesToTheDom(group) {
         }
     }
 
+    service.searchAndChangeStyle(aplicationGroups[group].regular.selectors[0], properties)
+
 
     if (state === "Regular") {
         aplicationGroups[group]['regular']['propertiesFinal_regular'] = properties;
-        write('data/groups.json', aplicationGroups);
+        // write('data/groups.json', aplicationGroups);
         fetchPropsFromJsonToDom(group);
 
     } else if (state === "Hover") {
         aplicationGroups[group]['hover']['propertiesFinal_hover'] = properties;
-        write('data/groups.json', aplicationGroups);
+        // write('data/groups.json', aplicationGroups);
         fetchPropsFromJsonToDom(group);
     } else {
 
         aplicationGroups[group]['regular']['propertiesFinal_regular'] = properties;
-        write('data/groups.json', aplicationGroups);
+        // write('data/groups.json', aplicationGroups);
         fetchPropsFromJsonToDom(group);
 
     }
@@ -415,7 +385,7 @@ function restoreToDefualtGroup(group) {
         deleteHoversAndSelectedByGroup(group, state);
         aplicationGroups[group]['propertiesFinal_hover'] = properties;
         aplicationGroups[group]['propertiesFinal_selected'] = properties;
-        write('data/groups.json', aplicationGroups);
+        write(`${__dirname}/data/groups.json`, aplicationGroups);
 
 
     } else {
@@ -527,8 +497,25 @@ function resetInputs() {
     $('#text-decoration').val('');
     $('#font-weight').val('');
 }
+// console.log(aplicationGroups)
+for (group in aplicationGroups) {
+    // console.log(aplicationGroups[group])
+    // console.log('**************' + aplicationGroups[group].regular.selectors[0])
+    // console.log('**************' +aplicationGroups[group].regular.propertiesFinal_regular)
+    service.searchAndChangeStyle(aplicationGroups[group].regular.selectors[0], aplicationGroups[group].regular.propertiesFinal_regular)
+
+}
 
 function generateCssFile() {
+    for (group in aplicationGroups) {
+        // console.log('**************' + group.regular.selectors[0])
+        // console.log('**************' + group.regular.propertiesFinal_regular)
+        service.searchAndChangeStyle(group.regular.selectors[0], group.regular.propertiesFinal_regular)
+
+    }
+
+
+
 
     let content = "Some text to save into the file";
     dialog.showSaveDialog((fileName) => {
@@ -827,8 +814,9 @@ function deleteHoversAndSelectedByGroup(group, state) {
 }
 
 
-
-
-
-service.searchAndChangeStyle(['.logo'],{'background':'red','width':'30px','background-image':4})
+service.searchAndChangeStyle(['.logo'], {
+    'background': "",
+    'width': "",
+    'background-image': ""
+})
 // service.checksDuplicatesPropsForEachClass('.logo');

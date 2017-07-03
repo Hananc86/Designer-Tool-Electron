@@ -16,7 +16,7 @@ module.exports = serviceObj = {
         stylesheet = css.stringify(stylesheet);
 
         // write(`C:/Users/Hananc/Desktop/Designer-Tool/css/application/styleDefualt2.txt`,stylesheet)
-        console.log(stylesheet)
+        // console.log(stylesheet)
         fs.writeFileSync(`./css/application/styleDefualt.css`, stylesheet, 'utf8')
     },
 
@@ -147,9 +147,9 @@ module.exports = serviceObj = {
                 let keySelectors = key.selectors;
                 let a = keySelectors
                 for (key2 in a) {
-                    // console.log(a[key2])
+                   
                     if (a[key2] === Class) {
-                        // console.log(a[key2])
+                  
                         theClass = a[key2];
                         // console.log(`${a[key2]},${arr.indexOf(key)},${serviceObj.getPropertiesFromSingleClass(arr.indexOf(key))}`)
                         theClass = a[key2];
@@ -162,12 +162,6 @@ module.exports = serviceObj = {
             }
 
         )
-
-        // console.log( {
-        //     "class":theClass,
-        //     index,
-        //     properties
-        // });
         return result;
     },
 
@@ -186,8 +180,11 @@ module.exports = serviceObj = {
             })
 
         }
-        // console.log(properties);
-        return properties
+        // console.log({properties,arrayOfIndexes});
+        return {
+            properties,
+            arrayOfIndexes
+        }
     },
 
 
@@ -206,128 +203,161 @@ module.exports = serviceObj = {
         return properties
     },
 
-    searchAndChangeStyle: (selectorArr, newPropsObj) => {
+    //adding new properties to StyleSheet file and print if duplicates was founded. 
+    searchAndChangeStyle: (selector, newPropsObj) => {
+        let result = [];
+        let styleSheet = stylesheet.stylesheet.rules;
+        let indexArr = serviceObj.checkInstancesOfClass(selector);
+
+        //  console.log(serviceObj.checksDuplicatesPropsFromClass(selector))
+        propertiesOfTheClass = serviceObj.getAllPropertiesFromClass(indexArr).properties;
+        locationInStylesheetObj = serviceObj.getAllPropertiesFromClass(indexArr).arrayOfIndexes;
+        locationInStyleSheetFile = [];
         //checks if the object is not empty
         Object.keys(newPropsObj).length === 0 && newPropsObj.constructor === Object
 
-
-
-
-
-
-
-        let indexArr = serviceObj.checkInstancesOfClass(selectorArr[0]);
+        
         // console.log(indexArr);
 
         //checks if there any duplicates props for class.. if there is duplicate prop it will handle the last1
-         duplicates = serviceObj.checkDuplicatesFromArray(serviceObj.getAllPropertiesFromClass(indexArr))
-         console.log(duplicates,indexArr.sort())
+        // console.log(propertiesOfTheClass)
+        duplicates = serviceObj.checkDuplicatesFromArray(propertiesOfTheClass)
+        // console.log(duplicates);
 
-        let styleSheet = stylesheet.stylesheet.rules;
+        //push the locations obj to duplicatesobj after converting to stylesheet location. 
+        locationInStylesheetObj.map((index) => {
+            locationInStyleSheetFile.push(styleSheet[index].position.start.line)
+        });
 
 
+
+        duplicatesObj = {
+            duplicates: {
+                props: duplicates,
+                styleSheetLocations: ""
+            },
+            properties: propertiesOfTheClass,
+            locationInObj: locationInStylesheetObj,
+            locationInStyleSheetFile: locationInStyleSheetFile,
+        }
+
+
+        //print only if its found duplicates
+        console.log(duplicatesObj.duplicates.props !== false ? duplicatesObj : "");
+
+
+        
+if(duplicatesObj.duplicates.props === false){
+
+        //indexArr = instances of the selector in StyleSheet Obj
         indexArr.map((index) => {
+            //declarations = properties from StyleSheet Obj
             let declarations = styleSheet[index].declarations;
+
             declarations.map((prop) => {
 
-                for (keyNewObj in newPropsObj) {
-                    if (prop.property === keyNewObj) {
+                for (item in newPropsObj) {
+
+                    if (prop.property === item && newPropsObj[item] !== "") {
                         // console.log(prop.property)
-                        prop.value = newPropsObj[keyNewObj]
-                        console.log(prop)
+                        prop.value = newPropsObj[item]
+                        result.push(prop.property)
+                        console.log(`File Was Changed - StyleSheet Line: ${prop.position.start.line}, ${item}:${newPropsObj[item]}`)
+
 
                     }
+
                 }
+
             })
-        })
-    },
-
-    checksDuplicatesPropsForEachClass:(Class)=>{
-        let styleSheet = stylesheet.stylesheet.rules;
-        let indexArr = serviceObj.checkInstancesOfClass(Class);
-        let declarations=[]; 
-        indexArr.map((index)=>{
-            declarations = styleSheet[index].declarations;
-            console.log(declarations);
-
 
         })
+
+
         
+        styleSheet = css.stringify(stylesheet);
+        
+        let path = __dirname.split('')
+        path.splice(-3,3)
+        path=path.join('')
+       
+        fs.writeFileSync(`${path}/css/application/styleDefualt.css`, styleSheet)
+        // console.log(styleSheet)
+        
+        return result;
 
 
 
 
+}else{
+    
+    
+    console.log('duplicates conflict')
 
 
-    },
-
-    checkDuplicatesFromArray:(arr)=>{
-
-      var sorted_arr = arr.slice().sort(); 
-
-      var results = [];
-      for (var i = 0; i < arr.length - 1; i++) {
-          if (sorted_arr[i + 1] == sorted_arr[i]) {
-              results.push(sorted_arr[i]);
-          }
-      }
-      
-      if(results){
-        console.log(`duplicates was found: ${results}`);
-        return results;
-      }
-      
-      
-    }
 
 
 }
 
+    },
+
+    checksDuplicatesPropsFromClass: (Class) => {
+        let styleSheet = stylesheet.stylesheet.rules;
+        let indexArr = serviceObj.checkInstancesOfClass(Class).sort();
+        let declarations = [];
+        let result = [];
+        indexArr.map((index) => {
+            declarations.push(styleSheet[index].declarations);
+            // console.log(declarations);
+
+        })
+
+
+        declarations.map((propObj) => {
+            for (prop in propObj) {
+                result.push(propObj[prop].property)
+            }
+        })
+
+
+        if (serviceObj.checkDuplicatesFromArray(result) !== false) {
+            propsDuplicates = result
+            let lastlInstanceOfDuplicateProp;
+
+            indexArr.map((index) => {
+                console.log(styleSheet[index].declarations)
+                let props = styleSheet[index].declarations;
+                for (prop in props) {
+                    if (props[prop].property === propsDuplicates[0]) {
+
+                        console.log(styleSheet[index].position.start.line);
 
 
 
-// indexArr.map((index)=>{
-//     let declarations = styleSheet[index].declarations;
-//     declarations.map((prop)=>{
+                    }
+                }
 
+            })
 
+        }
+    },
 
+    checkDuplicatesFromArray: (arr) => {
 
-//         if(prop.property === property){
-//             console.log(prop.property)
-//             prop.value = value
-//             console.log(prop)
+        var sorted_arr = arr.slice().sort();
+        var results = [];
+        for (var i = 0; i < arr.length - 1; i++) {
+            if (sorted_arr[i + 1] == sorted_arr[i]) {
+                results.push(sorted_arr[i]);
+            }
+        }
+        //   console.log(results);
+        if (results.length > 0) {
+            console.log(`Duplicates Props:  ${results} `);
+            return results;
+        } else {
+            return false
+        }
+    },
 
-//             return ''
-//         }
-
-
-//     })
-
-
-
-
-// })
-
-
-
-
-// styleSheet.map((rule)=>{
-
-//     if(rule.selectors !== undefined){
-// let selectors = rule.selectors;
-//     console.log(rule.selectors)
-//     selectors.map((prop)=>{
-
-
-
-
-//     })
-
-
-
-//     }
-
-
-
-// })
+}

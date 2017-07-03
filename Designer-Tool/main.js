@@ -4,7 +4,7 @@ const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
-require('electron-reload')(__dirname);
+// require('electron-reload')(__dirname);
 
 
 const path = require('path');
