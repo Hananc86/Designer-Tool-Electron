@@ -9,10 +9,10 @@ after the user finish to work he can generate basiclly a new skin/copy from his 
 
 
 Installation:
-# Npm install
+# npm install
 
 Then:
-# Npm start
+# npm start
 
 Builds for production:
 Npm run build (the script will build the app for all the platforms , Linux MacOS , Windows x32 or 64) 
