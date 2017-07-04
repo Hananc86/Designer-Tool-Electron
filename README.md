@@ -15,6 +15,6 @@ Then:
 # npm start
 
 Builds for production:
-Npm run build (the script will build the app for all the platforms , Linux MacOS , Windows x32 or 64) 
+Npm run build (the script will build the app for all the platforms , Windows 32-ia32 Or 32-x64, Linux-ia32 Or linux-x64, MacOS ) 
 ![My image](https://user-images.githubusercontent.com/17859078/27674544-e3018bfa-5cae-11e7-842b-743c7a476634.png)
 
