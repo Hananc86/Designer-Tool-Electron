@@ -8,14 +8,15 @@ It's read all the properties of each element and based on the information from t
 after the user finish to work he can generate basiclly a new skin/copy from his website. <br/>
 
 
-## Installation:
-# npm install
-
-
-
-Builds for production:
-Npm run build (the script will build the app for all the platforms , Windows 32-ia32 Or 32-x64, Linux-ia32 Or linux-x64, MacOS ) 
+## Builds for production:
+## Npm run build (the script will build the app for all the platforms , Windows 32-ia32 Or 32-x64, Linux-ia32 Or linux-x64, MacOS ) 
 ![My image](https://user-images.githubusercontent.com/17859078/27818238-817174de-609d-11e7-8365-0dbca8635ebc.png)
-## Then:
-# npm start
+
+## Installation:
+```
+> git clone https://github.com/Hananc86/Designer-Tool-Electron.git
+> cd Designer-Tool-Electron
+> npm install
+> npm start
+```
 ![My image](https://user-images.githubusercontent.com/17859078/27674544-e3018bfa-5cae-11e7-842b-743c7a476634.png)
