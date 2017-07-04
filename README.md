@@ -6,7 +6,7 @@ it also let you edit each element as you want without needed understanding css o
 Behind the seen the app read all the css and html files and splits them into groups based on the css blocks and create a huge object that we can manipulate with it.  <br/>
 It's read all the properties of each element and based on the information from the object it offer you the edit the elements. <br/>
 after the user finish to work he can generate basiclly a new skin/copy from his website. <br/>
-![screenshot](https://user-images.githubusercontent.com/17859078/27820461-65c458dc-60a7-11e7-9038-1362e9849218.gif)
+![screenshot](https://user-images.githubusercontent.com/17859078/27821417-dc8fd39e-60aa-11e7-9876-9947b7e5ee5b.gif)
 ## Builds for production:
 ```
 > npm run build
