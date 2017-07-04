@@ -1,6 +1,6 @@
 ## Designer Tool [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Designer Tool is a desktop application that written in Electron j's. <br/>
+*Designer Tool* is a desktop application that written in *Electron.js*. <br/>
 It's written by me from scratch to our Designers in Techfinancials. <br/>
 With this app you can load html and css files and inject functionality to the DOM with very friendly UI. <br/>
 it also let you edit each element as you want without needed understanding css or html code. <br/>
